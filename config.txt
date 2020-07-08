@@ -1,0 +1,20 @@
+settings
+highscore=0
+recentScore=0
+controllerA=0
+controllerB=1
+video=1
+settings
+displayHighscore=0
+playerName=PLAYER
+tankColor=color 0f
+debugAmode=0
+debugBmode=0
+debugCmode=0
+debugMode=0
+experimentalFeatures=0
+statistics
+shootingTimes=0
+controlAtimes=0
+controlDtimes=0
+controlStimes=0

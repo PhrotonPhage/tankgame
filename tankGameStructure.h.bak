@@ -1,0 +1,26 @@
+#ifndef TANKGAMESTRUCTURE_H
+#define TANKGAMESTRUCTURE_H
+#include <string>
+#include "tankgamemain.h"
+using namespace std;
+
+class tankGameStructure
+{
+    public:
+        void tankDifficulty();
+        void difficultySelection();
+        void mainGame();
+        void gameOverVoid();
+        void debugModeDirect(int debug);
+        void playerProperties();
+        void videoSettings();
+        void statistics();
+        void experimentalGameplay();
+        void controls();
+        void generalSettings();
+    protected:
+
+    private:
+};
+
+#endif // TANKGAMESTRUCTURE_H

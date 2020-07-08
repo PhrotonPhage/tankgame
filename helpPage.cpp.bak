@@ -1,0 +1,96 @@
+#include "helpPage.h"
+#include <iostream>
+#include <string>
+#include <conio.h>
+#include <windows.h>
+#include <algorithm>
+#include <thread>
+#include <chrono>
+#include <cstdlib>
+#include <pthread.h>
+#include <conio.h>
+
+using namespace std;
+
+tankgamemain tankgamehelpObject;
+
+void helpPage::helpPageMain()
+{
+    system("cls");
+    cout << "HELP\n\n";
+    cout << "TIP: ALWAYS CAPS LOCK\n";
+    cout << "1 - SHOOTING\n2 - INVASION (COMING SOON)\n3 - CLASSIC(COMING SOON)\n4 - CHAOTIC(COMING SOON)\n5 - MINIMAL(COMING SOON)\n\n";
+    cout << "6 - CHANGELOGS\n\n0 - BACK\n";
+    if(kbhit()){
+        switch(_getch()){
+        case '1':
+            shootingGame();
+            system("cls");
+            break;
+        case '6':
+            changelogs();
+            system("cls");
+            break;
+        case '0':
+            tankgamehelpObject.mainMenu();
+            system("cls");
+            break;
+        }
+    }
+    helpPageMain();
+}
+
+void helpPage::changelogs(){
+    system("cls");
+    cout << "CHANGELOGS:\n\n";
+    cout << "WHAT'S NEW IN VERSION " << VERMAJOR << "." << VERMINOR << "." << REVISION << "." << VERBUILD << " " << VERSION << " build " << BUILD  << "?\n";
+    cout << "-ADDED UNUSED GENERAL SETTINGS\n";
+    cout << "-CHANGES TO NAVIGATION ON GAMEPLAY MENUS\n";
+    cout << "-BUFFED THE PRICE OF HEALTH FROM 500 TO 100\n";
+    cout << "-CAN NO LONGER BUY HEALTH IN EXPERT DIFFICULTY\n\n";
+    cout << "0 - BACK\n" << endl;
+    if(kbhit()){
+        switch(_getch()){
+        case '0':
+            system("cls");
+            helpPageMain();
+            break;
+        }
+    }
+    changelogs();
+}
+
+void helpPage::shootingGame(){
+    system("cls");
+    cout << "SHOOTING GAME:\n\n";
+    cout << "CONTROLS:\n";
+    cout << "CAPS LOCK REQUIRED\n";
+    cout << "W - UP/SHOOT\n";
+    cout << "A - LEFT\n";
+    cout << "D - RIGHT\n";
+    cout << "S - SHIELD/DOWN\n\n";
+    cout << "Q - BUY HEALTH\n";
+    cout << "Z - PAUSE GAME\n";
+    cout << "X - QUIT GAME\n";
+    cout << "E - INVENTORY\n";
+    cout << "F - BUY AMMUNITION\n\n";
+    cout << "IN OTHER GAME MODE: SPACE - SHOOT\n\n";
+    cout << "GAMEMODE SHOOTING:\n";
+    cout << "W = ENEMY\t, = ENEMY AMMUNITION\n";
+    cout << "M = PLAYER\t. = PLAYER AMMUNITON\n";
+    cout << "MECHANICS:\n";
+    cout << "SCORE REWARD AMMO1 = SCORE: 100 (EASY/NORMAL), 50 (HARD), 25 (EXPERT)\n";
+    cout << "AMMUNITION REWARD AMMO1 = AMMUNITION: +10 EASY, +7 NORMAL, +5 HARD, +3 EXPERT\n";
+    cout << "HEALTH REWARD = CURRENTLY IN PROGRESS\n";
+    cout << "ENEMY MECHANICS = CURRENTLY IN PROGRESS\n\n";
+    cout << "0 - BACK\n";
+    if(kbhit()){
+        switch(_getch()){
+        case '0':
+            system("cls");
+            helpPageMain();
+            break;
+        }
+    }
+    shootingGame();
+}

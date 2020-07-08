@@ -1,0 +1,265 @@
+# depslib dependency file v1.0
+1591605301 source:c:\users\charles\desktop\c++ workplace\console programs\tankgame\helppage.cpp
+	"helpPage.h"
+	<iostream>
+	<string>
+	<conio.h>
+	<windows.h>
+	<algorithm>
+	<thread>
+	<chrono>
+	<cstdlib>
+	<pthread.h>
+	<conio.h>
+
+1591236054 c:\users\charles\desktop\c++ workplace\console programs\tankgame\helppage.h
+	"tankgamemain.h"
+
+1591778365 c:\users\charles\desktop\c++ workplace\console programs\tankgame\tankgamemain.h
+	"tankGameStructure.h"
+	"helpPage.h"
+
+1591778204 c:\users\charles\desktop\c++ workplace\console programs\tankgame\tankgamestructure.h
+	<string>
+	"tankgamemain.h"
+
+1591604717 source:c:\users\charles\desktop\c++ workplace\console programs\tankgame\main.cpp
+	<iostream>
+	"tankgamemain.h"
+	<windows.h>
+	<fstream>
+	<string>
+
+1591774942 source:c:\users\charles\desktop\c++ workplace\console programs\tankgame\tankgamemain.cpp
+	"tankgamemain.h"
+	<iostream>
+	<string>
+	<conio.h>
+	<windows.h>
+	<algorithm>
+	<thread>
+	<chrono>
+	<cstdlib>
+	<pthread.h>
+
+1592534644 source:c:\users\cpasc\desktop\c++ workplace\console programs\tankgame\helppage.cpp
+	"helpPage.h"
+	<iostream>
+	<string>
+	<conio.h>
+	<windows.h>
+	<algorithm>
+	<thread>
+	<chrono>
+	<cstdlib>
+	<pthread.h>
+	<conio.h>
+
+1591236054 c:\users\cpasc\desktop\c++ workplace\console programs\tankgame\helppage.h
+	"tankgamemain.h"
+
+1592536458 c:\users\cpasc\desktop\c++ workplace\console programs\tankgame\tankgamemain.h
+	"tankGameStructure.h"
+	"helpPage.h"
+
+1591778204 c:\users\cpasc\desktop\c++ workplace\console programs\tankgame\tankgamestructure.h
+	<string>
+	"tankgamemain.h"
+
+1591604717 source:c:\users\cpasc\desktop\c++ workplace\console programs\tankgame\main.cpp
+	<iostream>
+	"tankgamemain.h"
+	<windows.h>
+	<fstream>
+	<string>
+
+1592535504 source:c:\users\cpasc\desktop\c++ workplace\console programs\tankgame\tankgamestructure.cpp
+	"tankGameStructure.h"
+	<iostream>
+	<string>
+	<conio.h>
+	<windows.h>
+	<algorithm>
+	<thread>
+	<chrono>
+	<cstdlib>
+	<pthread.h>
+	<conio.h>
+	<sstream>
+	<fstream>
+	<istream>
+	<ostream>
+	<streambuf>
+
+1592533260 source:c:\users\cpasc\desktop\c++ workplace\console programs\tankgame\tankgamemain.cpp
+	"tankgamemain.h"
+	<iostream>
+	<string>
+	<conio.h>
+	<windows.h>
+	<algorithm>
+	<thread>
+	<chrono>
+	<cstdlib>
+	<pthread.h>
+
+1592792682 source:c:\users\cpasc\desktop\tankgame\helppage.cpp
+	"helpPage.h"
+	<iostream>
+	<string>
+	<conio.h>
+	<windows.h>
+	<algorithm>
+	<thread>
+	<chrono>
+	<cstdlib>
+	<pthread.h>
+	<conio.h>
+
+1591236054 c:\users\cpasc\desktop\tankgame\helppage.h
+	"tankgamemain.h"
+
+1594007359 c:\users\cpasc\desktop\tankgame\tankgamemain.h
+	"tankGameStructure.h"
+	"helpPage.h"
+	"minimalGame.h"
+
+1594005389 c:\users\cpasc\desktop\tankgame\tankgamestructure.h
+	<string>
+	"tankgamemain.h"
+	"minimalGame.h"
+
+1591604717 source:c:\users\cpasc\desktop\tankgame\main.cpp
+	<iostream>
+	"tankgamemain.h"
+	<windows.h>
+	<fstream>
+	<string>
+
+1594006437 source:c:\users\cpasc\desktop\tankgame\tankgamemain.cpp
+	"tankgamemain.h"
+	<iostream>
+	<string>
+	<conio.h>
+	<windows.h>
+	<algorithm>
+	<thread>
+	<chrono>
+	<cstdlib>
+	<pthread.h>
+
+1594006913 source:c:\users\cpasc\desktop\tankgame\tankgamestructure.cpp
+	"tankGameStructure.h"
+	<iostream>
+	<string>
+	<conio.h>
+	<windows.h>
+	<algorithm>
+	<thread>
+	<chrono>
+	<cstdlib>
+	<pthread.h>
+	<sstream>
+	<fstream>
+	<istream>
+	<ostream>
+	<streambuf>
+
+1594006986 c:\users\cpasc\desktop\tankgame\minimalgame.h
+	<iostream>
+	<string>
+	<string.h>
+	<conio.h>
+	<windows.h>
+	"tankgamemain.h"
+	"tankGameStructure.h"
+
+1594006636 source:c:\users\cpasc\desktop\tankgame\minimalgame.cpp
+	"minimalGame.h"
+	<iostream>
+	<string>
+	<conio.h>
+	<windows.h>
+	<algorithm>
+	<thread>
+
+1594101414 source:c:\users\cpasc\desktop\  \tankgame\helppage.cpp
+	"helpPage.h"
+	<iostream>
+	<string>
+	<conio.h>
+	<windows.h>
+	<algorithm>
+	<thread>
+	<chrono>
+	<cstdlib>
+	<pthread.h>
+	<conio.h>
+
+1594093298 c:\users\cpasc\desktop\  \tankgame\helppage.h
+	"tankgamemain.h"
+
+1594102787 c:\users\cpasc\desktop\  \tankgame\tankgamemain.h
+	"tankGameStructure.h"
+	"helpPage.h"
+	"minimalGame.h"
+
+1594005389 c:\users\cpasc\desktop\  \tankgame\tankgamestructure.h
+	<string>
+	"tankgamemain.h"
+	"minimalGame.h"
+
+1594006986 c:\users\cpasc\desktop\  \tankgame\minimalgame.h
+	<iostream>
+	<string>
+	<string.h>
+	<conio.h>
+	<windows.h>
+	"tankgamemain.h"
+	"tankGameStructure.h"
+
+1591604717 source:c:\users\cpasc\desktop\  \tankgame\main.cpp
+	<iostream>
+	"tankgamemain.h"
+	<windows.h>
+	<fstream>
+	<string>
+
+1594095262 source:c:\users\cpasc\desktop\  \tankgame\minimalgame.cpp
+	"minimalGame.h"
+	<iostream>
+	<string>
+	<conio.h>
+	<windows.h>
+	<algorithm>
+	<thread>
+
+1594102700 source:c:\users\cpasc\desktop\  \tankgame\tankgamemain.cpp
+	"tankgamemain.h"
+	<iostream>
+	<string>
+	<conio.h>
+	<windows.h>
+	<algorithm>
+	<thread>
+	<chrono>
+	<cstdlib>
+	<pthread.h>
+
+1594101497 source:c:\users\cpasc\desktop\  \tankgame\tankgamestructure.cpp
+	"tankGameStructure.h"
+	<iostream>
+	<string>
+	<conio.h>
+	<windows.h>
+	<algorithm>
+	<thread>
+	<chrono>
+	<cstdlib>
+	<pthread.h>
+	<sstream>
+	<fstream>
+	<istream>
+	<ostream>
+	<streambuf>
+
