@@ -78,6 +78,7 @@ int audio = 1;
 
 tankgamemain tankgamemainObject;
 minimalGame minimalGameObject;
+classicMode classicModeObject;
 
 static int death5 = 0;
 static int shootingTimes5 = 0;
@@ -206,7 +207,7 @@ void tankGameStructure::tankDifficulty(){
     cout << "0 - BACK TO MAIN MENU\t\tHIGHSCORE:" << endl << endl;
     cout << "1 - SHOOTING\t\t\t" << highscore << endl;
     cout << "2 - INVASION - COMING SOON" << endl;
-    cout << "3 - CLASSIC - COMING SOON" << endl;
+    cout << "3 - CLASSIC" << endl;
     cout << "4 - CHAOS - COMING SOON" << endl;
     cout << "5 - MINIMAL\t\t\t" << highscore5 << endl;
     cout << "INPUT:";
@@ -228,7 +229,7 @@ void tankGameStructure::tankDifficulty(){
         break;
     case '3':
         system("cls");
-        cout << "COMING SOON\n";
+        classicModeObject.difficulty();
         break;
     case '4':
         system("cls");

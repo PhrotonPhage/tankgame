@@ -3,13 +3,14 @@
 #include "tankGameStructure.h"
 #include "helpPage.h"
 #include "minimalGame.h"
+#include "classicMode.h"
 
 #define VERMAJOR 0
-#define VERMINOR 2
+#define VERMINOR 3
 #define REVISION 0
-#define VERBUILD ""
+#define VERBUILD ".0"
 #define VERSION "ALPHA"
-#define BUILD 952
+#define BUILD 964
 
 class tankgamemain
 {

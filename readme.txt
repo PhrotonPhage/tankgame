@@ -8,7 +8,7 @@ Command prompt. Color 'C' must be Red: 255 and classic cmd window size
 
 Plans:
 -Add colors to tanks, and choose your own color
--3 other game modes
+-2 other game modes
 -Improve Performance
 -Separate statistics file from config file
 '=Load a config file
@@ -16,15 +16,14 @@ Plans:
 -Open readme.txt and config file using the game
 (!=High Priority, '-Medium Priority, -Low Priority)
 
-v0.2.0 Alpha build 952 - July 7, 2020		Minimal Update
--Added minimal game mode. It's shooting mode but simplier.
--Added beep sounds (game over, enemy hit, and program start)(both gamemode 1 & 5)
--Added audio settings. Can mute all beep sounds
--Added recommended settings page
--Added navigation text on some pages
--Playername is now displayed on settings page
--Minor changes to shooting mode
--Minor bug fixes
+v0.3.0.0 Alpha build - July 9, 2020
+-Removed coming soon text for Classic mode
+-Added classes and objects for classic mode
+-Added required libraries for classic mode
+-Added basic functions for classic mode
+-Added basic variables for classic mode
+-Added controls A, D, S for classic mode
+-Can unshield with 'W' but not functional yet
 
 Older Versions:
 v0.0.0 - May 17, 2020
@@ -442,3 +441,12 @@ v0.2.0 Pre-release 1 Alpha build 950 - July 7, 2020
 -Fixed bug causing inability to navigate to help page gamemode 5
 -Added "0 - Back" text to gamemode 5 help page
 -Added highscore for gamemode 5 in gamemode selector
+v0.2.0 Alpha build 952 - July 7, 2020		Minimal Update
+-Added minimal game mode. It's shooting mode but simplier.
+-Added beep sounds (game over, enemy hit, and program start)(both gamemode 1 & 5)
+-Added audio settings. Can mute all beep sounds
+-Added recommended settings page
+-Added navigation text on some pages
+-Playername is now displayed on settings page
+-Minor changes to shooting mode
+-Minor bug fixes

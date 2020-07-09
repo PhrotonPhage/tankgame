@@ -3,6 +3,7 @@
 #include <string>
 #include "tankgamemain.h"
 #include "minimalGame.h"
+#include "classicMode.h"
 
 using namespace std;
 
