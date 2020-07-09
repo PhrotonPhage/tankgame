@@ -15,8 +15,12 @@ namespace classicGame{
     int difficulty;
 
     char tank = 'M';
-    char enemyTank = 'W';
+    char blocks = 'W';
     int movement = 10;
+
+    int score = 0;
+
+    int uiWidth = 30;
 }
 
 void classicMode::difficulty(){
@@ -45,7 +49,7 @@ void classicMode::difficulty(){
 
 void classicMode::mainGame(){
     system("cls");
-    cout << "--------------------" << endl;
+    cout << "--------------------\tSCORE: " << classicGame::score << endl;
     cout << "\n";
     cout << "\n";
     cout << "\n";
@@ -76,6 +80,7 @@ void classicMode::mainGame(){
             if(classicGame::tank=='W'){
                 classicGame::tank='M';
             }
+            break;
         case 'A':
             if(classicGame::tank!='W'){
               classicGame::movement--;
