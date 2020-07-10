@@ -16,15 +16,13 @@ Plans:
 -Open readme.txt and config file using the game
 (!=High Priority, '-Medium Priority, -Low Priority)
 
-v0.3.0.0 Alpha build 966 - July 9, 2020
--Removed coming soon text for Classic mode
--Added classes and objects for classic mode
--Added required libraries for classic mode
--Added basic functions for classic mode
--Added basic variables for classic mode
--Added controls A, D, S for classic mode
--Can unshield with 'W' but not functional yet
--Added text "SCORE" in classic mode
+v0.3.0.1 Alpha build - July X, 2020
+-Removed "Coming Soon" text while pressing 'W'
+-Added shooting in classic mode
+-Added shooting trail in classic mode
+-Moved "SCORE" text down to be used with playername in classic mode
+-Added Ammunition counter in classic mode. Does not work properly.
+-Added Health points in classic mode. Does not work yet.
 
 Older Versions:
 v0.0.0 - May 17, 2020
@@ -451,3 +449,12 @@ v0.2.0 Alpha build 952 - July 7, 2020		Minimal Update
 -Playername is now displayed on settings page
 -Minor changes to shooting mode
 -Minor bug fixes
+v0.3.0.0 Alpha build 966 - July 9, 2020
+-Removed coming soon text for Classic mode
+-Added classes and objects for classic mode
+-Added required libraries for classic mode
+-Added basic functions for classic mode
+-Added basic variables for classic mode
+-Added controls A, D, S for classic mode
+-Can unshield with 'W' but not functional yet
+-Added text "SCORE" in classic mode

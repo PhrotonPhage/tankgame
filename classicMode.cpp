@@ -19,8 +19,17 @@ namespace classicGame{
     int movement = 10;
 
     int score = 0;
+    int healthPoint = 3;
+    int ammunition = 50;
 
+    int shootPlayer;
+    char shootPlayerPtr;
+}
+
+namespace classicGameUI{
     int uiWidth = 30;
+    int cguiAxis;
+    int cguiAxis2;
 }
 
 void classicMode::difficulty(){
@@ -48,38 +57,83 @@ void classicMode::difficulty(){
 }
 
 void classicMode::mainGame(){
-    system("cls");
-    cout << "--------------------\tSCORE: " << classicGame::score << endl;
-    cout << "\n";
-    cout << "\n";
-    cout << "\n";
-    cout << "\n";
-    cout << "\n";
-    cout << "\n";
-    cout << "\n";
-    cout << "\n";
-    cout << "\n";
-    cout << "\n";
-    cout << "\n";
-    cout << "\n";
-    cout << "\n";
-    cout << "\n";
-    cout << "\n";
-    cout << "\n";
-    cout << "\n";
-    cout.width(classicGame::movement);
-    cout << classicGame::tank;
-    cout << "\n";
-    cout << "--------------------" << endl;
 
+    classicGameUI::cguiAxis=classicGameUI::uiWidth-classicGame::movement;
+
+    system("cls");
+    cout<<"--------------------\t"<<endl;
+    cout<<"\n";
+    cout.width(classicGame::movement);
+    cout<<classicGame::shootPlayerPtr;
+    cout.width(classicGameUI::cguiAxis);
+    cout<<"SCORE: " << classicGame::score;
+    cout<<"\n";
+    cout.width(classicGame::movement);
+    cout<<classicGame::shootPlayerPtr;
+    cout.width(classicGameUI::cguiAxis+1);
+    cout<<"HEALTH: "<<classicGame::healthPoint;
+    cout<<"\n";
+    cout.width(classicGame::movement);
+    cout<<classicGame::shootPlayerPtr;
+    cout<<"\n";
+    cout.width(classicGame::movement);
+    cout<<classicGame::shootPlayerPtr;
+    cout.width(classicGameUI::cguiAxis+5);
+    cout<<"AMMUNITION: " <<classicGame::ammunition;
+    cout<<"\n";
+    cout.width(classicGame::movement);
+    cout<<classicGame::shootPlayerPtr;
+    cout<<"\n";
+    cout.width(classicGame::movement);
+    cout<<classicGame::shootPlayerPtr;
+    cout<<"\n";
+    cout.width(classicGame::movement);
+    cout<<classicGame::shootPlayerPtr;
+    cout<<"\n";
+    cout.width(classicGame::movement);
+    cout<<classicGame::shootPlayerPtr;
+    cout<<"\n";
+    cout.width(classicGame::movement);
+    cout<<classicGame::shootPlayerPtr;
+    cout<<"\n";
+    cout.width(classicGame::movement);
+    cout<<classicGame::shootPlayerPtr;
+    cout<<"\n";
+    cout.width(classicGame::movement);
+    cout<<classicGame::shootPlayerPtr;
+    cout<<"\n";
+    cout.width(classicGame::movement);
+    cout<<classicGame::shootPlayerPtr;
+    cout<<"\n";
+    cout.width(classicGame::movement);
+    cout<<classicGame::shootPlayerPtr;
+    cout<<"\n";
+    cout.width(classicGame::movement);
+    cout<<classicGame::shootPlayerPtr;
+    cout<<"\n";
+    cout.width(classicGame::movement);
+    cout<<classicGame::shootPlayerPtr;
+    cout<<"\n";
+    cout.width(classicGame::movement);
+    cout<<classicGame::shootPlayerPtr;
+    cout<<"\n";
+    cout.width(classicGame::movement);
+    cout<<classicGame::tank;
+    cout<<"\n";
+    cout<<"--------------------"<<endl;
+    classicGame::shootPlayerPtr=' ';
     //CONTROLS
     if(kbhit()){
         switch(_getch()){
         case 'W':
-            cout << "COMING SOON";
             if(classicGame::tank=='W'){
                 classicGame::tank='M';
             }
+            classicGame::shootPlayer = 1;
+            if(classicGame::shootPlayer>=1){
+                classicGame::shootPlayerPtr = '.';
+            }
+            classicGame::ammunition--;
             break;
         case 'A':
             if(classicGame::tank!='W'){
