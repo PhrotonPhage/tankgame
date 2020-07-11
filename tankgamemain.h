@@ -5,12 +5,12 @@
 #include "minimalGame.h"
 #include "classicMode.h"
 
-#define VERMAJOR 0
-#define VERMINOR 3
-#define REVISION 0
+#define VERSION_MAJOR 0
+#define VERSION_MINOR 3
+#define VERSION_REVISION 0
 #define VERBUILD ".1"
 #define VERSION "ALPHA"
-#define BUILD 973
+#define BUILD 985
 
 class tankgamemain
 {

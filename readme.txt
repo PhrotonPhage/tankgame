@@ -16,13 +16,19 @@ Plans:
 -Open readme.txt and config file using the game
 (!=High Priority, '-Medium Priority, -Low Priority)
 
-v0.3.0.1 Alpha build - July X, 2020
+v0.3.0.1 Alpha build 985 - July 11, 2020
 -Removed "Coming Soon" text while pressing 'W'
 -Added shooting in classic mode
 -Added shooting trail in classic mode
 -Moved "SCORE" text down to be used with playername in classic mode
 -Added Ammunition counter in classic mode. Does not work properly.
 -Added Health points in classic mode. Does not work yet.
+-Minor changes to versioning
+-Changed build date text in Info page
+-Added an info to determine wheter the program is x64 or x86
+-Added highscore and recent score in classic mode
+-Added game over screen in classic mode
+-Added game restart. Only occurs when lost 1 life in classic mode
 
 Older Versions:
 v0.0.0 - May 17, 2020

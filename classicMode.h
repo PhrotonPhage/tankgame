@@ -9,6 +9,8 @@ class classicMode
     public:
     void difficulty();
     void mainGame();
+    void gameover();
+    void restart();
     protected:
 
     private:

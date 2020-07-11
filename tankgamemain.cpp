@@ -8,6 +8,7 @@
 #include <chrono>
 #include <cstdlib>
 #include <pthread.h>
+
 using namespace std;
 
 int debug;
@@ -37,7 +38,7 @@ void tankgamemain::menuInfo(){
 system("title TankGame v0.3.0.1 Alpha");
 //int staticLoader = 10;
 int loader = 7;
-cout << "TANK GAME " << VERMAJOR << "." << VERMINOR << "." << REVISION << VERBUILD << " " << VERSION << " - BY PHROTON" << endl;
+cout << "TANK GAME " << VERSION_MAJOR << "." << VERSION_MINOR << "." << VERSION_REVISION << VERBUILD << " " << VERSION << " - BY PHROTON" << endl;
 cout << "---";
 loader = rand()%7;
 loader *= 7;
@@ -170,14 +171,16 @@ settings();
 
 void tankgamemain::info(){
 system("cls");
-cout << "TANKGAME" << endl;
-cout << "DEVELOPER: PHROTON" << endl;
-cout << "VERSION " << VERMAJOR<< "." << VERMINOR << "." << REVISION << VERBUILD << " " << VERSION << endl << endl;
-cout << "STDC: " << __STDC__ << endl;
-cout << "CPP: " << __cplusplus << endl;
-cout << "BUILD DATE: " << __DATE__ << " " << __TIME__ << endl;
-cout << "BUILD " <<BUILD<< endl << endl;
-cout << "PRESS ANYTHING TO CONTINUE\n";
+cout<<"TANKGAME"<<endl;
+cout<<"DEVELOPER: PHROTON"<<endl;
+cout<<"VERSION " << VERSION_MAJOR<< "." << VERSION_MINOR << "." << VERSION_REVISION << VERBUILD << " " << VERSION << endl << endl;
+cout<<"STDC: "<< __STDC__ << endl;
+cout<<"CPP: " << __cplusplus << endl;
+cout<<"BUILD DATE: " << /*__DATE__ << " " << __TIME__ << endl;*/ __TIMESTAMP__ << endl;
+cout<<"BUILD " <<BUILD<< endl << endl;
+cout<<"32-BIT: "<<__WIN32<<endl;
+cout<<"64-BIT: "<<__WIN64<<endl<<endl;
+cout<<"PRESS ANYTHING TO CONTINUE\n";
 if(kbhit()){
     switch(_getch()){
 case 'X':

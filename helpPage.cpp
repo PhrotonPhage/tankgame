@@ -48,7 +48,7 @@ void helpPage::changelogs(){
     system("cls");
     cout << "HELP > CHANGELOGS\n\n";
     cout << "CHANGELOGS:\n\n";
-    cout << "WHAT'S NEW IN VERSION " << VERMAJOR << "." << VERMINOR << "." << REVISION << VERBUILD << " " << VERSION << " BUILD " << BUILD  << "?\n";
+    cout << "WHAT'S NEW IN VERSION " << VERSION_MAJOR << "." << VERSION_MINOR << "." << VERSION_REVISION << VERBUILD << " " << VERSION << " BUILD " << BUILD  << "?\n";
     cout << "RELEASE 0.2.0:\n";
     cout << "-ADDED MINIMAL GAME MODE. SIMILAR TO SHOOTING BUT SIMPLIER\n";
     cout << "-ADDED BEEP SOUNDS. (GAMEOVER, PROGRAM START, ENEMY HIT)\n";

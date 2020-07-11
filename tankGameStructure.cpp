@@ -338,7 +338,7 @@ void tankGameStructure::mainGame(){
             cout << " " << randomEnemyShootChance << endl;
         }else{}
         if(debugText==true){
-            cout << "v" << VERMAJOR << "." << VERMINOR << "." << REVISION << VERBUILD << " " << VERSION << " BUILD " << BUILD << endl;
+            cout << "v" << VERSION_MAJOR << "." << VERSION_MINOR << "." << VERSION_REVISION << VERBUILD << " " << VERSION << " BUILD " << BUILD << endl;
         }
         if(debugVariable>=1){
             cout << " " << score << " " << highscore << " " << healthPoint << " " << ammunition << " " << recentScore << " " << shootingTimes;

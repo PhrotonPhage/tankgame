@@ -15,12 +15,15 @@ namespace classicGame{
     int difficulty;
 
     char tank = 'M';
-    char blocks = 'W';
+    char blocks = 'I';
     int movement = 10;
 
     int score = 0;
     int healthPoint = 3;
     int ammunition = 50;
+
+    int highscore3;
+    int recentScore3;
 
     int shootPlayer;
     char shootPlayerPtr;
@@ -60,6 +63,17 @@ void classicMode::mainGame(){
 
     classicGameUI::cguiAxis=classicGameUI::uiWidth-classicGame::movement;
 
+    if(classicGame::score>classicGame::highscore3){
+        classicGame::highscore3=classicGame::score;
+    }
+
+    if(classicGame::ammunition<0){
+        restart();
+    }
+    if(classicGame::healthPoint==0){
+        gameover();
+    }
+
     system("cls");
     cout<<"--------------------\t"<<endl;
     cout<<"\n";
@@ -86,6 +100,8 @@ void classicMode::mainGame(){
     cout<<"\n";
     cout.width(classicGame::movement);
     cout<<classicGame::shootPlayerPtr;
+    cout.width(classicGameUI::cguiAxis+4);
+    cout<<"HIGHSOCRE: "<<classicGame::highscore3;
     cout<<"\n";
     cout.width(classicGame::movement);
     cout<<classicGame::shootPlayerPtr;
@@ -160,5 +176,44 @@ void classicMode::mainGame(){
             break;
         }
     }
+    mainGame();
+}
+
+void classicMode::gameover(){
+    system("cls");
+    Beep(500,1000);
+    classicGame::recentScore3 = classicGame::highscore3;
+    cout<<"GAME OVER!\n";
+    cout<<"--------------------\n";
+    cout<<"0 - QUIT 1 - TRY AGAIN\n";
+    switch(_getch()){
+    case '0':
+        classicGame::score = 0;
+        classicGame::movement = 10;
+        classicGame::ammunition = 50;
+        classicGame::healthPoint = 3;
+        cout<<"RECENT SCORE: "<<classicGame::recentScore3<<endl;
+        this_thread::sleep_for(chrono::seconds(1));
+        tankgamemainClassicGameObject.mainMenu();
+        break;
+    case '1':
+        classicGame::score = 0;
+        classicGame::movement = 10;
+        classicGame::ammunition = 50;
+        classicGame::healthPoint = 3;
+        mainGame();
+        break;
+    }
+    gameover();
+}
+
+void classicMode::restart(){
+    system("cls");
+    cout<<"\tYOU FAILED THE GAME\n";
+    Beep(500,500);
+    classicGame::healthPoint--;
+    classicGame::ammunition = 50;
+    classicGame::movement = 10;
+    this_thread::sleep_for(chrono::seconds(1));
     mainGame();
 }
