@@ -15,7 +15,6 @@ namespace classicGame{
     int difficulty;
 
     char tank = 'M';
-    char blocks = 'I';
     int movement = 10;
 
     int score = 0;
@@ -33,6 +32,31 @@ namespace classicGameUI{
     int uiWidth = 30;
     int cguiAxis;
     int cguiAxis2;
+}
+
+namespace classicGameBlock{
+    int randomness;
+
+    int result1;
+    int result2;
+    int result3;
+    int result4;
+
+    int amplifier1 = 32;
+    int amplifier2 = 24;
+    int amplifier3 = 16;
+    int amplifier4 = 8;
+
+    char block1 = 'I';
+    char block2 = 'I';
+    char block3 = 'I';
+    char block4 = 'I';
+    char block5 = 'I';
+    char block6 = 'I';
+    char block7 = 'I';
+    char block8 = 'I';
+    char block9 = 'I';
+    char block10 = 'I';
 }
 
 void classicMode::difficulty(){
@@ -60,7 +84,7 @@ void classicMode::difficulty(){
 }
 
 void classicMode::mainGame(){
-
+    system("cls");
     classicGameUI::cguiAxis=classicGameUI::uiWidth-classicGame::movement;
 
     if(classicGame::score>classicGame::highscore3){
@@ -74,9 +98,47 @@ void classicMode::mainGame(){
         gameover();
     }
 
-    system("cls");
+    classicGameBlock::result1 = rand() % classicGameBlock::amplifier1;
+    cout << classicGameBlock::result1 << endl;
+
+    //system("cls");
     cout<<"--------------------\t"<<endl;
     cout<<"\n";
+    if((classicGameBlock::result1==32)||(classicGameBlock::result1==24)||(classicGameBlock::result1==21)||(classicGameBlock::result1==17)||(classicGameBlock::result1==9)||(classicGameBlock::result1==7)||(classicGameBlock::result1==4)){
+        classicGameBlock::block1 = 'I';
+        cout<<classicGameBlock::block1;
+    }else{
+        classicGameBlock::block1 = ' ';
+        cout<<classicGameBlock::block1;
+    }
+    if((classicGameBlock::result1==30)||(classicGameBlock::result1==27)||(classicGameBlock::result1==22)||(classicGameBlock::result1==19)||(classicGameBlock::result1==11)||(classicGameBlock::result1==8)||(classicGameBlock::result1==3)){
+        classicGameBlock::block2 = 'I';
+        cout<<classicGameBlock::block2;
+    }else{
+        classicGameBlock::block2 = ' ';
+        cout<<classicGameBlock::block2;
+    }
+    if((classicGameBlock::result1==31)||(classicGameBlock::result1==25)||(classicGameBlock::result1==20)||(classicGameBlock::result1==18)||(classicGameBlock::result1==14)||(classicGameBlock::result1==10)||(classicGameBlock::result1==5)){
+        classicGameBlock::block3 = 'I';
+        cout<<classicGameBlock::block3;
+    }else{
+        classicGameBlock::block3 = ' ';
+        cout<<classicGameBlock::block3;
+    }
+    if((classicGameBlock::result1==29)||(classicGameBlock::result1==26)||(classicGameBlock::result1==23)||(classicGameBlock::result1==16)||(classicGameBlock::result1==15)||(classicGameBlock::result1==6)||(classicGameBlock::result1==2)){
+        classicGameBlock::block4 = 'I';
+        cout<<classicGameBlock::block4;
+    }else{
+        classicGameBlock::block4 = ' ';
+        cout<<classicGameBlock::block4;
+    }
+    if((classicGameBlock::result1==32)||(classicGameBlock::result1==24)||(classicGameBlock::result1==20)||(classicGameBlock::result1==19)||(classicGameBlock::result1==10)||(classicGameBlock::result1==3)||(classicGameBlock::result1==1)){
+        classicGameBlock::block5 = 'I';
+        cout<<classicGameBlock::block5;
+    }else{
+        classicGameBlock::block5 = ' ';
+        cout<<classicGameBlock::block5;
+    }
     cout.width(classicGame::movement);
     cout<<classicGame::shootPlayerPtr;
     cout.width(classicGameUI::cguiAxis);
@@ -139,7 +201,6 @@ void classicMode::mainGame(){
     cout<<"--------------------"<<endl;
     classicGame::shootPlayerPtr=' ';
     //CONTROLS
-    if(kbhit()){
         switch(_getch()){
         case 'W':
             if(classicGame::tank=='W'){
@@ -175,7 +236,6 @@ void classicMode::mainGame(){
             tankgamemainClassicGameObject.mainMenu();
             break;
         }
-    }
     mainGame();
 }
 

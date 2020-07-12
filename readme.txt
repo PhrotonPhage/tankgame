@@ -16,19 +16,11 @@ Plans:
 -Open readme.txt and config file using the game
 (!=High Priority, '-Medium Priority, -Low Priority)
 
-v0.3.0.1 Alpha build 985 - July 11, 2020
--Removed "Coming Soon" text while pressing 'W'
--Added shooting in classic mode
--Added shooting trail in classic mode
--Moved "SCORE" text down to be used with playername in classic mode
--Added Ammunition counter in classic mode. Does not work properly.
--Added Health points in classic mode. Does not work yet.
--Minor changes to versioning
--Changed build date text in Info page
--Added an info to determine wheter the program is x64 or x86
--Added highscore and recent score in classic mode
--Added game over screen in classic mode
--Added game restart. Only occurs when lost 1 life in classic mode
+v0.3.0.2 Alpha build - July 2020
+-Added block randomizer in classic mode
+-Added block "I" in classic mode
+-Removed `kbhit()` in classic mode
+-"I" Appears and disappears once specified value is met
 
 Older Versions:
 v0.0.0 - May 17, 2020
@@ -464,3 +456,16 @@ v0.3.0.0 Alpha build 966 - July 9, 2020
 -Added controls A, D, S for classic mode
 -Can unshield with 'W' but not functional yet
 -Added text "SCORE" in classic mode
+v0.3.0.1 Alpha build 985 - July 11, 2020
+-Removed "Coming Soon" text while pressing 'W'
+-Added shooting in classic mode
+-Added shooting trail in classic mode
+-Moved "SCORE" text down to be used with playername in classic mode
+-Added Ammunition counter in classic mode. Does not work properly.
+-Added Health points in classic mode. Does not work yet.
+-Minor changes to versioning
+-Changed build date text in Info page
+-Added an info to determine wheter the program is x64 or x86
+-Added highscore and recent score in classic mode
+-Added game over screen in classic mode
+-Added game restart. Only occurs when lost 1 life in classic mode
