@@ -15,6 +15,7 @@ Plans:
 '-Make tanks disappear for a second once shoot
 -Open readme.txt and config file using the game
 -Remove goto statements
+-Fix bugs
 (!=High Priority, '-Medium Priority, -Low Priority)
 
 v0.3.0.2 Alpha build 1046 - July 13, 2020
