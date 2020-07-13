@@ -176,7 +176,7 @@ cout<<"DEVELOPER: PHROTON"<<endl;
 cout<<"VERSION " << VERSION_MAJOR<< "." << VERSION_MINOR << "." << VERSION_REVISION << VERBUILD << " " << VERSION << endl << endl;
 cout<<"STDC: "<< __STDC__ << endl;
 cout<<"CPP: " << __cplusplus << endl;
-cout<<"BUILD DATE: " << /*__DATE__ << " " << __TIME__ << endl;*/ __TIMESTAMP__ << endl;
+cout<<"BUILD DATE: " << __DATE__ << " " << __TIME__  << endl;
 cout<<"BUILD " <<BUILD<< endl << endl;
 cout<<"32-BIT: "<<__WIN32<<endl;
 cout<<"64-BIT: "<<__WIN64<<endl<<endl;
