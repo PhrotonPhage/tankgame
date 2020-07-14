@@ -35,7 +35,7 @@ void tankgamemain::getVariable1(int audio){
 }
 
 void tankgamemain::menuInfo(){
-system("title TankGame v0.3.0.2 Alpha");
+system("title TankGame v0.3.0.3 Alpha");
 //int staticLoader = 10;
 int loader = 7;
 cout << "TANK GAME " << VERSION_MAJOR << "." << VERSION_MINOR << "." << VERSION_REVISION << VERBUILD << " " << VERSION << " - BY PHROTON" << endl;
@@ -179,7 +179,8 @@ cout<<"CPP: " << __cplusplus << endl;
 cout<<"BUILD DATE: " << __DATE__ << " " << __TIME__  << endl;
 cout<<"BUILD " <<BUILD<< endl << endl;
 cout<<"32-BIT: "<<__WIN32<<endl;
-cout<<"64-BIT: "<<__WIN64<<endl<<endl;
+cout<<"64-BIT: "<<__WIN64<<endl;
+cout <<"AMD64: "<<__amd64<<endl<<endl;
 cout<<"PRESS ANYTHING TO CONTINUE\n";
 if(kbhit()){
     switch(_getch()){

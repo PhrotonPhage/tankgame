@@ -18,20 +18,8 @@ Plans:
 -Fix bugs
 (!=High Priority, '-Medium Priority, -Low Priority)
 
-v0.3.0.2 Alpha build 1046 - July 13, 2020
--Added block randomizer in classic mode
--Added block "I" in classic mode
--Removed `kbhit()` in classic mode
--"I" Appears and disappears once specified value is met
--"Recent score" will now appear properly on classic mode
--Displays 20 "I" blocks in classic mode
--Fixed bug on info page displaying western time instead of utc+08:00(china)
--Added update button 'E' in classic mode
--Update button will update blocks, -5 ammunition, -50 score
--A score with -500 will now game over
--Fixed typo in Highscore on classic mode
--Can now get scores by shooting blocks 1-3 temporarily
--Temporarily added goto statements
+v0.3.0.3 - Alpha build - July , 2020
+-Added info text for amd64(bool 0/1) in info page
 
 Older Versions:
 v0.0.0 - May 17, 2020
@@ -480,3 +468,17 @@ v0.3.0.1 Alpha build 985 - July 11, 2020
 -Added highscore and recent score in classic mode
 -Added game over screen in classic mode
 -Added game restart. Only occurs when lost 1 life in classic mode
+v0.3.0.2 Alpha build 1046 - July 13, 2020
+-Added block randomizer in classic mode
+-Added block "I" in classic mode
+-Removed `kbhit()` in classic mode
+-"I" Appears and disappears once specified value is met
+-"Recent score" will now appear properly on classic mode
+-Displays 20 "I" blocks in classic mode
+-Fixed bug on info page displaying western time instead of utc+08:00(china)
+-Added update button 'E' in classic mode
+-Update button will update blocks, -5 ammunition, -50 score
+-A score with -500 will now game over
+-Fixed typo in Highscore on classic mode
+-Can now get scores by shooting blocks 1-3 temporarily
+-Temporarily added goto statements
