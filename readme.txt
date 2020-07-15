@@ -18,8 +18,9 @@ Plans:
 -Fix bugs
 (!=High Priority, '-Medium Priority, -Low Priority)
 
-v0.3.0.3 - Alpha build - July , 2020
+v0.3.0.3 Alpha build - July , 2020
 -Added info text for amd64(bool 0/1) in info page
+-Some blocks will now dissapear once shoot in classic mode (1-3 blocks)
 
 Older Versions:
 v0.0.0 - May 17, 2020
