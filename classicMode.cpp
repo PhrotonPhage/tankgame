@@ -12,6 +12,7 @@ tankgamemain tankgamemainClassicGameObject;
 tankGameStructure tankGameStructureClassicGameObject;
 
 int dummy;
+static int clearScreen = 0;
 
 namespace classicGame{
     int difficulty;
@@ -111,12 +112,52 @@ void classicMode::difficulty(){
             classicGame::difficulty = 1;
             mainGame();
             break;
+        case '2':
+            classicGame::difficulty = 2;
+            mainGame();
+            break;
+        case '3':
+            classicGame::difficulty = 3;
+            mainGame();
+            break;
+        case '4':
+            classicGame::difficulty = 4;
+            mainGame();
+            break;
         }
     }
     difficulty();
 }
 
 void classicMode::mainGame(){
+    if(clearScreen>=0){
+        clearScreen++;
+    }
+    if(classicGame::difficulty==1){
+        if(clearScreen==10){
+        classicGameBlock::result1 = rand() % classicGameBlock::amplifier1;
+        clearScreen = 0;
+    }
+    }
+    if(classicGame::difficulty==2){
+        if(clearScreen==5){
+        classicGameBlock::result1 = rand() % classicGameBlock::amplifier2;
+        clearScreen = 0;
+    }
+    }
+    if(classicGame::difficulty==3){
+        if(clearScreen==3){
+        classicGameBlock::result1 = rand() % classicGameBlock::amplifier3;
+        clearScreen = 0;
+    }
+    }
+    if(classicGame::difficulty==4){
+        if(clearScreen==1){
+        classicGameBlock::result1 = rand() % classicGameBlock::amplifier4;
+        clearScreen = 0;
+    }
+    }
+    cout<<clearScreen<<endl;
     system("cls");
     classicGameUI::cguiAxis=classicGameUI::uiWidth-classicGame::movement;
 
@@ -413,6 +454,7 @@ void classicMode::mainGame(){
     classicGame::shootPlayerPtr=' ';
 
     //CONTROLS
+    if(kbhit()){
         switch(_getch()){
         case 'W':
             if(classicGame::tank=='W'){
@@ -474,6 +516,7 @@ void classicMode::mainGame(){
             tankgamemainClassicGameObject.mainMenu();
             break;
         }
+    }
     mainGame();
 }
 

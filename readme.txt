@@ -18,9 +18,16 @@ Plans:
 -Fix bugs
 (!=High Priority, '-Medium Priority, -Low Priority)
 
-v0.3.0.3 Alpha build - July , 2020
+v0.3.0.3 Alpha build 1079 - July 16, 2020
 -Added info text for amd64(bool 0/1) in info page
 -Some blocks will now dissapear once shoot in classic mode (1-3 blocks)
+-Blocks will now update per 10 int value (easy) in classic mode
+-Blocks will now update per 5 int value (normal) in classic mode
+-Blocks will now update per 3 int value (hard) in classic mode
+-Blocks will now update per 1 int value (very hard) in classic mode
+-Re-added `kbhit()` in classic mode
+-Changes to randomzier on different difficulty in classic mode
+-Bug: `int clearScreen` does not turn into 0 automatically in classic mode
 
 Older Versions:
 v0.0.0 - May 17, 2020
