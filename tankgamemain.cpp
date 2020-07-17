@@ -35,7 +35,7 @@ void tankgamemain::getVariable1(int audio){
 }
 
 void tankgamemain::menuInfo(){
-system("title TankGame v0.3.0.3 Alpha");
+system("title TankGame v0.3.0.4 Alpha");
 //int staticLoader = 10;
 int loader = 7;
 cout << "TANK GAME " << VERSION_MAJOR << "." << VERSION_MINOR << "." << VERSION_REVISION << VERBUILD << " " << VERSION << " - BY PHROTON" << endl;
@@ -43,7 +43,8 @@ cout << "---";
 loader = rand()%7;
 loader *= 7;
 if(mainClass::audio==1){
-    Beep(1000,500);
+    //Beep(1000,500);
+    Beep(500,200);
 }
 this_thread::sleep_for(chrono::milliseconds(loader));
 cout << "-----";

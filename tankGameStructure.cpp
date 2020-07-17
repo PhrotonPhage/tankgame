@@ -835,6 +835,7 @@ void tankGameStructure::mainGame(){
             }
             break;
 		case 'X':
+		    Beep(500,200);
                 cout << "GAME OVER? 1 - YES, 0 - NO\n";
                 switch(_getch()){
                 case '1':

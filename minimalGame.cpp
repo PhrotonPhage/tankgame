@@ -368,6 +368,7 @@ void minimalGame::mainGame(){
                 tankGameStructureObjectMiniGame.gamemode5Stats(death05,moveAtimes05,moveDtimes05,moveStimes05,shootingTimes05,recentScore05,highscore05);
                 break;
             case 'X':
+                Beep(500,200);
                 cout << "ARE YOU SURE DO YOU WANT TO QUIT? 1 - YES 0 - NO\n";
                 switch(_getch()){
                 case '1':

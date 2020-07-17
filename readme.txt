@@ -18,16 +18,17 @@ Plans:
 -Fix bugs
 (!=High Priority, '-Medium Priority, -Low Priority)
 
-v0.3.0.3 Alpha build 1079 - July 16, 2020
--Added info text for amd64(bool 0/1) in info page
--Some blocks will now dissapear once shoot in classic mode (1-3 blocks)
--Blocks will now update per 10 int value (easy) in classic mode
--Blocks will now update per 5 int value (normal) in classic mode
--Blocks will now update per 3 int value (hard) in classic mode
--Blocks will now update per 1 int value (very hard) in classic mode
--Re-added `kbhit()` in classic mode
--Changes to randomzier on different difficulty in classic mode
--Bug: `int clearScreen` does not turn into 0 automatically in classic mode
+v0.3.0.4 Alpha build - July 17, 2020
+-More blocks now support scoring (4-6) on classic mode
+-On easy difficulty, block update is now longer (50 value) instead of 10 value on classic mode
+-On normal difficulty, block update is now longer (25 value) instead of 5 value on classic mode
+-On hard difficulty, block update is now longer (10 value) instead of 3 value on classic mode
+-On very hard difficulty, block update is now longer (5 value) instead of 1 value on classic mode
+-Removed value counter to improve performance on classic mode
+-Pressing 'Z' no longer quits the game immediately. It's now used to pause. Z to unpause
+-Added quit by pressing 'X' in classic mode (including beep sound)
+-Added beep sounds for quit confirmation on classic mode, minimal, and shooting
+-Changed beep sound for program startup
 
 Older Versions:
 v0.0.0 - May 17, 2020
@@ -490,3 +491,13 @@ v0.3.0.2 Alpha build 1046 - July 13, 2020
 -Fixed typo in Highscore on classic mode
 -Can now get scores by shooting blocks 1-3 temporarily
 -Temporarily added goto statements
+v0.3.0.3 Alpha build 1079 - July 16, 2020
+-Added info text for amd64(bool 0/1) in info page
+-Some blocks will now dissapear once shoot in classic mode (1-3 blocks)
+-Blocks will now update per 10 int value (easy) in classic mode
+-Blocks will now update per 5 int value (normal) in classic mode
+-Blocks will now update per 3 int value (hard) in classic mode
+-Blocks will now update per 1 int value (very hard) in classic mode
+-Re-added `kbhit()` in classic mode
+-Changes to randomzier on different difficulty in classic mode
+-Bug: `int clearScreen` does not turn into 0 automatically in classic mode
