@@ -19,7 +19,7 @@ Plans:
 (!=High Priority, '-Medium Priority, -Low Priority)
 
 v0.3.0.4 Alpha build - July 17, 2020
--More blocks now support scoring (4-6) on classic mode
+-More blocks now support scoring (4-8) on classic mode
 -On easy difficulty, block update is now longer (50 value) instead of 10 value on classic mode
 -On normal difficulty, block update is now longer (25 value) instead of 5 value on classic mode
 -On hard difficulty, block update is now longer (10 value) instead of 3 value on classic mode
@@ -29,6 +29,7 @@ v0.3.0.4 Alpha build - July 17, 2020
 -Added quit by pressing 'X' in classic mode (including beep sound)
 -Added beep sounds for quit confirmation on classic mode, minimal, and shooting
 -Changed beep sound for program startup
+-Minor graphical fixes
 
 Older Versions:
 v0.0.0 - May 17, 2020
