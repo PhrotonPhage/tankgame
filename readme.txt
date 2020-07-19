@@ -18,7 +18,7 @@ Plans:
 -Fix bugs
 (!=High Priority, '-Medium Priority, -Low Priority)
 
-v0.3.0.4 Alpha build 1100 - July 17, 2020
+v0.3.0.4 Alpha build 1100 - July 19, 2020
 -More blocks now support scoring (4-11) on classic mode
 -On easy difficulty, block update is now longer (50 value) instead of 10 value on classic mode
 -On normal difficulty, block update is now longer (25 value) instead of 5 value on classic mode
