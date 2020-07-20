@@ -16,21 +16,13 @@ Plans:
 -Open readme.txt and config file using the game
 -Remove goto statements
 -Fix bugs
+!=Add amplifier picker on classic mode
+!=-1 Score per movement on classic mode
+!=Fix "score" text misplacement on classic mode
 (!=High Priority, '-Medium Priority, -Low Priority)
 
-v0.3.0.4 Alpha build 1100 - July 19, 2020
--More blocks now support scoring (4-11) on classic mode
--On easy difficulty, block update is now longer (50 value) instead of 10 value on classic mode
--On normal difficulty, block update is now longer (25 value) instead of 5 value on classic mode
--On hard difficulty, block update is now longer (10 value) instead of 3 value on classic mode
--On very hard difficulty, block update is now longer (5 value) instead of 1 value on classic mode
--Removed value counter to improve performance on classic mode
--Pressing 'Z' no longer quits the game immediately. It's now used to pause. Z to unpause
--Added quit by pressing 'X' in classic mode (including beep sound)
--Added beep sounds for quit confirmation on classic mode, minimal, and shooting
--Changed beep sound for program startup
--Minor graphical fixes
--Known bugs: On classic mode, some blocks (1-11) cannot be destroyed
+v0.3.0.5 Alpha build - July , 2020
+-More blocks now support scoring (12-20) on classic mode
 
 Older Versions:
 v0.0.0 - May 17, 2020
@@ -503,3 +495,16 @@ v0.3.0.3 Alpha build 1079 - July 16, 2020
 -Re-added `kbhit()` in classic mode
 -Changes to randomzier on different difficulty in classic mode
 -Bug: `int clearScreen` does not turn into 0 automatically in classic mode
+v0.3.0.4 Alpha build 1100 - July 19, 2020
+-More blocks now support scoring (4-11) on classic mode
+-On easy difficulty, block update is now longer (50 value) instead of 10 value on classic mode
+-On normal difficulty, block update is now longer (25 value) instead of 5 value on classic mode
+-On hard difficulty, block update is now longer (10 value) instead of 3 value on classic mode
+-On very hard difficulty, block update is now longer (5 value) instead of 1 value on classic mode
+-Removed value counter to improve performance on classic mode
+-Pressing 'Z' no longer quits the game immediately. It's now used to pause. Z to unpause
+-Added quit by pressing 'X' in classic mode (including beep sound)
+-Added beep sounds for quit confirmation on classic mode, minimal, and shooting
+-Changed beep sound for program startup
+-Minor graphical fixes
+-Known bugs: On classic mode, some blocks (1-11) cannot be destroyed
