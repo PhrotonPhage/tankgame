@@ -23,6 +23,14 @@ Plans:
 
 v0.3.0.5 Alpha build - July , 2020
 -More blocks now support scoring (12-20) on classic mode
+-Fixed bug causing score to overlap on classic mode
+-Fixed bug causing blocks to overlap on classic mode
+-Fixed bug that shooting a block doesn't give a score, unless when spammed on classic mode
+-Added result2 for normal difficulty on classic mode. Not yet used
+-Update button in classic mode is now difficulty aware
+-The entire block code is moved to easy difficulty. Normal-Very hard difficulties might now work
+-Temporarliy added "0" to represent value change in normal difficulty on classic mode
+-Normal difficulty has now it's own blocks. It's currently 1.
 
 Older Versions:
 v0.0.0 - May 17, 2020

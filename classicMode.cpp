@@ -46,7 +46,7 @@ namespace classicGameBlock{
     int result4;
 
     int amplifier1 = 32;
-    int amplifier2 = 24;
+    int amplifier2 = 24; //block exception 13, 24
     int amplifier3 = 16;
     int amplifier4 = 8;
 
@@ -137,24 +137,108 @@ void classicMode::mainGame(){
         if(clearScreen==50){
         classicGameBlock::result1 = rand() % classicGameBlock::amplifier1;
         clearScreen = 0;
+
+        classicGameBlock::blockStart1 = 0;
+            classicGameBlock::blockStart2 = 0;
+            classicGameBlock::blockStart3 = 0;
+            classicGameBlock::blockStart4 = 0;
+            classicGameBlock::blockStart5 = 0;
+            classicGameBlock::blockStart6 = 0;
+            classicGameBlock::blockStart7 = 0;
+            classicGameBlock::blockStart8 = 0;
+            classicGameBlock::blockStart9 = 0;
+            classicGameBlock::blockStart10 = 0;
+            classicGameBlock::blockStart11 = 0;
+            classicGameBlock::blockStart12 = 0;
+            classicGameBlock::blockStart13 = 0;
+            classicGameBlock::blockStart14 = 0;
+            classicGameBlock::blockStart15 = 0;
+            classicGameBlock::blockStart16 = 0;
+            classicGameBlock::blockStart17 = 0;
+            classicGameBlock::blockStart18 = 0;
+            classicGameBlock::blockStart19 = 0;
+            classicGameBlock::blockStart20 = 0;
     }
     }
     if(classicGame::difficulty==2){
         if(clearScreen==25){
-        classicGameBlock::result1 = rand() % classicGameBlock::amplifier2;
+        classicGameBlock::result2 = rand() % classicGameBlock::amplifier2;
         clearScreen = 0;
+
+        classicGameBlock::blockStart1 = 0;
+            classicGameBlock::blockStart2 = 0;
+            classicGameBlock::blockStart3 = 0;
+            classicGameBlock::blockStart4 = 0;
+            classicGameBlock::blockStart5 = 0;
+            classicGameBlock::blockStart6 = 0;
+            classicGameBlock::blockStart7 = 0;
+            classicGameBlock::blockStart8 = 0;
+            classicGameBlock::blockStart9 = 0;
+            classicGameBlock::blockStart10 = 0;
+            classicGameBlock::blockStart11 = 0;
+            classicGameBlock::blockStart12 = 0;
+            classicGameBlock::blockStart13 = 0;
+            classicGameBlock::blockStart14 = 0;
+            classicGameBlock::blockStart15 = 0;
+            classicGameBlock::blockStart16 = 0;
+            classicGameBlock::blockStart17 = 0;
+            classicGameBlock::blockStart18 = 0;
+            classicGameBlock::blockStart19 = 0;
+            classicGameBlock::blockStart20 = 0;
     }
     }
     if(classicGame::difficulty==3){
         if(clearScreen==10){
         classicGameBlock::result1 = rand() % classicGameBlock::amplifier3;
         clearScreen = 0;
+
+        classicGameBlock::blockStart1 = 0;
+            classicGameBlock::blockStart2 = 0;
+            classicGameBlock::blockStart3 = 0;
+            classicGameBlock::blockStart4 = 0;
+            classicGameBlock::blockStart5 = 0;
+            classicGameBlock::blockStart6 = 0;
+            classicGameBlock::blockStart7 = 0;
+            classicGameBlock::blockStart8 = 0;
+            classicGameBlock::blockStart9 = 0;
+            classicGameBlock::blockStart10 = 0;
+            classicGameBlock::blockStart11 = 0;
+            classicGameBlock::blockStart12 = 0;
+            classicGameBlock::blockStart13 = 0;
+            classicGameBlock::blockStart14 = 0;
+            classicGameBlock::blockStart15 = 0;
+            classicGameBlock::blockStart16 = 0;
+            classicGameBlock::blockStart17 = 0;
+            classicGameBlock::blockStart18 = 0;
+            classicGameBlock::blockStart19 = 0;
+            classicGameBlock::blockStart20 = 0;
     }
     }
     if(classicGame::difficulty==4){
         if(clearScreen==5){
         classicGameBlock::result1 = rand() % classicGameBlock::amplifier4;
         clearScreen = 0;
+
+        classicGameBlock::blockStart1 = 0;
+            classicGameBlock::blockStart2 = 0;
+            classicGameBlock::blockStart3 = 0;
+            classicGameBlock::blockStart4 = 0;
+            classicGameBlock::blockStart5 = 0;
+            classicGameBlock::blockStart6 = 0;
+            classicGameBlock::blockStart7 = 0;
+            classicGameBlock::blockStart8 = 0;
+            classicGameBlock::blockStart9 = 0;
+            classicGameBlock::blockStart10 = 0;
+            classicGameBlock::blockStart11 = 0;
+            classicGameBlock::blockStart12 = 0;
+            classicGameBlock::blockStart13 = 0;
+            classicGameBlock::blockStart14 = 0;
+            classicGameBlock::blockStart15 = 0;
+            classicGameBlock::blockStart16 = 0;
+            classicGameBlock::blockStart17 = 0;
+            classicGameBlock::blockStart18 = 0;
+            classicGameBlock::blockStart19 = 0;
+            classicGameBlock::blockStart20 = 0;
     }
     }
     //cout<<clearScreen<<endl;
@@ -179,7 +263,13 @@ void classicMode::mainGame(){
         classicGame::score += 50;
         classicGame::ammunition += 2;
         classicGameBlock::block1 = ' ';
-        goto endBlocks1;
+        if(classicGame::difficulty==1){
+            goto endBlocks1;
+        }
+        if(classicGame::difficulty==2){
+            goto endBlocks1_n;
+        }
+
     }
     if(classicGame::movement==2&&classicGameBlock::block2=='I'&&classicGame::shootPlayerPtr=='.'){
         classicGame::score += 50;
@@ -296,7 +386,7 @@ void classicMode::mainGame(){
         goto endBlocks20;
     }
 
-    //cout << classicGameBlock::result1 << endl;
+    cout << classicGameBlock::result2 << endl;
 
     //system("cls");
     if(classicGame::movement==32767){
@@ -420,9 +510,17 @@ void classicMode::mainGame(){
     goto blocks20;
     }
 
+    if(classicGame::movement==32767){
+        endBlocks1_n:
+            cout<<"--------------------\t"<<endl;
+    cout<<"\n";
+    goto blocks1_n;
+    }
+
     cout<<"--------------------\t"<<endl;
     cout<<"\n";
-    if(classicGameBlock::blockStart1!=0){
+    if(classicGame::difficulty==1){
+        if(classicGameBlock::blockStart1!=0){
         cout<<classicGameBlock::block1;
     }
     if((classicGameBlock::result1==32)||(classicGameBlock::result1==24)||(classicGameBlock::result1==21)||(classicGameBlock::result1==17)||(classicGameBlock::result1==9)||(classicGameBlock::result1==7)||(classicGameBlock::result1==4)){
@@ -763,6 +861,27 @@ void classicMode::mainGame(){
         classicGameBlock::block20 = ' ';
         cout<<classicGameBlock::block20;
     }
+    }
+    if(classicGame::difficulty==2){
+        if(classicGameBlock::blockStart1!=0){
+        cout<<classicGameBlock::block1;
+    }
+    if((classicGameBlock::result2==24)||(classicGameBlock::result2==20)||(classicGameBlock::result2==16)||(classicGameBlock::result2==12)||(classicGameBlock::result2==8)||(classicGameBlock::result2==4)||(classicGameBlock::result2==0)){
+        if(classicGameBlock::blockStart1!=1){
+            classicGameBlock::block1 = 'I';
+            cout<<classicGameBlock::block1;
+        }
+    }else{
+        if(dummy==32767){
+            blocks1_n:
+            classicGameBlock::blockStart1 = 1;
+            cout<<classicGameBlock::block1;
+        }
+        classicGameBlock::block1 = ' ';
+        cout<<classicGameBlock::block1;
+    }
+    }
+
     if(classicGameBlock::result1<0){
         cout.width(classicGame::movement);
         cout<<classicGame::shootPlayerPtr;
@@ -860,7 +979,18 @@ void classicMode::mainGame(){
             classicGame::tank = 'W';
             break;
         case 'E':
-            classicGameBlock::result1 = rand() % classicGameBlock::amplifier1;
+            if(classicGame::difficulty==1){
+                classicGameBlock::result1 = rand() % classicGameBlock::amplifier1;
+            }
+            if(classicGame::difficulty==2){
+                classicGameBlock::result2 = rand() % classicGameBlock::amplifier2;
+            }
+            if(classicGame::difficulty==3){
+                classicGameBlock::result3 = rand() % classicGameBlock::amplifier3;
+            }
+            if(classicGame::difficulty==4){
+                classicGameBlock::result4 = rand() % classicGameBlock::amplifier4;
+            }
             classicGame::ammunition -= 5;
             classicGame::score -= 50;
 
