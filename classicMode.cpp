@@ -275,31 +275,56 @@ void classicMode::mainGame(){
         classicGame::score += 50;
         classicGame::ammunition += 2;
         classicGameBlock::block2 = ' ';
-        goto endBlocks2;
+        if(classicGame::difficulty==1){
+            goto endBlocks2;
+        }
+        if(classicGame::difficulty==2){
+            goto endBlocks2_n;
+        }
     }
     if(classicGame::movement==3&&classicGameBlock::block3=='I'&&classicGame::shootPlayerPtr=='.'){
         classicGame::score += 50;
         classicGame::ammunition += 2;
         classicGameBlock::block3 = ' ';
-        goto endBlocks3;
+        if(classicGame::difficulty==1){
+            goto endBlocks3;
+        }
+        if(classicGame::difficulty==2){
+            goto endBlocks3_n;
+        }
     }
     if(classicGame::movement==4&&classicGameBlock::block4=='I'&&classicGame::shootPlayerPtr=='.'){
         classicGame::score += 50;
         classicGame::ammunition += 2;
         classicGameBlock::block4 = ' ';
-        goto endBlocks4;
+        if(classicGame::difficulty==1){
+            goto endBlocks4;
+        }
+        if(classicGame::difficulty==2){
+            goto endBlocks4_n;
+        }
     }
     if(classicGame::movement==5&&classicGameBlock::block5=='I'&&classicGame::shootPlayerPtr=='.'){
         classicGame::score += 50;
         classicGame::ammunition += 2;
         classicGameBlock::block5 = ' ';
-        goto endBlocks5;
+        if(classicGame::difficulty==1){
+            goto endBlocks5;
+        }
+        if(classicGame::difficulty==2){
+            goto endBlocks5_n;
+        }
     }
     if(classicGame::movement==6&&classicGameBlock::block6=='I'&&classicGame::shootPlayerPtr=='.'){
         classicGame::score += 50;
         classicGame::ammunition += 2;
         classicGameBlock::block6 = ' ';
-        goto endBlocks6;
+        if(classicGame::difficulty==1){
+            goto endBlocks6;
+        }
+        if(classicGame::difficulty==2){
+            goto endBlocks6_n;
+        }
     }
     if(classicGame::movement==7&&classicGameBlock::block7=='I'&&classicGame::shootPlayerPtr=='.'){
         classicGame::score += 50;
@@ -515,6 +540,36 @@ void classicMode::mainGame(){
             cout<<"--------------------\t"<<endl;
     cout<<"\n";
     goto blocks1_n;
+    }
+    if(classicGame::movement==32767){
+        endBlocks2_n:
+            cout<<"--------------------\t"<<endl;
+    cout<<"\n";
+    goto blocks2_n;
+    }
+    if(classicGame::movement==32767){
+        endBlocks3_n:
+            cout<<"--------------------\t"<<endl;
+    cout<<"\n";
+    goto blocks3_n;
+    }
+    if(classicGame::movement==32767){
+        endBlocks4_n:
+            cout<<"--------------------\t"<<endl;
+    cout<<"\n";
+    goto blocks4_n;
+    }
+    if(classicGame::movement==32767){
+        endBlocks5_n:
+            cout<<"--------------------\t"<<endl;
+    cout<<"\n";
+    goto blocks5_n;
+    }
+    if(classicGame::movement==32767){
+        endBlocks6_n:
+            cout<<"--------------------\t"<<endl;
+    cout<<"\n";
+    goto blocks6_n;
     }
 
     cout<<"--------------------\t"<<endl;
@@ -863,7 +918,7 @@ void classicMode::mainGame(){
     }
     }
     if(classicGame::difficulty==2){
-        if(classicGameBlock::blockStart1!=0){
+    if(classicGameBlock::blockStart1!=0){
         cout<<classicGameBlock::block1;
     }
     if((classicGameBlock::result2==24)||(classicGameBlock::result2==20)||(classicGameBlock::result2==16)||(classicGameBlock::result2==12)||(classicGameBlock::result2==8)||(classicGameBlock::result2==4)||(classicGameBlock::result2==0)){
@@ -879,6 +934,91 @@ void classicMode::mainGame(){
         }
         classicGameBlock::block1 = ' ';
         cout<<classicGameBlock::block1;
+    }
+    if(classicGameBlock::blockStart2!=0){
+        cout<<classicGameBlock::block2;
+    }
+    if((classicGameBlock::result2==23)||(classicGameBlock::result2==19)||(classicGameBlock::result2==15)||(classicGameBlock::result2==11)||(classicGameBlock::result2==7)||(classicGameBlock::result2==3)||(classicGameBlock::result2==1)){
+        if(classicGameBlock::blockStart2!=1){
+            classicGameBlock::block2 = 'I';
+            cout<<classicGameBlock::block2;
+        }
+    }else{
+        if(dummy==32767){
+            blocks2_n:
+            classicGameBlock::blockStart2 = 1;
+            cout<<classicGameBlock::block2;
+        }
+        classicGameBlock::block2 = ' ';
+        cout<<classicGameBlock::block2;
+    }
+    if(classicGameBlock::blockStart3!=0){
+        cout<<classicGameBlock::block3;
+    }
+    if((classicGameBlock::result2==22)||(classicGameBlock::result2==18)||(classicGameBlock::result2==14)||(classicGameBlock::result2==10)||(classicGameBlock::result2==6)||(classicGameBlock::result2==2)||(classicGameBlock::result2==3)){
+        if(classicGameBlock::blockStart3!=1){
+            classicGameBlock::block3 = 'I';
+            cout<<classicGameBlock::block3;
+        }
+    }else{
+        if(dummy==32767){
+            blocks3_n:
+            classicGameBlock::blockStart3 = 1;
+            cout<<classicGameBlock::block3;
+        }
+        classicGameBlock::block3 = ' ';
+        cout<<classicGameBlock::block3;
+    }
+    if(classicGameBlock::blockStart4!=0){
+        cout<<classicGameBlock::block4;
+    }
+    if((classicGameBlock::result2==21)||(classicGameBlock::result2==17)||(classicGameBlock::result2==13)||(classicGameBlock::result2==9)||(classicGameBlock::result2==5)||(classicGameBlock::result2==1)||(classicGameBlock::result2==4)){
+        if(classicGameBlock::blockStart4!=1){
+            classicGameBlock::block4 = 'I';
+            cout<<classicGameBlock::block4;
+        }
+    }else{
+        if(dummy==32767){
+            blocks4_n:
+            classicGameBlock::blockStart4 = 1;
+            cout<<classicGameBlock::block4;
+        }
+        classicGameBlock::block4 = ' ';
+        cout<<classicGameBlock::block4;
+    }
+    if(classicGameBlock::blockStart5!=0){
+        cout<<classicGameBlock::block5;
+    }
+    if((classicGameBlock::result2==23)||(classicGameBlock::result2==19)||(classicGameBlock::result2==14)||(classicGameBlock::result2==10)||(classicGameBlock::result2==6)||(classicGameBlock::result2==5)||(classicGameBlock::result2==2)){
+        if(classicGameBlock::blockStart5!=1){
+            classicGameBlock::block5 = 'I';
+            cout<<classicGameBlock::block5;
+        }
+    }else{
+        if(dummy==32767){
+            blocks5_n:
+            classicGameBlock::blockStart5 = 1;
+            cout<<classicGameBlock::block5;
+        }
+        classicGameBlock::block5 = ' ';
+        cout<<classicGameBlock::block5;
+    }
+    if(classicGameBlock::blockStart6!=0){
+        cout<<classicGameBlock::block6;
+    }
+    if((classicGameBlock::result2==24)||(classicGameBlock::result2==18)||(classicGameBlock::result2==16)||(classicGameBlock::result2==11)||(classicGameBlock::result2==7)||(classicGameBlock::result2==4)||(classicGameBlock::result2==1)){
+        if(classicGameBlock::blockStart6!=1){
+            classicGameBlock::block6 = 'I';
+            cout<<classicGameBlock::block6;
+        }
+    }else{
+        if(dummy==32767){
+            blocks6_n:
+            classicGameBlock::blockStart6 = 1;
+            cout<<classicGameBlock::block6;
+        }
+        classicGameBlock::block6 = ' ';
+        cout<<classicGameBlock::block6;
     }
     }
 

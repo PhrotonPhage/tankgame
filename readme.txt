@@ -18,7 +18,9 @@ Plans:
 -Fix bugs
 !=Add amplifier picker on classic mode
 !=-1 Score per movement on classic mode
-!=Fix "score" text misplacement on classic mode
+'=Increased ammunition consuming on harder difficulty, classic mode
+'=Ability to buy health
+'=Different score per difficulty, classic mode
 (!=High Priority, '-Medium Priority, -Low Priority)
 
 v0.3.0.5 Alpha build - July , 2020
@@ -30,7 +32,7 @@ v0.3.0.5 Alpha build - July , 2020
 -Update button in classic mode is now difficulty aware
 -The entire block code is moved to easy difficulty. Normal-Very hard difficulties might now work
 -Temporarliy added "0" to represent value change in normal difficulty on classic mode
--Normal difficulty has now it's own blocks. It's currently 1.
+-Normal difficulty has now it's own blocks. It's now 1-6 blocks
 
 Older Versions:
 v0.0.0 - May 17, 2020
