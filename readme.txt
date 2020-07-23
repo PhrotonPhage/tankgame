@@ -23,7 +23,7 @@ Plans:
 '=Different score per difficulty, classic mode
 (!=High Priority, '-Medium Priority, -Low Priority)
 
-v0.3.0.5 Alpha build - July , 2020
+v0.3.0.5 Alpha build 1126 - July 23, 2020
 -More blocks now support scoring (12-20) on classic mode
 -Fixed bug causing score to overlap on classic mode
 -Fixed bug causing blocks to overlap on classic mode
@@ -32,7 +32,7 @@ v0.3.0.5 Alpha build - July , 2020
 -Update button in classic mode is now difficulty aware
 -The entire block code is moved to easy difficulty. Normal-Very hard difficulties might now work
 -Temporarliy added "0" to represent value change in normal difficulty on classic mode
--Normal difficulty has now it's own blocks. It's now 1-6 blocks
+-Normal difficulty has now it's own blocks. It's now 1-10 blocks
 
 Older Versions:
 v0.0.0 - May 17, 2020

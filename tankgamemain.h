@@ -10,7 +10,7 @@
 #define VERSION_REVISION 0
 #define VERBUILD ".5"
 #define VERSION "ALPHA"
-#define BUILD 1122
+#define BUILD 1126
 
 class tankgamemain
 {
