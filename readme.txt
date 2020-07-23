@@ -30,8 +30,8 @@ v0.3.0.5 Alpha build 1126 - July 23, 2020
 -Fixed bug that shooting a block doesn't give a score, unless when spammed on classic mode
 -Added result2 for normal difficulty on classic mode. Not yet used
 -Update button in classic mode is now difficulty aware
--The entire block code is moved to easy difficulty. Normal-Very hard difficulties might now work
--Temporarliy added "0" to represent value change in normal difficulty on classic mode
+-The entire block code is moved to easy difficulty. Normal-Very hard difficulties might not work
+-Temporarily added "0" to represent value change in normal difficulty on classic mode
 -Normal difficulty has now it's own blocks. It's now 1-10 blocks
 
 Older Versions:
