@@ -29,6 +29,9 @@ namespace classicGame{
 
     int shootPlayer;
     char shootPlayerPtr;
+
+    int scopeInt;
+    char scope = '|';
 }
 
 namespace classicGameUI{
@@ -374,31 +377,56 @@ void classicMode::mainGame(){
         classicGame::score += 50;
         classicGame::ammunition += 2;
         classicGameBlock::block11 = ' ';
-        goto endBlocks11;
+        if(classicGame::difficulty==1){
+            goto endBlocks11;
+        }
+        if(classicGame::difficulty==2){
+            goto endBlocks11_n;
+        }
     }
     if(classicGame::movement==12&&classicGameBlock::block12=='I'&&classicGame::shootPlayerPtr=='.'){
         classicGame::score += 50;
         classicGame::ammunition += 2;
         classicGameBlock::block12 = ' ';
-        goto endBlocks12;
+        if(classicGame::difficulty==1){
+            goto endBlocks12;
+        }
+        if(classicGame::difficulty==2){
+            goto endBlocks12_n;
+        }
     }
     if(classicGame::movement==13&&classicGameBlock::block13=='I'&&classicGame::shootPlayerPtr=='.'){
         classicGame::score += 50;
         classicGame::ammunition += 2;
         classicGameBlock::block13 = ' ';
-        goto endBlocks13;
+        if(classicGame::difficulty==1){
+            goto endBlocks13;
+        }
+        if(classicGame::difficulty==2){
+            goto endBlocks13_n;
+        }
     }
     if(classicGame::movement==14&&classicGameBlock::block14=='I'&&classicGame::shootPlayerPtr=='.'){
         classicGame::score += 50;
         classicGame::ammunition += 2;
         classicGameBlock::block14 = ' ';
-        goto endBlocks14;
+        if(classicGame::difficulty==1){
+            goto endBlocks14;
+        }
+        if(classicGame::difficulty==2){
+            goto endBlocks14_n;
+        }
     }
     if(classicGame::movement==15&&classicGameBlock::block15=='I'&&classicGame::shootPlayerPtr=='.'){
         classicGame::score += 50;
         classicGame::ammunition += 2;
         classicGameBlock::block15 = ' ';
-        goto endBlocks15;
+        if(classicGame::difficulty==1){
+            goto endBlocks15;
+        }
+        if(classicGame::difficulty==2){
+            goto endBlocks15_n;
+        }
     }
     if(classicGame::movement==16&&classicGameBlock::block16=='I'&&classicGame::shootPlayerPtr=='.'){
         classicGame::score += 50;
@@ -614,6 +642,36 @@ void classicMode::mainGame(){
             cout<<"--------------------\t"<<endl;
     cout<<"\n";
     goto blocks10_n;
+    }
+    if(classicGame::movement==32767){
+        endBlocks11_n:
+            cout<<"--------------------\t"<<endl;
+    cout<<"\n";
+    goto blocks11_n;
+    }
+    if(classicGame::movement==32767){
+        endBlocks12_n:
+            cout<<"--------------------\t"<<endl;
+    cout<<"\n";
+    goto blocks12_n;
+    }
+    if(classicGame::movement==32767){
+        endBlocks13_n:
+            cout<<"--------------------\t"<<endl;
+    cout<<"\n";
+    goto blocks13_n;
+    }
+    if(classicGame::movement==32767){
+        endBlocks14_n:
+            cout<<"--------------------\t"<<endl;
+    cout<<"\n";
+    goto blocks14_n;
+    }
+    if(classicGame::movement==32767){
+        endBlocks15_n:
+            cout<<"--------------------\t"<<endl;
+    cout<<"\n";
+    goto blocks15_n;
     }
 
     cout<<"--------------------\t"<<endl;
@@ -1132,6 +1190,91 @@ void classicMode::mainGame(){
         classicGameBlock::block10 = ' ';
         cout<<classicGameBlock::block10;
     }
+    if(classicGameBlock::blockStart11!=0){
+        cout<<classicGameBlock::block11;
+    }
+    if((classicGameBlock::result2==24)||(classicGameBlock::result2==16)||(classicGameBlock::result2==15)||(classicGameBlock::result2==10)||(classicGameBlock::result2==5)||(classicGameBlock::result2==2)||(classicGameBlock::result2==0)){
+        if(classicGameBlock::blockStart11!=1){
+            classicGameBlock::block11 = 'I';
+            cout<<classicGameBlock::block11;
+        }
+    }else{
+        if(dummy==32767){
+            blocks11_n:
+            classicGameBlock::blockStart11 = 1;
+            cout<<classicGameBlock::block11;
+        }
+        classicGameBlock::block11 = ' ';
+        cout<<classicGameBlock::block11;
+    }
+    if(classicGameBlock::blockStart12!=0){
+        cout<<classicGameBlock::block12;
+    }
+    if((classicGameBlock::result2==21)||(classicGameBlock::result2==18)||(classicGameBlock::result2==13)||(classicGameBlock::result2==8)||(classicGameBlock::result2==6)||(classicGameBlock::result2==4)||(classicGameBlock::result2==1)){
+        if(classicGameBlock::blockStart12!=1){
+            classicGameBlock::block12 = 'I';
+            cout<<classicGameBlock::block12;
+        }
+    }else{
+        if(dummy==32767){
+            blocks12_n:
+            classicGameBlock::blockStart12 = 1;
+            cout<<classicGameBlock::block12;
+        }
+        classicGameBlock::block12 = ' ';
+        cout<<classicGameBlock::block12;
+    }
+    if(classicGameBlock::blockStart13!=0){
+        cout<<classicGameBlock::block13;
+    }
+    if((classicGameBlock::result2==22)||(classicGameBlock::result2==17)||(classicGameBlock::result2==13)||(classicGameBlock::result2==9)||(classicGameBlock::result2==6)||(classicGameBlock::result2==3)||(classicGameBlock::result2==1)){
+        if(classicGameBlock::blockStart13!=1){
+            classicGameBlock::block13 = 'I';
+            cout<<classicGameBlock::block13;
+        }
+    }else{
+        if(dummy==32767){
+            blocks13_n:
+            classicGameBlock::blockStart13 = 1;
+            cout<<classicGameBlock::block13;
+        }
+        classicGameBlock::block13 = ' ';
+        cout<<classicGameBlock::block13;
+    }
+    if(classicGameBlock::blockStart14!=0){
+        cout<<classicGameBlock::block14;
+    }
+    if((classicGameBlock::result2==23)||(classicGameBlock::result2==19)||(classicGameBlock::result2==14)||(classicGameBlock::result2==8)||(classicGameBlock::result2==4)||(classicGameBlock::result2==1)||(classicGameBlock::result2==7)){
+        if(classicGameBlock::blockStart14!=1){
+            classicGameBlock::block14 = 'I';
+            cout<<classicGameBlock::block14;
+        }
+    }else{
+        if(dummy==32767){
+            blocks14_n:
+            classicGameBlock::blockStart14 = 1;
+            cout<<classicGameBlock::block14;
+        }
+        classicGameBlock::block14 = ' ';
+        cout<<classicGameBlock::block14;
+    }
+    if(classicGameBlock::blockStart15!=0){
+        cout<<classicGameBlock::block15;
+    }
+    if((classicGameBlock::result2==21)||(classicGameBlock::result2==18)||(classicGameBlock::result2==12)||(classicGameBlock::result2==10)||(classicGameBlock::result2==9)||(classicGameBlock::result2==5)||(classicGameBlock::result2==3)){
+        if(classicGameBlock::blockStart15!=1){
+            classicGameBlock::block15 = 'I';
+            cout<<classicGameBlock::block15;
+        }
+    }else{
+        if(dummy==32767){
+            blocks15_n:
+            classicGameBlock::blockStart15 = 1;
+            cout<<classicGameBlock::block15;
+        }
+        classicGameBlock::block15 = ' ';
+        cout<<classicGameBlock::block15;
+    }
     }
 
     if(classicGameBlock::result1<0){
@@ -1187,10 +1330,18 @@ void classicMode::mainGame(){
     cout<<classicGame::shootPlayerPtr;
     cout<<"\n";
     cout.width(classicGame::movement);
-    cout<<classicGame::shootPlayerPtr;
+    if(classicGame::scopeInt==0){
+        cout<<classicGame::shootPlayerPtr;
+    }else{
+        cout<<classicGame::scope;
+    }
     cout<<"\n";
     cout.width(classicGame::movement);
-    cout<<classicGame::shootPlayerPtr;
+    if(classicGame::scopeInt==0){
+        cout<<classicGame::shootPlayerPtr;
+    }else{
+        cout<<classicGame::scope;
+    }
     cout<<"\n";
     cout.width(classicGame::movement);
     cout<<classicGame::tank;
@@ -1202,8 +1353,8 @@ void classicMode::mainGame(){
     if(kbhit()){
         switch(_getch()){
         case 'W':
-            if(classicGame::tank=='W'){
-                classicGame::tank='M';
+            if(classicGame::scopeInt==1){
+                classicGame::scopeInt=0;
             }
             classicGame::shootPlayer = 1;
             if(classicGame::shootPlayer>=1){
@@ -1212,7 +1363,7 @@ void classicMode::mainGame(){
             classicGame::ammunition--;
             break;
         case 'A':
-            if(classicGame::tank!='W'){
+            if(classicGame::scopeInt!=1){
               classicGame::movement--;
             }
             while(classicGame::movement<1){
@@ -1220,7 +1371,7 @@ void classicMode::mainGame(){
             }
             break;
         case 'D':
-            if(classicGame::tank!='W'){
+            if(classicGame::scopeInt!=1){
                classicGame::movement++;
             }
             while(classicGame::movement>20){
@@ -1228,7 +1379,7 @@ void classicMode::mainGame(){
             }
             break;
         case 'S':
-            classicGame::tank = 'W';
+            classicGame::scopeInt = 1;
             break;
         case 'E':
             if(classicGame::difficulty==1){

@@ -23,16 +23,10 @@ Plans:
 '=Different score per difficulty, classic mode
 (!=High Priority, '-Medium Priority, -Low Priority)
 
-v0.3.0.5 Alpha build 1126 - July 23, 2020
--More blocks now support scoring (12-20) on classic mode
--Fixed bug causing score to overlap on classic mode
--Fixed bug causing blocks to overlap on classic mode
--Fixed bug that shooting a block doesn't give a score, unless when spammed on classic mode
--Added result2 for normal difficulty on classic mode. Not yet used
--Update button in classic mode is now difficulty aware
--The entire block code is moved to easy difficulty. Normal-Very hard difficulties might not work
--Temporarily added "0" to represent value change in normal difficulty on classic mode
--Normal difficulty has now it's own blocks. It's now 1-10 blocks
+v0.3.0.6 alpha build - July 24, 2020
+-More blocks in normal difficulty now support scoring (11-15) on classic mode
+-Removed shielding on classic mode
+-Added scoping. Can be accessed with 'S'. Does not allow player to move direction. Only for classic mode
 
 Older Versions:
 v0.0.0 - May 17, 2020
@@ -518,3 +512,13 @@ v0.3.0.4 Alpha build 1100 - July 19, 2020
 -Changed beep sound for program startup
 -Minor graphical fixes
 -Known bugs: On classic mode, some blocks (1-11) cannot be destroyed
+v0.3.0.5 Alpha build 1126 - July 23, 2020
+-More blocks now support scoring (12-20) on classic mode
+-Fixed bug causing score to overlap on classic mode
+-Fixed bug causing blocks to overlap on classic mode
+-Fixed bug that shooting a block doesn't give a score, unless when spammed on classic mode
+-Added result2 for normal difficulty on classic mode. Not yet used
+-Update button in classic mode is now difficulty aware
+-The entire block code is moved to easy difficulty. Normal-Very hard difficulties might not work
+-Temporarily added "0" to represent value change in normal difficulty on classic mode
+-Normal difficulty has now it's own blocks. It's now 1-10 blocks
