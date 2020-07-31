@@ -23,7 +23,7 @@ Plans:
 '=Different score per difficulty, classic mode
 (!=High Priority, '-Medium Priority, -Low Priority)
 
-v0.3.0.6 alpha build 1145 - July 28, 2020
+v0.3.0.6 alpha build 1145 - July 31, 2020
 -More blocks in normal difficulty now support scoring (11-20) on classic mode
 -Removed shielding on classic mode
 -Added scoping. Can be accessed with 'S'. Does not allow player to move direction. Only for classic mode
