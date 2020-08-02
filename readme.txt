@@ -21,11 +21,14 @@ Plans:
 '=Increased ammunition consuming on harder difficulty, classic mode
 '=Ability to buy health
 '=Different score per difficulty, classic mode
+'=Add custom difficulty for classic mode
 (!=High Priority, '-Medium Priority, -Low Priority)
 
 v0.3.0.7 alpha build - August , 2020
--More blocks in hard difficulty now support scoring (1-10) on classic mode
+-More blocks in hard difficulty now support scoring (1-20) on classic mode
 -Hard difficulty will now give 1 ammunition per enemy shoot instead of 2 on classic mode
+-More blocks in very hard difficulty now support scoring (1-10) on classic mode
+-On Very hard difficulty, classic mode. Now rewards 5 scores, 0 ammunition per enemy shot.
 
 Older Versions:
 v0.0.0 - May 17, 2020
