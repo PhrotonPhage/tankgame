@@ -218,7 +218,7 @@ void classicMode::mainGame(){
     }
     }
     if(classicGame::difficulty==4){
-        if(clearScreen==5){
+        if(clearScreen==6){
         classicGameBlock::result4 = rand() % classicGameBlock::amplifier4;
         clearScreen = 0;
 
