@@ -24,12 +24,9 @@ Plans:
 '=Add custom difficulty for classic mode
 (!=High Priority, '-Medium Priority, -Low Priority)
 
-v0.3.0.7 alpha build 1150- August 3, 2020
--More blocks in hard difficulty now support scoring (1-20) on classic mode
--Hard difficulty will now give 1 ammunition per enemy shoot instead of 2 on classic mode
--More blocks in very hard difficulty now support scoring (1-20) on classic mode
--On very hard difficulty, classic mode. Now rewards 5 scores, 0 ammunition per enemy shot.
--On very hard difficulty, classic mode. Now updates slower. 6 value instead of 5
+V0.3.0.8 alpha build - August , 2020
+-Added Custom mode in classic mode. Not functional yet
+-Can now set CLSVALUE
 
 Older Versions:
 v0.0.0 - May 17, 2020
@@ -532,3 +529,9 @@ v0.3.0.6 alpha build 1145 - July 31, 2020
 -On classic mode, scores is now different. easy = 50, normal = 25
 -On hard difficulty, classic mode. 10 scores per block shot.
 -More blocks in hard difficulty now support scoring (1-10) on classic mode
+v0.3.0.7 alpha build 1150- August 3, 2020
+-More blocks in hard difficulty now support scoring (1-20) on classic mode
+-Hard difficulty will now give 1 ammunition per enemy shoot instead of 2 on classic mode
+-More blocks in very hard difficulty now support scoring (1-20) on classic mode
+-On very hard difficulty, classic mode. Now rewards 5 scores, 0 ammunition per enemy shot.
+-On very hard difficulty, classic mode. Now updates slower. 6 value instead of 5
