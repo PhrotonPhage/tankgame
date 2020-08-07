@@ -24,9 +24,11 @@ Plans:
 '=Add custom difficulty for classic mode
 (!=High Priority, '-Medium Priority, -Low Priority)
 
-V0.3.0.8 alpha build - August , 2020
--Added Custom mode in classic mode. Not functional yet
--Can now set CLSVALUE
+v0.3.0.8 alpha build 1166 - August , 2020
+-Added custom difficulty in classic mode.
+-Can now set CLSVALUE in custom difficulty in classic mode
+-Added github links in info page
+-Can now set AMPLIFIER in custom difficulty in classic mode
 
 Older Versions:
 v0.0.0 - May 17, 2020

@@ -151,7 +151,7 @@ void classicMode::custom(){
     system("cls");
     cout << "GAMEMODE 3: CLASSIC MODE > CUSTOM\n\n";
     cout << "1 - INTEGERS\n";
-    cout << "2 - AMPLIFIER\n";
+    cout << "2 - AMPLIFIER - " << classicGameCustom::amplifier << endl;
     cout << "3 - RESULTS\n";
     cout << "4 - CLSVALUE - "<< classicGameCustom::clearScreen <<"\n\n";
     cout << "S - SAVE\n";
@@ -159,14 +159,40 @@ void classicMode::custom(){
     cout << "X - BACK\n";
     if(kbhit()){
         switch(_getch()){
+        case '2':
+            system("cls");
+            cout << "GAMEMODE 3: CLASSIC MODE > CUSTOM > AMPLIFIER\n\n";
+            cout << "AMPLIFIER: TYPE: INTEGER\n";
+            cout << "AMPLIFIER = % MODULUS TO RANDOM RESULT INTEGER\n";
+            cout << "UPDATE PER CLSVALUE INCREMENTS TO EXPECTED VALUE\n";
+            cout << "NORMAL VALUE: 24 CURRENT VALUE: " << classicGameCustom::amplifier << endl;
+            cout << "PRESS X TO GO BACK\n";
+            cout << "PRESS A TO SET VALUE\n";
+            switch(_getch()){
+            case 'A':
+                cout << ": SET VALUE TO = ";
+                cin >> classicGameCustom::amplifier;
+            case 'X':
+                custom();
+                break;
+            }
+            break;
         case '4':
             system("cls");
             cout << "GAMEMODE 3: CLASSIC MODE > CUSTOM > CLSVALUE\n\n";
             cout << "CLSVALUE = NORMAL: 25 TYPE: INTEGER\n";
             cout << "PER INCREMENT TO VALUE " << classicGameCustom::clearScreen << endl;
-            cout << "SET VALUE TO = ";
-            cin >> classicGameCustom::clearScreen;
-            custom();
+            cout << "PRESS X TO GO BACK\n";
+            cout << "PRESS C TO SET VALUE\n";
+            switch(_getch()){
+            case 'C':
+                cout << ": SET VALUE TO = ";
+                cin >> classicGameCustom::clearScreen;
+            case 'X':
+                custom();
+                break;
+            }
+            break;
         case 'X':
             difficulty();
             break;

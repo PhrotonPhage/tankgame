@@ -181,15 +181,35 @@ cout<<"BUILD DATE: " << __DATE__ << " " << __TIME__  << endl;
 cout<<"BUILD " <<BUILD<< endl << endl;
 cout<<"32-BIT: "<<__WIN32<<endl;
 cout<<"64-BIT: "<<__WIN64<<endl;
-cout <<"AMD64: "<<__amd64<<endl<<endl;
-cout<<"PRESS ANYTHING TO CONTINUE\n";
+cout<<"AMD64: "<<__amd64<<endl<<endl;
+cout<<"PRESS C TO CHECK FOR UPDATES\n";
+cout<<"PRESS G TO OPEN PHROTON'S GIT\n";
+cout<<"PRESS R TO OPEN GITHUB REPOSITORY\n\n";
+cout<<"PRESS X TO CONTINUE\n";
 if(kbhit()){
     switch(_getch()){
 case 'X':
     mainMenu();
     break;
-default:
-    mainMenu();
+case 'G':
+    {
+    string linkGit;
+    linkGit = "https://github.com/PhrotonX";
+    ShellExecute(NULL, "open", linkGit.c_str(), NULL, NULL, SW_SHOWNORMAL);
+    break;
+    }
+case 'R':
+    {
+    string linkRepo;
+    linkRepo = "https://github.com/PhrotonX/tankgame";
+    ShellExecute(NULL, "open", linkRepo.c_str(), NULL, NULL, SW_SHOWNORMAL);
+    break;
+    }
+
+case 'C':
+    string linkUpdates;
+    linkUpdates = "https://github.com/PhrotonX/tankgame/releases";
+    ShellExecute(NULL, "open", linkUpdates.c_str(), NULL, NULL, SW_SHOWNORMAL);
     break;
     }
 }
