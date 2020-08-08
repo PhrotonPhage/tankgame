@@ -24,11 +24,15 @@ Plans:
 '=Add custom difficulty for classic mode
 (!=High Priority, '-Medium Priority, -Low Priority)
 
-v0.3.0.8 alpha build 1166 - August , 2020
+v0.3.0.8 alpha build 1172 - August 8, 2020
 -Added custom difficulty in classic mode.
 -Can now set CLSVALUE in custom difficulty in classic mode
 -Added github links in info page
 -Can now set AMPLIFIER in custom difficulty in classic mode
+-Can now set SCORES and AMMUNITION value. Cannot use custom ammunition yet
+-Custom amplifier and clsvalue for custom difficulty can now be used in gameplay
+-Custom scores and ammunition can now be used on custom difficulty (blocks 1-5)
+-Can now set and use custom ammunition reward
 
 Older Versions:
 v0.0.0 - May 17, 2020
