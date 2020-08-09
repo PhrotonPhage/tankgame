@@ -279,7 +279,7 @@
 1594187481 c:\users\cpasc\documents\github\tankgame\helppage.h
 	"tankgamemain.h"
 
-1596868390 c:\users\cpasc\documents\github\tankgame\tankgamemain.h
+1596971547 c:\users\cpasc\documents\github\tankgame\tankgamemain.h
 	"tankGameStructure.h"
 	"helpPage.h"
 	"minimalGame.h"
@@ -316,7 +316,7 @@
 	<algorithm>
 	<thread>
 
-1596797073 source:c:\users\cpasc\documents\github\tankgame\tankgamemain.cpp
+1596955657 source:c:\users\cpasc\documents\github\tankgame\tankgamemain.cpp
 	"tankgamemain.h"
 	<iostream>
 	<string>
@@ -328,7 +328,7 @@
 	<cstdlib>
 	<pthread.h>
 
-1596541213 source:c:\users\cpasc\documents\github\tankgame\classicmode.cpp
+1596971369 source:c:\users\cpasc\documents\github\tankgame\classicmode.cpp
 	"classicMode.h"
 	<iostream>
 	<string>

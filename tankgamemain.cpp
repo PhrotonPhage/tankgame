@@ -35,7 +35,7 @@ void tankgamemain::getVariable1(int audio){
 }
 
 void tankgamemain::menuInfo(){
-system("title TankGame v0.3.0.8 Alpha");
+system("title TankGame v0.3.0.9 Alpha");
 //int staticLoader = 10;
 int loader = 7;
 cout << "TANK GAME " << VERSION_MAJOR << "." << VERSION_MINOR << "." << VERSION_REVISION << VERBUILD << " " << VERSION << " - BY PHROTON" << endl;
