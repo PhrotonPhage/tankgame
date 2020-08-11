@@ -101,6 +101,8 @@ namespace classicGameCustom{
     int ammunition;
     static int tempAmmunition;
 
+    int movement = 10;
+
     int rewardAmmunition;
 
     int amplifier;
@@ -174,6 +176,7 @@ void classicMode::custom(){
             cout << "A - AMMUNITION - " << classicGameCustom::ammunition << endl;
             cout << "R - REWARD AMMUNITION - " << classicGameCustom::rewardAmmunition << endl;
             cout << "H - HEALTHPOINT - " << classicGameCustom::healthPoint << endl;
+            cout << "M - MOVEMENT - " << classicGame::movement << endl;
             switch(_getch()){
             case 'S':
                 cout << ": SET VALUE TO = ";
@@ -196,7 +199,20 @@ void classicMode::custom(){
                 cin >> classicGameCustom::healthPoint;
                 goto customCase1;
                 break;
+            case 'M':
+                customCase1m:
+                cout << "MAX: 20 NORMAL VALUE: 10\n";
+                cout << "MOVEMENT RESET PER BACK BUTTON\n";
+                cout << ": SET VALUE TO = ";
+                cin >> classicGame::movement;
+                if(classicGame::movement>20||classicGame::movement<0){
+                    cout << "ERROR 04: TOO MANY ARGUMENTS GIVEN\n";
+                    goto customCase1m;
+                }
+                goto customCase1;
+                break;
             case 'X':
+                classicGame::movement = 10;
                 custom();
                 break;
             }
@@ -436,7 +452,7 @@ void classicMode::mainGame(){
         }
         if(classicGame::difficulty==5){
             classicGame::score += classicGameCustom::score;
-            classicGame::ammunition += classicGameCustom::rewardAmmunition;
+            classicGameCustom::ammunition += classicGameCustom::rewardAmmunition;
             goto endBlocks1_c;
         }
 
@@ -464,7 +480,7 @@ void classicMode::mainGame(){
         }
         if(classicGame::difficulty==5){
             classicGame::score += classicGameCustom::score;
-            classicGame::ammunition += classicGameCustom::rewardAmmunition;
+            classicGameCustom::ammunition += classicGameCustom::rewardAmmunition;
             goto endBlocks2_c;
         }
     }
@@ -491,7 +507,7 @@ void classicMode::mainGame(){
         }
         if(classicGame::difficulty==5){
             classicGame::score += classicGameCustom::score;
-            classicGame::ammunition += classicGameCustom::rewardAmmunition;
+            classicGameCustom::ammunition += classicGameCustom::rewardAmmunition;
             goto endBlocks3_c;
         }
     }
@@ -518,7 +534,7 @@ void classicMode::mainGame(){
         }
         if(classicGame::difficulty==5){
             classicGame::score += classicGameCustom::score;
-            classicGame::ammunition += classicGameCustom::rewardAmmunition;
+            classicGameCustom::ammunition += classicGameCustom::rewardAmmunition;
             goto endBlocks4_c;
         }
     }
@@ -545,7 +561,7 @@ void classicMode::mainGame(){
         }
         if(classicGame::difficulty==5){
             classicGame::score += classicGameCustom::score;
-            classicGame::ammunition += classicGameCustom::rewardAmmunition;
+            classicGameCustom::ammunition += classicGameCustom::rewardAmmunition;
             goto endBlocks5_c;
         }
     }
@@ -572,7 +588,7 @@ void classicMode::mainGame(){
         }
         if(classicGame::difficulty==5){
             classicGame::score += classicGameCustom::score;
-            classicGame::ammunition += classicGameCustom::rewardAmmunition;
+            classicGameCustom::ammunition += classicGameCustom::rewardAmmunition;
             goto endBlocks6_c;
         }
     }
@@ -599,7 +615,7 @@ void classicMode::mainGame(){
         }
         if(classicGame::difficulty==5){
             classicGame::score += classicGameCustom::score;
-            classicGame::ammunition += classicGameCustom::rewardAmmunition;
+            classicGameCustom::ammunition += classicGameCustom::rewardAmmunition;
             goto endBlocks7_c;
         }
     }
@@ -626,7 +642,7 @@ void classicMode::mainGame(){
         }
         if(classicGame::difficulty==5){
             classicGame::score += classicGameCustom::score;
-            classicGame::ammunition += classicGameCustom::rewardAmmunition;
+            classicGameCustom::ammunition += classicGameCustom::rewardAmmunition;
             goto endBlocks8_c;
         }
     }
@@ -653,7 +669,7 @@ void classicMode::mainGame(){
         }
         if(classicGame::difficulty==5){
             classicGame::score += classicGameCustom::score;
-            classicGame::ammunition += classicGameCustom::rewardAmmunition;
+            classicGameCustom::ammunition += classicGameCustom::rewardAmmunition;
             goto endBlocks9_c;
         }
     }
@@ -680,7 +696,7 @@ void classicMode::mainGame(){
         }
         if(classicGame::difficulty==5){
             classicGame::score += classicGameCustom::score;
-            classicGame::ammunition += classicGameCustom::rewardAmmunition;
+            classicGameCustom::ammunition += classicGameCustom::rewardAmmunition;
             goto endBlocks10_c;
         }
     }
@@ -707,7 +723,7 @@ void classicMode::mainGame(){
         }
         if(classicGame::difficulty==5){
             classicGame::score += classicGameCustom::score;
-            classicGame::ammunition += classicGameCustom::rewardAmmunition;
+            classicGameCustom::ammunition += classicGameCustom::rewardAmmunition;
             goto endBlocks11_c;
         }
     }
@@ -734,7 +750,7 @@ void classicMode::mainGame(){
         }
         if(classicGame::difficulty==5){
             classicGame::score += classicGameCustom::score;
-            classicGame::ammunition += classicGameCustom::rewardAmmunition;
+            classicGameCustom::ammunition += classicGameCustom::rewardAmmunition;
             goto endBlocks12_c;
         }
     }
@@ -761,7 +777,7 @@ void classicMode::mainGame(){
         }
         if(classicGame::difficulty==5){
             classicGame::score += classicGameCustom::score;
-            classicGame::ammunition += classicGameCustom::rewardAmmunition;
+            classicGameCustom::ammunition += classicGameCustom::rewardAmmunition;
             goto endBlocks13_c;
         }
     }
@@ -788,7 +804,7 @@ void classicMode::mainGame(){
         }
         if(classicGame::difficulty==5){
             classicGame::score += classicGameCustom::score;
-            classicGame::ammunition += classicGameCustom::rewardAmmunition;
+            classicGameCustom::ammunition += classicGameCustom::rewardAmmunition;
             goto endBlocks14_c;
         }
     }
@@ -815,7 +831,7 @@ void classicMode::mainGame(){
         }
         if(classicGame::difficulty==5){
             classicGame::score += classicGameCustom::score;
-            classicGame::ammunition += classicGameCustom::rewardAmmunition;
+            classicGameCustom::ammunition += classicGameCustom::rewardAmmunition;
             goto endBlocks15_c;
         }
     }
@@ -842,7 +858,7 @@ void classicMode::mainGame(){
         }
         if(classicGame::difficulty==5){
             classicGame::score += classicGameCustom::score;
-            classicGame::ammunition += classicGameCustom::rewardAmmunition;
+            classicGameCustom::ammunition += classicGameCustom::rewardAmmunition;
             goto endBlocks16_c;
         }
     }
@@ -869,7 +885,7 @@ void classicMode::mainGame(){
         }
         if(classicGame::difficulty==5){
             classicGame::score += classicGameCustom::score;
-            classicGame::ammunition += classicGameCustom::rewardAmmunition;
+            classicGameCustom::ammunition += classicGameCustom::rewardAmmunition;
             goto endBlocks17_c;
         }
     }
@@ -896,7 +912,7 @@ void classicMode::mainGame(){
         }
         if(classicGame::difficulty==5){
             classicGame::score += classicGameCustom::score;
-            classicGame::ammunition += classicGameCustom::rewardAmmunition;
+            classicGameCustom::ammunition += classicGameCustom::rewardAmmunition;
             goto endBlocks18_c;
         }
     }
@@ -923,7 +939,7 @@ void classicMode::mainGame(){
         }
         if(classicGame::difficulty==5){
             classicGame::score += classicGameCustom::score;
-            classicGame::ammunition += classicGameCustom::rewardAmmunition;
+            classicGameCustom::ammunition += classicGameCustom::rewardAmmunition;
             goto endBlocks19_c;
         }
     }
@@ -950,7 +966,7 @@ void classicMode::mainGame(){
         }
         if(classicGame::difficulty==5){
             classicGame::score += classicGameCustom::score;
-            classicGame::ammunition += classicGameCustom::rewardAmmunition;
+            classicGameCustom::ammunition += classicGameCustom::rewardAmmunition;
             goto endBlocks20_c;
         }
     }
@@ -3517,8 +3533,13 @@ void classicMode::restart(){
     system("cls");
     cout<<"\tYOU FAILED THE GAME\n";
     Beep(500,500);
-    classicGame::healthPoint--;
-    classicGame::ammunition = 50;
+    if(classicGame::difficulty!=5){
+        classicGame::healthPoint--;
+        classicGame::ammunition = 50;
+    }else{
+        classicGameCustom::healthPoint--;
+        classicGameCustom::ammunition;
+    }
     classicGame::movement = 10;
 
     classicGameCustom::ammunition = classicGameCustom::tempAmmunition;

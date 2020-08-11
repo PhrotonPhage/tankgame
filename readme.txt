@@ -27,6 +27,9 @@ Plans:
 v0.3.0.9 alpha build - August , 2020
 -Custom scores and ammunition can now be used on custom difficulty (blocks 6-20)
 -Can now customize healthPoints
+-Fixed bug causing custom ammunition reward not to work on classic mode
+-Movement value can now be changed
+-Added value limit in movement value
 
 Older Versions:
 v0.0.0 - May 17, 2020
