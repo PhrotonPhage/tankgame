@@ -235,6 +235,39 @@ void classicMode::custom(){
                 break;
             }
             break;
+        case '3':
+            customCase3:
+                system("cls");
+            cout << "GAMEMODE 3: CLASSIC MODE > CUSTOM > RESULTS\n\n";
+            cout << "RESULT TYPE: INTEGER\n";
+            cout << "RESULT OF RAND() % AMPLIFIER\n";
+            cout << "DISPLAY BLOCKS AT SPECIFIED VALUE\n";
+            cout << "A - BLOCK RESULT 1\n";
+            cout << "B - BLOCK RESULT 2\n";
+            cout << "C - BLOCK RESULT 3\n";
+            cout << "D - BLOCK RESULT 4\n";
+            cout << "E - BLOCK RESULT 5\n";
+            cout << "F - BLOCK RESULT 6\n";
+            cout << "G - BLOCK RESULT 7\n";
+            cout << "H - BLOCK RESULT 8\n";
+            cout << "I - BLOCK RESULT 9\n";
+            cout << "J - BLOCK RESULT 10\n";
+            cout << "K - BLOCK RESULT 11\n";
+            cout << "L - BLOCK RESULT 12\n";
+            cout << "M - BLOCK RESULT 13\n";
+            cout << "N - BLOCK RESULT 14\n";
+            cout << "O - BLOCK RESULT 15\n";
+            cout << "P - BLOCK RESULT 16\n";
+            cout << "Q - BLOCK RESULT 17\n";
+            cout << "R - BLOCK RESULT 18\n";
+            cout << "S - BLOCK RESULT 19\n";
+            cout << "T - BLOCK RESULT 20\n";
+            switch(_getch()){
+            case 'X':
+                custom();
+                break;
+            }
+            break;
         case '4':
             system("cls");
             cout << "GAMEMODE 3: CLASSIC MODE > CUSTOM > CLSVALUE\n\n";
