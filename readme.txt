@@ -30,6 +30,7 @@ v0.3.0.9 alpha build - August , 2020
 -Fixed bug causing custom ammunition reward not to work on classic mode
 -Movement value can now be changed
 -Added value limit in movement value
+-Can now customize block results value (block 1 value 1-7)
 
 Older Versions:
 v0.0.0 - May 17, 2020

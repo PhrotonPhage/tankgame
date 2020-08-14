@@ -113,6 +113,23 @@ namespace classicGameCustom{
     int healthPoint;
 }
 
+namespace classicGameResultCustom{
+    int resultBlock1_1;
+    int resultBlock1_2;
+    int resultBlock1_3;
+    int resultBlock1_4;
+    int resultBlock1_5;
+    int resultBlock1_6;
+    int resultBlock1_7;
+    int resultBlock2_1;
+    int resultBlock2_2;
+    int resultBlock2_3;
+    int resultBlock2_4;
+    int resultBlock2_5;
+    int resultBlock2_6;
+    int resultBlock2_7;
+}
+
 void classicMode::difficulty(){
     system("cls");
     cout << "GAMEMODE 3: CLASSIC MODE\n\n";
@@ -242,6 +259,7 @@ void classicMode::custom(){
             cout << "RESULT TYPE: INTEGER\n";
             cout << "RESULT OF RAND() % AMPLIFIER\n";
             cout << "DISPLAY BLOCKS AT SPECIFIED VALUE\n";
+            cout << "X - BACK\n";
             cout << "A - BLOCK RESULT 1\n";
             cout << "B - BLOCK RESULT 2\n";
             cout << "C - BLOCK RESULT 3\n";
@@ -263,6 +281,62 @@ void classicMode::custom(){
             cout << "S - BLOCK RESULT 19\n";
             cout << "T - BLOCK RESULT 20\n";
             switch(_getch()){
+            case 'A':
+                resultA:
+                system("cls");
+                cout << "GAMEMODE 3: CLASSIC MODE > CUSTOM > RESULTS > BLOCK RESULT 1\n\n";
+                cout << "RESULT OF RAND() % AMPLIFIER\n";
+                cout << "DISPLAY BLOCKS AT SPECIFIED VALUE\n";
+                cout << "X - BACK\n";
+                cout << "1 - VALUE 1 - " << classicGameResultCustom::resultBlock1_1 << endl;
+                cout << "2 - VALUE 2 - " << classicGameResultCustom::resultBlock1_2 << endl;
+                cout << "3 - VALUE 3 - " << classicGameResultCustom::resultBlock1_3 << endl;
+                cout << "4 - VALUE 4 - " << classicGameResultCustom::resultBlock1_4 << endl;
+                cout << "5 - VALUE 5 - " << classicGameResultCustom::resultBlock1_5 << endl;
+                cout << "6 - VALUE 6 - " << classicGameResultCustom::resultBlock1_6 << endl;
+                switch(_getch()){
+                case '1':
+                    cout << ": SET VALUE TO = ";
+                    cin >> classicGameResultCustom::resultBlock1_1;
+                    goto resultA;
+                    break;
+                case '2':
+                    cout << ": SET VALUE TO = ";
+                    cin >> classicGameResultCustom::resultBlock1_2;
+                    goto resultA;
+                    break;
+                case '3':
+                    cout << ": SET VALUE TO = ";
+                    cin >> classicGameResultCustom::resultBlock1_3;
+                    goto resultA;
+                    break;
+                case '4':
+                    cout << ": SET VALUE TO = ";
+                    cin >> classicGameResultCustom::resultBlock1_4;
+                    goto resultA;
+                    break;
+                case '5':
+                    cout << ": SET VALUE TO = ";
+                    cin >> classicGameResultCustom::resultBlock1_5;
+                    goto resultA;
+                    break;
+                case '6':
+                    cout << ": SET VALUE TO = ";
+                    cin >> classicGameResultCustom::resultBlock1_6;
+                    goto resultA;
+                    break;
+                case '7':
+                    cout << ": SET VALUE TO = ";
+                    cin >> classicGameResultCustom::resultBlock1_7;
+                    goto resultA;
+                    break;
+                case 'X':
+                    goto customCase3;
+                    break;
+                }
+                break;
+            //case 'B':
+
             case 'X':
                 custom();
                 break;
@@ -2989,7 +3063,7 @@ void classicMode::mainGame(){
     if(classicGameBlock::blockStart1!=0){
         cout<<classicGameBlock::block1;
     }
-    if((classicGameBlock::result4==8)||(classicGameBlock::result4==7)||(classicGameBlock::result4==6)||(classicGameBlock::result4==5)||(classicGameBlock::result4==4)||(classicGameBlock::result4==4)||(classicGameBlock::result4==3)){
+    if((classicGameCustom::result==classicGameResultCustom::resultBlock1_1)||(classicGameCustom::result==classicGameResultCustom::resultBlock1_2)||(classicGameCustom::result==classicGameResultCustom::resultBlock1_3)||(classicGameCustom::result==classicGameResultCustom::resultBlock1_4)||(classicGameCustom::result==classicGameResultCustom::resultBlock1_5)||(classicGameCustom::result==classicGameResultCustom::resultBlock1_6)||(classicGameCustom::result==classicGameResultCustom::resultBlock1_7)){
         if(classicGameBlock::blockStart1!=1){
             classicGameBlock::block1 = 'I';
             cout<<classicGameBlock::block1;
