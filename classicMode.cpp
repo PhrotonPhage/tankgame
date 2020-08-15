@@ -128,6 +128,34 @@ namespace classicGameResultCustom{
     int resultBlock2_5;
     int resultBlock2_6;
     int resultBlock2_7;
+    int resultBlock3_1;
+    int resultBlock3_2;
+    int resultBlock3_3;
+    int resultBlock3_4;
+    int resultBlock3_5;
+    int resultBlock3_6;
+    int resultBlock3_7;
+    int resultBlock4_1;
+    int resultBlock4_2;
+    int resultBlock4_3;
+    int resultBlock4_4;
+    int resultBlock4_5;
+    int resultBlock4_6;
+    int resultBlock4_7;
+    int resultBlock5_1;
+    int resultBlock5_2;
+    int resultBlock5_3;
+    int resultBlock5_4;
+    int resultBlock5_5;
+    int resultBlock5_6;
+    int resultBlock5_7;
+    int resultBlock6_1;
+    int resultBlock6_2;
+    int resultBlock6_3;
+    int resultBlock6_4;
+    int resultBlock6_5;
+    int resultBlock6_6;
+    int resultBlock6_7;
 }
 
 void classicMode::difficulty(){
@@ -335,7 +363,60 @@ void classicMode::custom(){
                     break;
                 }
                 break;
-            //case 'B':
+            case 'B':
+                resultB:
+                system("cls");
+                cout << "GAMEMODE 3: CLASSIC MODE > CUSTOM > RESULTS > BLOCK RESULT 2\n\n";
+                cout << "RESULT OF RAND() % AMPLIFIER\n";
+                cout << "DISPLAY BLOCKS AT SPECIFIED VALUE\n";
+                cout << "X - BACK\n";
+                cout << "1 - VALUE 1 - " << classicGameResultCustom::resultBlock2_1 << endl;
+                cout << "2 - VALUE 2 - " << classicGameResultCustom::resultBlock2_2 << endl;
+                cout << "3 - VALUE 3 - " << classicGameResultCustom::resultBlock2_3 << endl;
+                cout << "4 - VALUE 4 - " << classicGameResultCustom::resultBlock2_4 << endl;
+                cout << "5 - VALUE 5 - " << classicGameResultCustom::resultBlock2_5 << endl;
+                cout << "6 - VALUE 6 - " << classicGameResultCustom::resultBlock2_6 << endl;
+                switch(_getch()){
+                case '1':
+                    cout << ": SET VALUE TO = ";
+                    cin >> classicGameResultCustom::resultBlock2_1;
+                    goto resultB;
+                    break;
+                case '2':
+                    cout << ": SET VALUE TO = ";
+                    cin >> classicGameResultCustom::resultBlock2_2;
+                    goto resultB;
+                    break;
+                case '3':
+                    cout << ": SET VALUE TO = ";
+                    cin >> classicGameResultCustom::resultBlock2_3;
+                    goto resultB;
+                    break;
+                case '4':
+                    cout << ": SET VALUE TO = ";
+                    cin >> classicGameResultCustom::resultBlock2_4;
+                    goto resultB;
+                    break;
+                case '5':
+                    cout << ": SET VALUE TO = ";
+                    cin >> classicGameResultCustom::resultBlock2_5;
+                    goto resultB;
+                    break;
+                case '6':
+                    cout << ": SET VALUE TO = ";
+                    cin >> classicGameResultCustom::resultBlock2_6;
+                    goto resultB;
+                    break;
+                case '7':
+                    cout << ": SET VALUE TO = ";
+                    cin >> classicGameResultCustom::resultBlock2_7;
+                    goto resultB;
+                    break;
+                case 'X':
+                    goto customCase3;
+                    break;
+                }
+                break;
 
             case 'X':
                 custom();
@@ -3506,6 +3587,7 @@ void classicMode::mainGame(){
         case 'A':
             if(classicGame::scopeInt!=1){
               classicGame::movement--;
+              classicGame::score--;
             }
             while(classicGame::movement<1){
                 classicGame::movement=1;
@@ -3514,6 +3596,7 @@ void classicMode::mainGame(){
         case 'D':
             if(classicGame::scopeInt!=1){
                classicGame::movement++;
+               classicGame::score--;
             }
             while(classicGame::movement>20){
                 classicGame::movement=20;

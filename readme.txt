@@ -24,13 +24,16 @@ Plans:
 '=Add custom difficulty for classic mode
 (!=High Priority, '-Medium Priority, -Low Priority)
 
-v0.3.0.9 alpha build - August , 2020
+Note: Custom mode has been scrapped on 0.3.0 and will be released on version 0.4.0 due to slow development of 0.3.0
+
+v0.3.0.9 alpha build 1197 - August 15, 2020
 -Custom scores and ammunition can now be used on custom difficulty (blocks 6-20)
 -Can now customize healthPoints
 -Fixed bug causing custom ammunition reward not to work on classic mode
 -Movement value can now be changed
 -Added value limit in movement value
 -Can now customize block results value (block 1 value 1-7)
+-Score will now decrease by 1 per tank movement on classic mode
 
 Older Versions:
 v0.0.0 - May 17, 2020
