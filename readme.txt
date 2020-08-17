@@ -26,14 +26,10 @@ Plans:
 
 Note: Custom mode has been scrapped on 0.3.0 and will be released on version 0.4.0 due to slow development of 0.3.0
 
-v0.3.0.9 alpha build 1197 - August 15, 2020
--Custom scores and ammunition can now be used on custom difficulty (blocks 6-20)
--Can now customize healthPoints
--Fixed bug causing custom ammunition reward not to work on classic mode
--Movement value can now be changed
--Added value limit in movement value
--Can now customize block results value (block 1 value 1-7)
--Score will now decrease by 1 per tank movement on classic mode
+v0.3.0.10 Alpha build - August , 2020
+-Added variables and functions to work with statistics recording for classic mode
+-Removed "COMING SOON" in statistics page, classic mode
+-Added statistics for Gamemode 3, classic mode
 
 Older Versions:
 v0.0.0 - May 17, 2020
@@ -529,20 +525,20 @@ v0.3.0.5 Alpha build 1126 - July 23, 2020
 -The entire block code is moved to easy difficulty. Normal-Very hard difficulties might not work
 -Temporarily added "0" to represent value change in normal difficulty on classic mode
 -Normal difficulty has now it's own blocks. It's now 1-10 blocks
-v0.3.0.6 alpha build 1145 - July 31, 2020
+v0.3.0.6 Alpha build 1145 - July 31, 2020
 -More blocks in normal difficulty now support scoring (11-20) on classic mode
 -Removed shielding on classic mode
 -Added scoping. Can be accessed with 'S'. Does not allow player to move direction. Only for classic mode
 -On classic mode, scores is now different. easy = 50, normal = 25
 -On hard difficulty, classic mode. 10 scores per block shot.
 -More blocks in hard difficulty now support scoring (1-10) on classic mode
-v0.3.0.7 alpha build 1150- August 3, 2020
+v0.3.0.7 Alpha build 1150- August 3, 2020
 -More blocks in hard difficulty now support scoring (1-20) on classic mode
 -Hard difficulty will now give 1 ammunition per enemy shoot instead of 2 on classic mode
 -More blocks in very hard difficulty now support scoring (1-20) on classic mode
 -On very hard difficulty, classic mode. Now rewards 5 scores, 0 ammunition per enemy shot.
 -On very hard difficulty, classic mode. Now updates slower. 6 value instead of 5
-v0.3.0.8 alpha build 1171/1172 - August 8, 2020
+v0.3.0.8 Alpha build 1171/1172 - August 8, 2020
 -Added custom difficulty in classic mode.
 -Can now set CLSVALUE in custom difficulty in classic mode
 -Added github links in info page
@@ -551,3 +547,11 @@ v0.3.0.8 alpha build 1171/1172 - August 8, 2020
 -Custom amplifier and clsvalue for custom difficulty can now be used in gameplay
 -Custom scores and ammunition can now be used on custom difficulty (blocks 1-5)
 -Can now set and use custom ammunition reward
+v0.3.0.9 Alpha build 1197 - August 15, 2020
+-Custom scores and ammunition can now be used on custom difficulty (blocks 6-20)
+-Can now customize healthPoints
+-Fixed bug causing custom ammunition reward not to work on classic mode
+-Movement value can now be changed
+-Added value limit in movement value
+-Can now customize block results value (block 1 value 1-7)
+-Score will now decrease by 1 per tank movement on classic mode

@@ -88,6 +88,14 @@ static int moveStimes5 = 0;
 static int recentScore5 = 0;
 static int highscore5 = 0;
 
+static int death3 = 0;
+static int shootingTimes3 = 0;
+static int moveDtimes3 = 0;
+static int moveAtimes3 = 0;
+static int moveStimes3 = 0;
+static int recentScore3 = 0;
+static int highscore3 = 0;
+
 std::string ipName;
 int nR, nC;
 
@@ -131,6 +139,16 @@ void tankGameStructure::gamemode5Stats(int death05,int moveAtimes05,int moveDtim
     shootingTimes5 = shootingTimes05;
     recentScore5 = recentScore05;
     highscore5 = highscore05;
+}
+
+void tankGameStructure::gamemode3Stats(int death03,int shootingTimes03,int moveAtimes03,int moveDtimes03,int moveStimes03,int recentScore03,int highscore03){
+    death3 = death03;
+    moveAtimes3 = moveAtimes03;
+    moveDtimes3 = moveDtimes03;
+    moveStimes3 = moveDtimes03;
+    shootingTimes3 = shootingTimes03;
+    recentScore3 = recentScore03;
+    highscore3 = highscore03;
 }
 
 void tankGameStructure::playerProperties(){
@@ -1319,15 +1337,15 @@ void tankGameStructure::statistics(){
     cout << "GAME:\t\t \tHIGHSCORES:\tRECENT:\n" << endl;
     cout << "SHOOTING\t-\t" << highscore << "\t\t" << recentScore << endl;
     cout << "INVASION\t-\t" << "COMING SOON\t\t"<< endl;
-    cout << "CLASSIC\t\t-\t" << "COMING SOON\t\t" << endl;
+    cout << "CLASSIC\t\t-\t" << highscore3 << "\t\t" << recentScore3 << endl;
     cout << "CHAOS\t\t-\t" << "COMING SOON\t\t" << endl;
     cout<<"MINIMAL\t\t-\t"<<highscore5<<"\t\t"<<recentScore5<<endl<<endl;
-    cout << "OTHER DATA\t\tGM1:\tGM5:\n\n";
-    cout << "DEATH\t\t-\t" << death << "\t" << death5 << endl;
-    cout << "SHOOTED AMMO\t-\t" << shootingTimes << "\t" << shootingTimes5 << endl;
-    cout << "CONTROL: D\t-\t" << moveDtimes << "\t" << moveDtimes5 << endl;
-    cout << "CONTROL: A\t-\t" << moveAtimes << "\t" << moveAtimes5 << endl;
-    cout << "CONTROL: S\t-\t" << moveStimes << "\t" << moveStimes5 << endl;
+    cout << "OTHER DATA\t\tGM1:\tGM3:\tGM5:\n\n";
+    cout << "DEATH\t\t-\t" << death << "\t" << death3 << "\t" <<death5 << endl;
+    cout << "SHOOTED AMMO\t-\t" << shootingTimes << "\t" << shootingTimes3 << "\t" << shootingTimes5 << endl;
+    cout << "CONTROL: D\t-\t" << moveDtimes << "\t" << moveDtimes3 << "\t" << moveDtimes5 << endl;
+    cout << "CONTROL: A\t-\t" << moveAtimes << "\t" << moveAtimes3 << "\t" << moveAtimes5 << endl;
+    cout << "CONTROL: S\t-\t" << moveStimes << "\t" << moveStimes3 << "\t" << moveStimes5 << endl;
     cout << "PRESS X TO CONTINUE, PRESS C TO CLEAR STATISTICS\n";
     if(kbhit()){
     switch(_getch()){
@@ -1344,6 +1362,14 @@ void tankGameStructure::statistics(){
         moveAtimes = 0;
         moveDtimes = 0;
         moveStimes = 0;
+
+        highscore3 = 0;
+        recentScore3 = 0;
+        death3 = 0;
+        shootingTimes3 = 0;
+        moveAtimes3 = 0;
+        moveStimes3 = 0;
+        moveDtimes3 = 0;
 
         highscore5 = 0;
         recentScore5 = 0;

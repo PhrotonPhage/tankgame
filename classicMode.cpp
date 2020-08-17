@@ -11,6 +11,12 @@ using namespace std;
 tankgamemain tankgamemainClassicGameObject;
 tankGameStructure tankGameStructureClassicGameObject;
 
+static int moveAtimes03;
+static int moveDtimes03;
+static int moveStimes03;
+static int shootingTimes03;
+static int death03;
+
 int dummy;
 static int clearScreen = 0;
 
@@ -158,6 +164,9 @@ namespace classicGameResultCustom{
     int resultBlock6_7;
 }
 
+static int recentScore03 = classicGame::recentScore3;
+static int highscore03 = classicGame::highscore3;
+
 void classicMode::difficulty(){
     system("cls");
     cout << "GAMEMODE 3: CLASSIC MODE\n\n";
@@ -197,6 +206,10 @@ void classicMode::difficulty(){
         }
     }
     difficulty();
+}
+
+void classicMode::classicGameVariablePass(){
+    tankGameStructureClassicGameObject.gamemode3Stats(death03,shootingTimes03, moveAtimes03, moveDtimes03, moveStimes03, recentScore03, highscore03);
 }
 
 void classicMode::custom(){
@@ -596,6 +609,8 @@ void classicMode::mainGame(){
 
     if(classicGame::score>classicGame::highscore3){
         classicGame::highscore3=classicGame::score;
+        highscore03 = classicGame::highscore3;
+        tankGameStructureClassicGameObject.gamemode3Stats(death03,shootingTimes03, moveAtimes03, moveDtimes03, moveStimes03, recentScore03, highscore03);
     }
     if(classicGame::difficulty!=5){
         if(classicGame::ammunition<0){
@@ -3579,8 +3594,12 @@ void classicMode::mainGame(){
             }
             if(classicGame::difficulty!=5){
                 classicGame::ammunition--;
+                shootingTimes03++;
+                tankGameStructureClassicGameObject.gamemode3Stats(death03,shootingTimes03, moveAtimes03, moveDtimes03, moveStimes03, recentScore03, highscore03);
             }else{
                 classicGameCustom::ammunition--;
+                shootingTimes03++;
+                tankGameStructureClassicGameObject.gamemode3Stats(death03,shootingTimes03, moveAtimes03, moveDtimes03, moveStimes03, recentScore03, highscore03);
             }
 
             break;
@@ -3588,6 +3607,8 @@ void classicMode::mainGame(){
             if(classicGame::scopeInt!=1){
               classicGame::movement--;
               classicGame::score--;
+              moveAtimes03++;
+              tankGameStructureClassicGameObject.gamemode3Stats(death03,shootingTimes03, moveAtimes03, moveDtimes03, moveStimes03, recentScore03, highscore03);
             }
             while(classicGame::movement<1){
                 classicGame::movement=1;
@@ -3597,6 +3618,8 @@ void classicMode::mainGame(){
             if(classicGame::scopeInt!=1){
                classicGame::movement++;
                classicGame::score--;
+               moveDtimes03++;
+               tankGameStructureClassicGameObject.gamemode3Stats(death03,shootingTimes03, moveAtimes03, moveDtimes03, moveStimes03, recentScore03, highscore03);
             }
             while(classicGame::movement>20){
                 classicGame::movement=20;
@@ -3604,6 +3627,8 @@ void classicMode::mainGame(){
             break;
         case 'S':
             classicGame::scopeInt = 1;
+            moveStimes03++;
+            tankGameStructureClassicGameObject.gamemode3Stats(death03,shootingTimes03, moveAtimes03, moveDtimes03, moveStimes03, recentScore03, highscore03);
             break;
         case 'E':
             if(classicGame::difficulty==1){
@@ -3689,7 +3714,11 @@ void classicMode::mainGame(){
 void classicMode::gameover(){
     system("cls");
     Beep(500,1000);
+    death03++;
+    tankGameStructureClassicGameObject.gamemode3Stats(death03,shootingTimes03, moveAtimes03, moveDtimes03, moveStimes03, recentScore03, highscore03);
     classicGame::recentScore3 = classicGame::highscore3;
+    recentScore03 = classicGame::recentScore3;
+    tankGameStructureClassicGameObject.gamemode3Stats(death03,shootingTimes03, moveAtimes03, moveDtimes03, moveStimes03, recentScore03, highscore03);
     cout<<"GAME OVER!\n";
     cout<<"--------------------\n";
     cout<<"0 - QUIT 1 - TRY AGAIN\n";
@@ -3722,6 +3751,8 @@ void classicMode::gameover(){
 void classicMode::restart(){
     system("cls");
     cout<<"\tYOU FAILED THE GAME\n";
+    death03++;
+    tankGameStructureClassicGameObject.gamemode3Stats(death03,shootingTimes03, moveAtimes03, moveDtimes03, moveStimes03, recentScore03, highscore03);
     Beep(500,500);
     if(classicGame::difficulty!=5){
         classicGame::healthPoint--;

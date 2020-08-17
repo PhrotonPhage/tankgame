@@ -8,6 +8,7 @@ class classicMode
 {
     public:
     void difficulty();
+    void classicGameVariablePass();
     void custom();
     void mainGame();
     void gameover();
