@@ -25,7 +25,7 @@ Plans:
 
 Note: Custom mode has been scrapped on 0.3.0 and will be released on version 0.4.0 due to slow development of 0.3.0
 
-v0.3.0.10 Alpha build - August 20, 2020
+v0.3.0.10 Alpha build 1204 - August 20, 2020
 -Added variables and functions to work with statistics recording for classic mode
 -Removed "COMING SOON" in statistics page, classic mode
 -Added statistics for Gamemode 3, classic mode
