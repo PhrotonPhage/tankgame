@@ -20,16 +20,17 @@ Plans:
 !=-1 Score per movement on classic mode
 '=Increased ammunition consuming on harder difficulty, classic mode
 '=Ability to buy health
-'=Different score per difficulty, classic mode
 '=Add custom difficulty for classic mode
 (!=High Priority, '-Medium Priority, -Low Priority)
 
 Note: Custom mode has been scrapped on 0.3.0 and will be released on version 0.4.0 due to slow development of 0.3.0
 
-v0.3.0.10 Alpha build - August , 2020
+v0.3.0.10 Alpha build - August 20, 2020
 -Added variables and functions to work with statistics recording for classic mode
 -Removed "COMING SOON" in statistics page, classic mode
 -Added statistics for Gamemode 3, classic mode
+-Added the ability to buy health on classic mode
+-Temporarily removed custom mode in classic mode. To be continued on 0.4.0
 
 Older Versions:
 v0.0.0 - May 17, 2020

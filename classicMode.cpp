@@ -175,7 +175,7 @@ void classicMode::difficulty(){
     cout << "2 - NORMAL\n";
     cout << "3 - HARD\n";
     cout << "4 - VERY HARD\n";
-    cout << "5 - CUSTOM\n\n";
+    //cout << "5 - CUSTOM\n\n"; //@note version 0.4.0
     cout << "0 - BACK\n";
     if(kbhit()){
         switch(_getch()){
@@ -3630,6 +3630,22 @@ void classicMode::mainGame(){
             moveStimes03++;
             tankGameStructureClassicGameObject.gamemode3Stats(death03,shootingTimes03, moveAtimes03, moveDtimes03, moveStimes03, recentScore03, highscore03);
             break;
+        case 'Q':
+            cout << "BUY HEALTH: -300 SCORES + 1 HEALTH E - BUY Q - CANCEL\n";
+            switch(_getch()){
+            case 'E':
+                classicGame::score -= 500;
+                if(classicGame::difficulty!=5){
+                    classicGame::healthPoint++
+                    ;
+                }else{
+                    classicGameCustom::healthPoint++; //@note On 0.4.0, requires custom healthPoint and price
+                }
+                break;
+            case 'Q':
+                mainGame();
+                break;
+            }
         case 'E':
             if(classicGame::difficulty==1){
                 classicGameBlock::result1 = rand() % classicGameBlock::amplifier1;
