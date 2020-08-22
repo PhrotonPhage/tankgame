@@ -131,3 +131,26 @@ void helpPage::minimalGame(){
     }
     minimalGame();
 }
+
+void helpPage::classicGame(){
+    system("cls");
+    cout << "HELP > CLASSIC GAME\n\n";
+    cout << "CLASSIC GAME:\n\n";
+    cout << "CLASSIC GAME IS TECHNICALLY NOT A CLASSIC GAME. IT WAS\n";
+    cout << "SUPPOSED TO WORK LIKE SHOOTING GAMES IN A TETRIS DEVICE\n";
+    cout << "DUE TO DEVELOPER'S LIMITED AMOUNT OF TIME, THIS HAS BEEN\n";
+    cout << "SPLIT INTO 3 UPDATES: 0.3.0, 0.4.0 AND 1.0.0\n";
+    cout << "W - SHOOT A - LEFT, D - RIGHT S - SCOPE\n";
+    cout << "Q - BUY HEALTH Z - PAUSE X - EXIT E - UPDATE BLOCKS\n";
+    cout << "ICONS:\n";
+    cout << "I - BLOCKS M - TANK . - BULLET\n";
+    cout << "PER MOVEMENT WILL DECREASE 1 SCORE\n";
+    cout << "BLOCKS UPDATE IN SPEFICIED VALUE\n\n";
+    cout << "X - BACK";
+    if(kbhit()){
+        switch(_getch()){
+
+        }
+    }
+    classicGame();
+}

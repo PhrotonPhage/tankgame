@@ -25,12 +25,8 @@ Plans:
 
 Note: Custom mode has been scrapped on 0.3.0 and will be released on version 0.4.0 due to slow development of 0.3.0
 
-v0.3.0.10 Alpha build 1204 - August 20, 2020
--Added variables and functions to work with statistics recording for classic mode
--Removed "COMING SOON" in statistics page, classic mode
--Added statistics for Gamemode 3, classic mode
--Added the ability to buy health on classic mode
--Temporarily removed custom mode in classic mode. To be continued on 0.4.0
+v0.3.0-rc.1 Alpha build - August , 2020
+-Added help page for classic mode
 
 Older Versions:
 v0.0.0 - May 17, 2020
@@ -556,3 +552,9 @@ v0.3.0.9 Alpha build 1197 - August 15, 2020
 -Added value limit in movement value
 -Can now customize block results value (block 1 value 1-7)
 -Score will now decrease by 1 per tank movement on classic mode
+v0.3.0.10 Alpha build 1204 - August 20, 2020
+-Added variables and functions to work with statistics recording for classic mode
+-Removed "COMING SOON" in statistics page, classic mode
+-Added statistics for Gamemode 3, classic mode
+-Added the ability to buy health on classic mode
+-Temporarily removed custom mode in classic mode. To be continued on 0.4.0

@@ -9,6 +9,7 @@ class helpPage
         void changelogs();
         void shootingGame();
         void minimalGame();
+        void classicGame();
     protected:
 
     private:
