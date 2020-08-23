@@ -19,7 +19,7 @@ void helpPage::helpPageMain()
     system("cls");
     cout << "HELP\n\n";
     cout << "TIP: ALWAYS CAPS LOCK\n";
-    cout << "1 - SHOOTING\n2 - INVASION (COMING SOON)\n3 - CLASSIC (COMING SOON)\n4 - CHAOTIC (COMING SOON)\n5 - MINIMAL\n\n";
+    cout << "1 - SHOOTING\n2 - INVASION (COMING SOON)\n3 - CLASSIC\n4 - CHAOTIC (COMING SOON)\n5 - MINIMAL\n\n";
     cout << "6 - CHANGELOGS\n\n0 - BACK\n";
     if(kbhit()){
         switch(_getch()){
@@ -49,12 +49,10 @@ void helpPage::changelogs(){
     cout << "HELP > CHANGELOGS\n\n";
     cout << "CHANGELOGS:\n\n";
     cout << "WHAT'S NEW IN VERSION " << VERSION_MAJOR << "." << VERSION_MINOR << "." << VERSION_REVISION << VERBUILD << " " << VERSION << " BUILD " << BUILD  << "?\n";
-    cout << "RELEASE 0.2.0:\n";
-    cout << "-ADDED MINIMAL GAME MODE. SIMILAR TO SHOOTING BUT SIMPLIER\n";
-    cout << "-ADDED BEEP SOUNDS. (GAMEOVER, PROGRAM START, ENEMY HIT)\n";
-    cout << "-ADDED RECOMMENDED SETTINGS PAGE\n";
-    cout << "-ADDED NAVIGATION TEXT IN SOME PAGES\n";
-    cout << "-MINOR CHANGES TO SHOOTING MODE\n";
+    cout << "RELEASE 0.3.0:\n";
+    cout << "-ADDED CLASSIC GAME MODE. A FAILED COPY OF SHOOTING IN TETRIS\n";
+    cout << "-ADDED GITHUB LINKS IN INFO PAGE\n";
+    cout << "-MORE INFO ADDED ON INFO PAGE\n";
     cout << "-BUG FIXES\n";
     cout << "\nFOR MORE INFO, CHECK README.TXT IN GAME FOLDER\n";
     cout << "0 - BACK\n" << endl;
@@ -149,7 +147,9 @@ void helpPage::classicGame(){
     cout << "X - BACK";
     if(kbhit()){
         switch(_getch()){
-
+        case 'X':
+            helpPageMain();
+            break;
         }
     }
     classicGame();

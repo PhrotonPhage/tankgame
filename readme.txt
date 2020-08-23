@@ -17,16 +17,16 @@ Plans:
 -Remove goto statements
 -Fix bugs
 !=Add amplifier picker on classic mode
-!=-1 Score per movement on classic mode
-'=Increased ammunition consuming on harder difficulty, classic mode
-'=Ability to buy health
 '=Add custom difficulty for classic mode
 (!=High Priority, '-Medium Priority, -Low Priority)
 
 Note: Custom mode has been scrapped on 0.3.0 and will be released on version 0.4.0 due to slow development of 0.3.0
 
-v0.3.0-rc.1 Alpha build - August , 2020
--Added help page for classic mode
+v0.3.0 Alpha build 1209 - August 23, 2020 - Classic Mode Update
+-Added classic mode. A dumbed-down and failed version of shooting games in tetris devices.
+-Added github links in info page
+-Added more info in info page (x86, x64, amd64)
+-Bug fixes
 
 Older Versions:
 v0.0.0 - May 17, 2020
@@ -558,3 +558,8 @@ v0.3.0.10 Alpha build 1204 - August 20, 2020
 -Added statistics for Gamemode 3, classic mode
 -Added the ability to buy health on classic mode
 -Temporarily removed custom mode in classic mode. To be continued on 0.4.0
+v0.3.0-rc.1 Alpha build 1208 - August 23, 2020
+-Added help page for classic mode
+-Removed "COMING SOON" in help page for classic mode
+-Temporarily disabled custom mode (not removed) for 0.4.0
+-Updated changelogs page

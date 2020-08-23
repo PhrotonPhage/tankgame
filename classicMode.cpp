@@ -199,10 +199,10 @@ void classicMode::difficulty(){
             classicGame::difficulty = 4;
             mainGame();
             break;
-        case '5':
-            classicGame::difficulty = 5;
-            custom();
-            break;
+        //case '5':
+        //    classicGame::difficulty = 5;
+        //    custom();
+        //    break;
         }
     }
     difficulty();
