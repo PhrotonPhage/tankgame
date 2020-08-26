@@ -22,11 +22,11 @@ Plans:
 
 Note: Custom mode has been scrapped on 0.3.0 and will be released on version 0.4.0 due to slow development of 0.3.0
 
-v0.3.0 Alpha build 1209 - August 23, 2020 - Classic Mode Update
--Added classic mode. A dumbed-down and failed version of shooting games in tetris devices.
--Added github links in info page
--Added more info in info page (x86, x64, amd64)
--Bug fixes
+v0.4.0.0 Alpha build - August , 2020
+-Can now customize block results value (block 1-4 value 1-7)
+-Re-enabled custom mode in classic game
+-Value is now shown on custom results menu (block 1)
+-Fixed bug 7th value not displaying on custom results
 
 Older Versions:
 v0.0.0 - May 17, 2020
@@ -563,3 +563,8 @@ v0.3.0-rc.1 Alpha build 1208 - August 23, 2020
 -Removed "COMING SOON" in help page for classic mode
 -Temporarily disabled custom mode (not removed) for 0.4.0
 -Updated changelogs page
+v0.3.0 Alpha build 1209 - August 23, 2020 - Classic Mode Update
+-Added classic mode. A dumbed-down and failed version of shooting games in tetris devices.
+-Added github links in info page
+-Added more info in info page (x86, x64, amd64)
+-Bug fixes

@@ -175,7 +175,7 @@ void classicMode::difficulty(){
     cout << "2 - NORMAL\n";
     cout << "3 - HARD\n";
     cout << "4 - VERY HARD\n";
-    //cout << "5 - CUSTOM\n\n"; //@note version 0.4.0
+    cout << "5 - CUSTOM\n\n";
     cout << "0 - BACK\n";
     if(kbhit()){
         switch(_getch()){
@@ -199,10 +199,10 @@ void classicMode::difficulty(){
             classicGame::difficulty = 4;
             mainGame();
             break;
-        //case '5':
-        //    classicGame::difficulty = 5;
-        //    custom();
-        //    break;
+        case '5':
+            classicGame::difficulty = 5;
+            custom();
+            break;
         }
     }
     difficulty();
@@ -301,7 +301,7 @@ void classicMode::custom(){
             cout << "RESULT OF RAND() % AMPLIFIER\n";
             cout << "DISPLAY BLOCKS AT SPECIFIED VALUE\n";
             cout << "X - BACK\n";
-            cout << "A - BLOCK RESULT 1\n";
+            cout << "A - BLOCK RESULT 1 - "<< classicGameResultCustom::resultBlock1_1 <<" " << classicGameResultCustom::resultBlock1_2 <<" "<<classicGameResultCustom::resultBlock1_3 <<" "<<classicGameResultCustom::resultBlock1_4 <<" "<<classicGameResultCustom::resultBlock1_5 <<" "<<classicGameResultCustom::resultBlock1_6 <<" "<<classicGameResultCustom::resultBlock1_7 << "\n";
             cout << "B - BLOCK RESULT 2\n";
             cout << "C - BLOCK RESULT 3\n";
             cout << "D - BLOCK RESULT 4\n";
@@ -335,6 +335,7 @@ void classicMode::custom(){
                 cout << "4 - VALUE 4 - " << classicGameResultCustom::resultBlock1_4 << endl;
                 cout << "5 - VALUE 5 - " << classicGameResultCustom::resultBlock1_5 << endl;
                 cout << "6 - VALUE 6 - " << classicGameResultCustom::resultBlock1_6 << endl;
+                cout << "7 - VALUE 7 - " << classicGameResultCustom::resultBlock1_7 << endl;
                 switch(_getch()){
                 case '1':
                     cout << ": SET VALUE TO = ";
@@ -389,6 +390,7 @@ void classicMode::custom(){
                 cout << "4 - VALUE 4 - " << classicGameResultCustom::resultBlock2_4 << endl;
                 cout << "5 - VALUE 5 - " << classicGameResultCustom::resultBlock2_5 << endl;
                 cout << "6 - VALUE 6 - " << classicGameResultCustom::resultBlock2_6 << endl;
+                cout << "7 - VALUE 7 - " << classicGameResultCustom::resultBlock2_7 << endl;
                 switch(_getch()){
                 case '1':
                     cout << ": SET VALUE TO = ";
@@ -430,7 +432,116 @@ void classicMode::custom(){
                     break;
                 }
                 break;
-
+            case 'C':
+                resultC:
+                system("cls");
+                cout << "GAMEMODE 3: CLASSIC MODE > CUSTOM > RESULTS > BLOCK RESULT 3\n\n";
+                cout << "RESULT OF RAND() % AMPLIFIER\n";
+                cout << "DISPLAY BLOCKS AT SPECIFIED VALUE\n";
+                cout << "X - BACK\n";
+                cout << "1 - VALUE 1 - " << classicGameResultCustom::resultBlock3_1 << endl;
+                cout << "2 - VALUE 2 - " << classicGameResultCustom::resultBlock3_2 << endl;
+                cout << "3 - VALUE 3 - " << classicGameResultCustom::resultBlock3_3 << endl;
+                cout << "4 - VALUE 4 - " << classicGameResultCustom::resultBlock3_4 << endl;
+                cout << "5 - VALUE 5 - " << classicGameResultCustom::resultBlock3_5 << endl;
+                cout << "6 - VALUE 6 - " << classicGameResultCustom::resultBlock3_6 << endl;
+                cout << "7 - VALUE 7 - " << classicGameResultCustom::resultBlock3_7 << endl;
+                switch(_getch()){
+                case '1':
+                    cout << ": SET VALUE TO = ";
+                    cin >> classicGameResultCustom::resultBlock3_1;
+                    goto resultC;
+                    break;
+                case '2':
+                    cout << ": SET VALUE TO = ";
+                    cin >> classicGameResultCustom::resultBlock3_2;
+                    goto resultC;
+                    break;
+                case '3':
+                    cout << ": SET VALUE TO = ";
+                    cin >> classicGameResultCustom::resultBlock3_3;
+                    goto resultC;
+                    break;
+                case '4':
+                    cout << ": SET VALUE TO = ";
+                    cin >> classicGameResultCustom::resultBlock3_4;
+                    goto resultC;
+                    break;
+                case '5':
+                    cout << ": SET VALUE TO = ";
+                    cin >> classicGameResultCustom::resultBlock3_5;
+                    goto resultC;
+                    break;
+                case '6':
+                    cout << ": SET VALUE TO = ";
+                    cin >> classicGameResultCustom::resultBlock3_6;
+                    goto resultC;
+                    break;
+                case '7':
+                    cout << ": SET VALUE TO = ";
+                    cin >> classicGameResultCustom::resultBlock3_7;
+                    goto resultC;
+                    break;
+                case 'X':
+                    goto customCase3;
+                    break;
+                }
+                break;
+            case 'D':
+                resultD:
+                system("cls");
+                cout << "GAMEMODE 3: CLASSIC MODE > CUSTOM > RESULTS > BLOCK RESULT 4\n\n";
+                cout << "RESULT OF RAND() % AMPLIFIER\n";
+                cout << "DISPLAY BLOCKS AT SPECIFIED VALUE\n";
+                cout << "X - BACK\n";
+                cout << "1 - VALUE 1 - " << classicGameResultCustom::resultBlock4_1 << endl;
+                cout << "2 - VALUE 2 - " << classicGameResultCustom::resultBlock4_2 << endl;
+                cout << "3 - VALUE 3 - " << classicGameResultCustom::resultBlock4_3 << endl;
+                cout << "4 - VALUE 4 - " << classicGameResultCustom::resultBlock4_4 << endl;
+                cout << "5 - VALUE 5 - " << classicGameResultCustom::resultBlock4_5 << endl;
+                cout << "6 - VALUE 6 - " << classicGameResultCustom::resultBlock4_6 << endl;
+                cout << "7 - VALUE 7 - " << classicGameResultCustom::resultBlock4_7 << endl;
+                switch(_getch()){
+                case '1':
+                    cout << ": SET VALUE TO = ";
+                    cin >> classicGameResultCustom::resultBlock4_1;
+                    goto resultD;
+                    break;
+                case '2':
+                    cout << ": SET VALUE TO = ";
+                    cin >> classicGameResultCustom::resultBlock4_2;
+                    goto resultD;
+                    break;
+                case '3':
+                    cout << ": SET VALUE TO = ";
+                    cin >> classicGameResultCustom::resultBlock4_3;
+                    goto resultD;
+                    break;
+                case '4':
+                    cout << ": SET VALUE TO = ";
+                    cin >> classicGameResultCustom::resultBlock4_4;
+                    goto resultD;
+                    break;
+                case '5':
+                    cout << ": SET VALUE TO = ";
+                    cin >> classicGameResultCustom::resultBlock4_5;
+                    goto resultD;
+                    break;
+                case '6':
+                    cout << ": SET VALUE TO = ";
+                    cin >> classicGameResultCustom::resultBlock4_6;
+                    goto resultD;
+                    break;
+                case '7':
+                    cout << ": SET VALUE TO = ";
+                    cin >> classicGameResultCustom::resultBlock4_7;
+                    goto resultD;
+                    break;
+                case 'X':
+                    goto customCase3;
+                    break;
+                }
+                break;
             case 'X':
                 custom();
                 break;
