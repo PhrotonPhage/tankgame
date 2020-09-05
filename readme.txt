@@ -22,8 +22,8 @@ Plans:
 
 Note: Custom mode has been scrapped on 0.3.0 and will be released on version 0.4.0 due to slow development of 0.3.0
 
-v0.4.0.0 Alpha build - August , 2020
--Can now customize block results value (block 1-6 value 1-7)
+v0.4.0.0 Alpha build 1224 - September 5, 2020
+-Can now customize block results value (block 1-7 value 1-7)
 -Re-enabled custom mode in classic game
 -Value is now shown on custom results menu (block 1-6)
 -Fixed bug 7th value not displaying on custom results
