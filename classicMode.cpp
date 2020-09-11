@@ -169,6 +169,97 @@ namespace classicGameResultCustom{
     int resultBlock7_5;
     int resultBlock7_6;
     int resultBlock7_7;
+    int resultBlock8_1;
+    int resultBlock8_2;
+    int resultBlock8_3;
+    int resultBlock8_4;
+    int resultBlock8_5;
+    int resultBlock8_6;
+    int resultBlock8_7;
+    int resultBlock9_1;
+    int resultBlock9_2;
+    int resultBlock9_3;
+    int resultBlock9_4;
+    int resultBlock9_5;
+    int resultBlock9_6;
+    int resultBlock9_7;
+    int resultBlock10_1;
+    int resultBlock10_2;
+    int resultBlock10_3;
+    int resultBlock10_4;
+    int resultBlock10_5;
+    int resultBlock10_6;
+    int resultBlock10_7;
+    int resultBlock11_1;
+    int resultBlock11_2;
+    int resultBlock11_3;
+    int resultBlock11_4;
+    int resultBlock11_5;
+    int resultBlock11_6;
+    int resultBlock11_7;
+    int resultBlock12_1;
+    int resultBlock12_2;
+    int resultBlock12_3;
+    int resultBlock12_4;
+    int resultBlock12_5;
+    int resultBlock12_6;
+    int resultBlock12_7;
+    int resultBlock13_1;
+    int resultBlock13_2;
+    int resultBlock13_3;
+    int resultBlock13_4;
+    int resultBlock13_5;
+    int resultBlock13_6;
+    int resultBlock13_7;
+    int resultBlock14_1;
+    int resultBlock14_2;
+    int resultBlock14_3;
+    int resultBlock14_4;
+    int resultBlock14_5;
+    int resultBlock14_6;
+    int resultBlock14_7;
+    int resultBlock15_1;
+    int resultBlock15_2;
+    int resultBlock15_3;
+    int resultBlock15_4;
+    int resultBlock15_5;
+    int resultBlock15_6;
+    int resultBlock15_7;
+    int resultBlock16_1;
+    int resultBlock16_2;
+    int resultBlock16_3;
+    int resultBlock16_4;
+    int resultBlock16_5;
+    int resultBlock16_6;
+    int resultBlock16_7;
+    int resultBlock17_1;
+    int resultBlock17_2;
+    int resultBlock17_3;
+    int resultBlock17_4;
+    int resultBlock17_5;
+    int resultBlock17_6;
+    int resultBlock17_7;
+    int resultBlock18_1;
+    int resultBlock18_2;
+    int resultBlock18_3;
+    int resultBlock18_4;
+    int resultBlock18_5;
+    int resultBlock18_6;
+    int resultBlock18_7;
+    int resultBlock19_1;
+    int resultBlock19_2;
+    int resultBlock19_3;
+    int resultBlock19_4;
+    int resultBlock19_5;
+    int resultBlock19_6;
+    int resultBlock19_7;
+    int resultBlock20_1;
+    int resultBlock20_2;
+    int resultBlock20_3;
+    int resultBlock20_4;
+    int resultBlock20_5;
+    int resultBlock20_6;
+    int resultBlock20_7;
 }
 
 static int recentScore03 = classicGame::recentScore3;
@@ -315,8 +406,8 @@ void classicMode::custom(){
             cout << "E - BLOCK RESULT 5 - " << classicGameResultCustom::resultBlock5_1 <<" " << classicGameResultCustom::resultBlock5_2 <<" "<<classicGameResultCustom::resultBlock5_3 <<" "<<classicGameResultCustom::resultBlock5_4 <<" "<<classicGameResultCustom::resultBlock5_5 <<" "<<classicGameResultCustom::resultBlock5_6 <<" "<<classicGameResultCustom::resultBlock5_7 << "\n";
             cout << "F - BLOCK RESULT 6 - " << classicGameResultCustom::resultBlock6_1 <<" " << classicGameResultCustom::resultBlock6_2 <<" "<<classicGameResultCustom::resultBlock6_3 <<" "<<classicGameResultCustom::resultBlock6_4 <<" "<<classicGameResultCustom::resultBlock6_5 <<" "<<classicGameResultCustom::resultBlock6_6 <<" "<<classicGameResultCustom::resultBlock6_7 << "\n";
             cout << "G - BLOCK RESULT 7 - " << classicGameResultCustom::resultBlock7_1 <<" " << classicGameResultCustom::resultBlock7_2 <<" "<<classicGameResultCustom::resultBlock7_3 <<" "<<classicGameResultCustom::resultBlock7_4 <<" "<<classicGameResultCustom::resultBlock7_5 <<" "<<classicGameResultCustom::resultBlock7_6 <<" "<<classicGameResultCustom::resultBlock7_7 << "\n";
-            cout << "H - BLOCK RESULT 8\n";
-            cout << "I - BLOCK RESULT 9\n";
+            cout << "H - BLOCK RESULT 8 - " << classicGameResultCustom::resultBlock8_1 <<" " << classicGameResultCustom::resultBlock8_2 <<" "<<classicGameResultCustom::resultBlock8_3 <<" "<<classicGameResultCustom::resultBlock8_4 <<" "<<classicGameResultCustom::resultBlock8_5 <<" "<<classicGameResultCustom::resultBlock8_6 <<" "<<classicGameResultCustom::resultBlock8_7 << "\n";
+            cout << "I - BLOCK RESULT 9 - " << classicGameResultCustom::resultBlock9_1 <<" " << classicGameResultCustom::resultBlock9_2 <<" "<<classicGameResultCustom::resultBlock9_3 <<" "<<classicGameResultCustom::resultBlock9_4 <<" "<<classicGameResultCustom::resultBlock9_5 <<" "<<classicGameResultCustom::resultBlock9_6 <<" "<<classicGameResultCustom::resultBlock9_7 << "\n";
             cout << "J - BLOCK RESULT 10\n";
             cout << "K - BLOCK RESULT 11\n";
             cout << "L - BLOCK RESULT 12\n";
@@ -714,7 +805,117 @@ void classicMode::custom(){
                     break;
                 }
                 break;
-            case 'X':
+            case 'H':
+                resultH:
+                system("cls");
+                cout << "GAMEMODE 3: CLASSIC MODE > CUSTOM > RESULTS > BLOCK RESULT 8\n\n";
+                cout << "RESULT OF RAND() % AMPLIFIER\n";
+                cout << "DISPLAY BLOCKS AT SPECIFIED VALUE\n";
+                cout << "X - BACK\n";
+                cout << "1 - VALUE 1 - " << classicGameResultCustom::resultBlock8_1 << endl;
+                cout << "2 - VALUE 2 - " << classicGameResultCustom::resultBlock8_2 << endl;
+                cout << "3 - VALUE 3 - " << classicGameResultCustom::resultBlock8_3 << endl;
+                cout << "4 - VALUE 4 - " << classicGameResultCustom::resultBlock8_4 << endl;
+                cout << "5 - VALUE 5 - " << classicGameResultCustom::resultBlock8_5 << endl;
+                cout << "6 - VALUE 6 - " << classicGameResultCustom::resultBlock8_6 << endl;
+                cout << "7 - VALUE 7 - " << classicGameResultCustom::resultBlock8_7 << endl;
+                switch(_getch()){
+                case '1':
+                    cout << ": SET VALUE TO = ";
+                    cin >> classicGameResultCustom::resultBlock8_1;
+                    goto resultH;
+                    break;
+                case '2':
+                    cout << ": SET VALUE TO = ";
+                    cin >> classicGameResultCustom::resultBlock8_2;
+                    goto resultH;
+                    break;
+                case '3':
+                    cout << ": SET VALUE TO = ";
+                    cin >> classicGameResultCustom::resultBlock8_3;
+                    goto resultH;
+                    break;
+                case '4':
+                    cout << ": SET VALUE TO = ";
+                    cin >> classicGameResultCustom::resultBlock8_4;
+                    goto resultH;
+                    break;
+                case '5':
+                    cout << ": SET VALUE TO = ";
+                    cin >> classicGameResultCustom::resultBlock8_5;
+                    goto resultH;
+                    break;
+                case '6':
+                    cout << ": SET VALUE TO = ";
+                    cin >> classicGameResultCustom::resultBlock8_6;
+                    goto resultH;
+                    break;
+                case '7':
+                    cout << ": SET VALUE TO = ";
+                    cin >> classicGameResultCustom::resultBlock8_7;
+                    goto resultH;
+                    break;
+                case 'X':
+                    goto customCase3;
+                    break;
+                }
+                break;
+            case 'I':
+                resultI:
+                system("cls");
+                cout << "GAMEMODE 3: CLASSIC MODE > CUSTOM > RESULTS > BLOCK RESULT 9\n\n";
+                cout << "RESULT OF RAND() % AMPLIFIER\n";
+                cout << "DISPLAY BLOCKS AT SPECIFIED VALUE\n";
+                cout << "X - BACK\n";
+                cout << "1 - VALUE 1 - " << classicGameResultCustom::resultBlock9_1 << endl;
+                cout << "2 - VALUE 2 - " << classicGameResultCustom::resultBlock9_2 << endl;
+                cout << "3 - VALUE 3 - " << classicGameResultCustom::resultBlock9_3 << endl;
+                cout << "4 - VALUE 4 - " << classicGameResultCustom::resultBlock9_4 << endl;
+                cout << "5 - VALUE 5 - " << classicGameResultCustom::resultBlock9_5 << endl;
+                cout << "6 - VALUE 6 - " << classicGameResultCustom::resultBlock9_6 << endl;
+                cout << "7 - VALUE 7 - " << classicGameResultCustom::resultBlock9_7 << endl;
+                switch(_getch()){
+                case '1':
+                    cout << ": SET VALUE TO = ";
+                    cin >> classicGameResultCustom::resultBlock9_1;
+                    goto resultI;
+                    break;
+                case '2':
+                    cout << ": SET VALUE TO = ";
+                    cin >> classicGameResultCustom::resultBlock9_2;
+                    goto resultI;
+                    break;
+                case '3':
+                    cout << ": SET VALUE TO = ";
+                    cin >> classicGameResultCustom::resultBlock9_3;
+                    goto resultI;
+                    break;
+                case '4':
+                    cout << ": SET VALUE TO = ";
+                    cin >> classicGameResultCustom::resultBlock9_4;
+                    goto resultI;
+                    break;
+                case '5':
+                    cout << ": SET VALUE TO = ";
+                    cin >> classicGameResultCustom::resultBlock9_5;
+                    goto resultI;
+                    break;
+                case '6':
+                    cout << ": SET VALUE TO = ";
+                    cin >> classicGameResultCustom::resultBlock9_6;
+                    goto resultI;
+                    break;
+                case '7':
+                    cout << ": SET VALUE TO = ";
+                    cin >> classicGameResultCustom::resultBlock9_7;
+                    goto resultI;
+                    break;
+                case 'X':
+                    goto customCase3;
+                    break;
+                }
+                break;
+        case 'X':
                 custom();
                 break;
             }

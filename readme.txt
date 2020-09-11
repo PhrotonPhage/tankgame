@@ -14,19 +14,13 @@ Plans:
 '=Load a config file
 '-Make tanks disappear for a second once shoot
 -Open readme.txt and config file using the game
--Remove goto statements
 -Fix bugs
-!=Add amplifier picker on classic mode
 '=Add custom difficulty for classic mode
 (!=High Priority, '-Medium Priority, -Low Priority)
 
-Note: Custom mode has been scrapped on 0.3.0 and will be released on version 0.4.0 due to slow development of 0.3.0
-
-v0.4.0.0 Alpha build 1224 - September 5, 2020
--Can now customize block results value (block 1-7 value 1-7)
--Re-enabled custom mode in classic game
--Value is now shown on custom results menu (block 1-6)
--Fixed bug 7th value not displaying on custom results
+v0.4.0.1 alpha build - September , 2020
+-Added customizable numbers from blocks 8-20
+-Can now customize block results value (block 8-9 value 1-7)
 
 Older Versions:
 v0.0.0 - May 17, 2020
@@ -568,3 +562,9 @@ v0.3.0 Alpha build 1209 - August 23, 2020 - Classic Mode Update
 -Added github links in info page
 -Added more info in info page (x86, x64, amd64)
 -Bug fixes
+v0.4.0.0 Alpha build 1224 - September 5, 2020
+-Added customizable numbers from blocks 1-7
+-Can now customize block results value (block 1-7 value 1-7)
+-Re-enabled custom mode in classic game
+-Value is now shown on custom results menu (block 1-6)
+-Fixed bug 7th value not displaying on custom results
