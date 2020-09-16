@@ -20,7 +20,8 @@ Plans:
 
 v0.4.0.1 alpha build - September , 2020
 -Added customizable numbers from blocks 8-20
--Can now customize block results value (block 8-12 value 1-7)
+-Can now customize block results value (block 8-15 value 1-7)
+-Fixed block N bug redirecting to M block
 
 Older Versions:
 v0.0.0 - May 17, 2020
