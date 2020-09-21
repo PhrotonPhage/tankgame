@@ -38,6 +38,9 @@ namespace classicGame{
 
     int scopeInt;
     char scope = '|';
+
+    static char controllerA = '0';
+    static char controllerB = '1';
 }
 
 namespace classicGameUI{
@@ -4798,7 +4801,7 @@ void classicMode::mainGame(){
                 break;
             }
             break;
-            case 'X':
+        case 'X':
                 system("cls");
                 Beep(500,200);
                 cout << "ARE YOU SURE DO YOU WANT TO QUIT?" << endl;
@@ -4814,7 +4817,111 @@ void classicMode::mainGame(){
                     gameover();
                     break;
                 }
+        if (classicGame::controllerA==1){
+            switch(_getch()){
+        case 'W':
+            if(classicGame::scopeInt==1){
+                classicGame::scopeInt=0;
+            }
+            classicGame::shootPlayer = 1;
+            if(classicGame::shootPlayer>=1){
+                classicGame::shootPlayerPtr = '.';
+            }
+            if(classicGame::difficulty!=5){
+                classicGame::ammunition--;
+                shootingTimes03++;
+                tankGameStructureClassicGameObject.gamemode3Stats(death03,shootingTimes03, moveAtimes03, moveDtimes03, moveStimes03, recentScore03, highscore03);
+            }else{
+                classicGameCustom::ammunition--;
+                shootingTimes03++;
+                tankGameStructureClassicGameObject.gamemode3Stats(death03,shootingTimes03, moveAtimes03, moveDtimes03, moveStimes03, recentScore03, highscore03);
+            }
+
+            break;
+        case 'A':
+            if(classicGame::scopeInt!=1){
+              classicGame::movement--;
+              classicGame::score--;
+              moveAtimes03++;
+              tankGameStructureClassicGameObject.gamemode3Stats(death03,shootingTimes03, moveAtimes03, moveDtimes03, moveStimes03, recentScore03, highscore03);
+            }
+            while(classicGame::movement<1){
+                classicGame::movement=1;
+            }
+            break;
+        case 'D':
+            if(classicGame::scopeInt!=1){
+               classicGame::movement++;
+               classicGame::score--;
+               moveDtimes03++;
+               tankGameStructureClassicGameObject.gamemode3Stats(death03,shootingTimes03, moveAtimes03, moveDtimes03, moveStimes03, recentScore03, highscore03);
+            }
+            while(classicGame::movement>20){
+                classicGame::movement=20;
+            }
+            break;
+        case 'S':
+            classicGame::scopeInt = 1;
+            moveStimes03++;
+            tankGameStructureClassicGameObject.gamemode3Stats(death03,shootingTimes03, moveAtimes03, moveDtimes03, moveStimes03, recentScore03, highscore03);
+            break;
         }
+        }
+        if(classicGame::controllerB==1){
+            switch(_getch()){
+        case 'W':
+            if(classicGame::scopeInt==1){
+                classicGame::scopeInt=0;
+            }
+            classicGame::shootPlayer = 1;
+            if(classicGame::shootPlayer>=1){
+                classicGame::shootPlayerPtr = '.';
+            }
+            if(classicGame::difficulty!=5){
+                classicGame::ammunition--;
+                shootingTimes03++;
+                tankGameStructureClassicGameObject.gamemode3Stats(death03,shootingTimes03, moveAtimes03, moveDtimes03, moveStimes03, recentScore03, highscore03);
+            }else{
+                classicGameCustom::ammunition--;
+                shootingTimes03++;
+                tankGameStructureClassicGameObject.gamemode3Stats(death03,shootingTimes03, moveAtimes03, moveDtimes03, moveStimes03, recentScore03, highscore03);
+            }
+
+            break;
+        case 'A':
+            if(classicGame::scopeInt!=1){
+              classicGame::movement--;
+              classicGame::score--;
+              moveAtimes03++;
+              tankGameStructureClassicGameObject.gamemode3Stats(death03,shootingTimes03, moveAtimes03, moveDtimes03, moveStimes03, recentScore03, highscore03);
+            }
+            while(classicGame::movement<1){
+                classicGame::movement=1;
+            }
+            break;
+        case 'D':
+            if(classicGame::scopeInt!=1){
+               classicGame::movement++;
+               classicGame::score--;
+               moveDtimes03++;
+               tankGameStructureClassicGameObject.gamemode3Stats(death03,shootingTimes03, moveAtimes03, moveDtimes03, moveStimes03, recentScore03, highscore03);
+            }
+            while(classicGame::movement>20){
+                classicGame::movement=20;
+            }
+            break;
+        case 'S':
+            classicGame::scopeInt = 1;
+            moveStimes03++;
+            tankGameStructureClassicGameObject.gamemode3Stats(death03,shootingTimes03, moveAtimes03, moveDtimes03, moveStimes03, recentScore03, highscore03);
+            break;
+        }
+
+
+        }
+
+        }
+
     }
     mainGame();
 }

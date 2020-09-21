@@ -15,13 +15,12 @@ Plans:
 '-Make tanks disappear for a second once shoot
 -Open readme.txt and config file using the game
 -Fix bugs
-'=Add custom difficulty for classic mode
 (!=High Priority, '-Medium Priority, -Low Priority)
 
-v0.4.0.1 alpha build 1243 - September 19, 2020
--Added customizable numbers from blocks 8-20
--Can now customize block results value (block 8-20 value 1-7)
--Fixed block N bug redirecting to M block
+v0.4.0.2 alpha build - September , 2020
+-Added note on controller settings
+-Added controller variables for classic mode
+-Added unused controller switcher for classic mode
 
 Older Versions:
 v0.0.0 - May 17, 2020
@@ -569,3 +568,7 @@ v0.4.0.0 Alpha build 1224 - September 5, 2020
 -Re-enabled custom mode in classic game
 -Value is now shown on custom results menu (block 1-6)
 -Fixed bug 7th value not displaying on custom results
+v0.4.0.1 alpha build 1243 - September 19, 2020
+-Added customizable numbers from blocks 8-20
+-Can now customize block results value (block 8-20 value 1-7)
+-Fixed block N bug redirecting to M block

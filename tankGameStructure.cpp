@@ -1429,6 +1429,7 @@ void tankGameStructure::controls(){
     system("cls");
     cout << "SETTINGS > CONTROLLER SETTINGS\n\n";
     cout << "CONTROLLER SETTINGS\n\n" << endl;
+    cout << "NOTE: THIS MAY ONLY AFFECT GAMEMODE 1 & 5\n";
     cout << "X - BACK\n";
     cout << "CHOOSE CONTROLLER:\n";
     cout << controllerA << " A - ARROW CONTROLS\n";
