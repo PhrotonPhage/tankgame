@@ -17,12 +17,8 @@ Plans:
 -Fix bugs
 (!=High Priority, '-Medium Priority, -Low Priority)
 
-v0.4.0.2 alpha build 1250 - October 4, 2020
--Added note on controller settings
--Added controller variables for classic mode
--Added unused controller switcher for classic mode
--Fixed bug causing inability to access help page for classic mode
--Minor changes to classic mode help page
+v0.4.0.3 alpha build - October 2020
+-
 
 Older Versions:
 v0.0.0 - May 17, 2020
@@ -574,3 +570,9 @@ v0.4.0.1 alpha build 1243 - September 19, 2020
 -Added customizable numbers from blocks 8-20
 -Can now customize block results value (block 8-20 value 1-7)
 -Fixed block N bug redirecting to M block
+v0.4.0.2 alpha build 1250 - October 4, 2020
+-Added note on controller settings
+-Added controller variables for classic mode
+-Added unused controller switcher for classic mode
+-Fixed bug causing inability to access help page for classic mode
+-Minor changes to classic mode help page
