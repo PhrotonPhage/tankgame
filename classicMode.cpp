@@ -319,7 +319,8 @@ void classicMode::custom(){
     cout << "1 - VARIABLES\n";
     cout << "2 - AMPLIFIER - " << classicGameCustom::amplifier << endl;
     cout << "3 - RESULTS\n";
-    cout << "4 - CLSVALUE - "<< classicGameCustom::clearScreen <<"\n\n";
+    cout << "4 - CLSVALUE - "<< classicGameCustom::clearScreen <<"\n";
+    cout << "5 - AMMOTEMP - "<< classicGameCustom::tempAmmunition << "\n\n";
     cout << "S - SAVE\n";
     cout << "Z - PLAY\n";
     cout << "X - BACK\n";
@@ -1532,6 +1533,7 @@ void classicMode::custom(){
             system("cls");
             cout << "GAMEMODE 3: CLASSIC MODE > CUSTOM > CLSVALUE\n\n";
             cout << "CLSVALUE = NORMAL: 25 TYPE: INTEGER\n";
+            cout << "PER CLSVALUE REACH " << classicGameCustom::clearScreen << " UPDATE SCREEN" << endl;
             cout << "PER INCREMENT TO VALUE " << classicGameCustom::clearScreen << endl;
             cout << "PRESS X TO GO BACK\n";
             cout << "PRESS C TO SET VALUE\n";
@@ -1539,6 +1541,23 @@ void classicMode::custom(){
             case 'C':
                 cout << ": SET VALUE TO = ";
                 cin >> classicGameCustom::clearScreen;
+            case 'X':
+                custom();
+                break;
+            }
+            break;
+        case '5':
+            system("cls");
+            cout << "GAMEMODE 3: CLASSIC MODE > CUSTOM > AMMOTEMP\n\n";
+            cout << "AMMOTEMP = TEMPORARY AMMO FIXED VALUE\n";
+            cout << "SYNC AMMO VALUE PER AMMO SHOOT\n";
+            cout << "CURRENT VALUE = " << classicGameCustom::tempAmmunition << endl;
+            cout << "PRESS X TO GO BACK\n";
+            cout << "PRESS A TO SET VALUE (NOT RECOMMENDED)\n";
+            switch(_getch()){
+            case 'A':
+                cout << ": SET VALUE TO = ";
+                cin >> classicGameCustom::tempAmmunition;
             case 'X':
                 custom();
                 break;

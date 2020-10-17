@@ -279,7 +279,7 @@
 1598085622 c:\users\cpasc\documents\github\tankgame\helppage.h
 	"tankgamemain.h"
 
-1602408321 c:\users\cpasc\documents\github\tankgame\tankgamemain.h
+1602916044 c:\users\cpasc\documents\github\tankgame\tankgamemain.h
 	"tankGameStructure.h"
 	"helpPage.h"
 	"minimalGame.h"
@@ -316,7 +316,7 @@
 	<algorithm>
 	<thread>
 
-1600672762 source:c:\users\cpasc\documents\github\tankgame\tankgamemain.cpp
+1602408320 source:c:\users\cpasc\documents\github\tankgame\tankgamemain.cpp
 	"tankgamemain.h"
 	<iostream>
 	<string>

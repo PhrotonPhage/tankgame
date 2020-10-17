@@ -17,8 +17,10 @@ Plans:
 -Fix bugs
 (!=High Priority, '-Medium Priority, -Low Priority)
 
-v0.4.0.3 alpha build - October 2020
--
+v0.4.0.3 alpha build 1254 - October 2020
+-Added more info on clsvalue on custom game mode 3
+-Added AMMOTEMP for custom mode
+-AMMOTEMP can be accessed by pressing "5"
 
 Older Versions:
 v0.0.0 - May 17, 2020
