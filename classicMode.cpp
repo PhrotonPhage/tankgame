@@ -357,7 +357,7 @@ void classicMode::custom(){
             case 'H':
                 cout << ": SET VALUE TO = ";
                 cin >> classicGameCustom::healthPoint;
-                goto customCase1;
+                goto customCase1; //goto statements are discouraged. they're considered as a part of spaghetti coding (bad at coding)
                 break;
             case 'M':
                 customCase1m:

@@ -1563,7 +1563,7 @@ void tankGameStructure::recommendedSettings(){
     recommendedSettings();
 }
 
-void tankGameStructure::saveNow(){
+void tankGameStructure::saveNow(){ //i'm too idiotic & delusional to understand
     system("cls");
             ofstream("config.txt");
             file.open("config.txt");

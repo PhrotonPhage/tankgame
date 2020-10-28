@@ -17,10 +17,7 @@ Plans:
 -Fix bugs
 (!=High Priority, '-Medium Priority, -Low Priority)
 
-v0.4.0.3 alpha build 1254 - October 17 2020
--Added more info on clsvalue on custom game mode 3
--Added AMMOTEMP for custom mode
--AMMOTEMP can be accessed by pressing "5"
+v0.4.0.4 alpha build - October 2020
 
 Older Versions:
 v0.0.0 - May 17, 2020
@@ -578,3 +575,7 @@ v0.4.0.2 alpha build 1250 - October 4, 2020
 -Added unused controller switcher for classic mode
 -Fixed bug causing inability to access help page for classic mode
 -Minor changes to classic mode help page
+v0.4.0.3 alpha build 1254 - October 17, 2020
+-Added more info on clsvalue on custom game mode 3
+-Added AMMOTEMP for custom mode
+-AMMOTEMP can be accessed by pressing "5"
