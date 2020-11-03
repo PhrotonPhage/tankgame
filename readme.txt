@@ -17,7 +17,9 @@ Plans:
 -Fix bugs
 (!=High Priority, '-Medium Priority, -Low Priority)
 
-v0.4.0.4 alpha build - October 2020
+v0.4.0.4 alpha build - November 2020
+-Added attempt message when accessing AMMOTEMP on custom mode
+-Added unused "RESET" on custom mode
 
 Older Versions:
 v0.0.0 - May 17, 2020

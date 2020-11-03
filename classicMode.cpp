@@ -322,6 +322,7 @@ void classicMode::custom(){
     cout << "4 - CLSVALUE - "<< classicGameCustom::clearScreen <<"\n";
     cout << "5 - AMMOTEMP - "<< classicGameCustom::tempAmmunition << "\n\n";
     cout << "S - SAVE\n";
+    cout << "R - RESET\n";
     cout << "Z - PLAY\n";
     cout << "X - BACK\n";
     if(kbhit()){
@@ -1547,6 +1548,7 @@ void classicMode::custom(){
             }
             break;
         case '5':
+            case5caseN:
             system("cls");
             cout << "GAMEMODE 3: CLASSIC MODE > CUSTOM > AMMOTEMP\n\n";
             cout << "AMMOTEMP = TEMPORARY AMMO FIXED VALUE\n";
@@ -1556,8 +1558,17 @@ void classicMode::custom(){
             cout << "PRESS A TO SET VALUE (NOT RECOMMENDED)\n";
             switch(_getch()){
             case 'A':
-                cout << ": SET VALUE TO = ";
-                cin >> classicGameCustom::tempAmmunition;
+                cout << "WARNING: SETTING AMMOTEMP CAN MAKE YOUR GAME UNSTABLE\n";
+                cout << "CONTINUE? Y - YES N -NO\n";
+                switch(_getch()){
+                case 'Y':
+                    cout << ": SET VALUE TO = ";
+                    cin >> classicGameCustom::tempAmmunition;
+                    break;
+                case 'N':
+                    goto case5caseN;
+                    break;
+                }
             case 'X':
                 custom();
                 break;
@@ -1565,6 +1576,10 @@ void classicMode::custom(){
             break;
         case 'X':
             difficulty();
+            break;
+        case 'R':
+            cout << "COMING SOON" << endl;
+            custom();
             break;
         case 'Z':
             mainGame();
