@@ -17,9 +17,17 @@ Plans:
 -Fix bugs
 (!=High Priority, '-Medium Priority, -Low Priority)
 
-v0.4.0.4 alpha build 1260 - November 17, 2020
--Added attempt message when accessing AMMOTEMP on custom mode
--Added unused "RESET" on custom mode
+v0.4.0.5 Alpha build 1269 - December 25, 2020
+!The development was slower compared to other versions due to personal issues
+-Input less than 0 will now show error 05 in custom movement variable
+-Invalid input written in custom movement will now clear the screen
+-Added "COMING SOON" text when pressing save on custom mode, save button is still unused
+-Reset button on custom mode now resets variables (values on 1-variables)
+-Added unused "DEFAULT" button on custom mode
+-Reset button on custom mode now resets amplifier (value on 2-amplifier)
+-Reset button on custom mode now resets clearscreen (value on 4-clsvalue)
+-Reset button on custom mode now resets ammo cache (value on 5-ammotemp)
+-Doesn't clear 3-results values yet
 
 Older Versions:
 v0.0.0 - May 17, 2020
@@ -581,3 +589,6 @@ v0.4.0.3 alpha build 1254 - October 17, 2020
 -Added more info on clsvalue on custom game mode 3
 -Added AMMOTEMP for custom mode
 -AMMOTEMP can be accessed by pressing "5"
+v0.4.0.4 alpha build 1260 - November 17, 2020
+-Added attempt message when accessing AMMOTEMP on custom mode
+-Added unused "RESET" on custom mode

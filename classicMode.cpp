@@ -323,6 +323,7 @@ void classicMode::custom(){
     cout << "5 - AMMOTEMP - "<< classicGameCustom::tempAmmunition << "\n\n";
     cout << "S - SAVE\n";
     cout << "R - RESET\n";
+    cout << "D - DEFAULTS\n\n";
     cout << "Z - PLAY\n";
     cout << "X - BACK\n";
     if(kbhit()){
@@ -366,16 +367,21 @@ void classicMode::custom(){
                 cout << "MOVEMENT RESET PER BACK BUTTON\n";
                 cout << ": SET VALUE TO = ";
                 cin >> classicGame::movement;
-                if(classicGame::movement>20||classicGame::movement<0){
+                if(classicGame::movement>20){
+                    system("cls");
                     cout << "ERROR 04: TOO MANY ARGUMENTS GIVEN\n";
+                    goto customCase1m;
+                }if(classicGame::movement<0){
+                    system("cls");
+                    cout << "ERROR 05: NO ARGUMENTS GIVEN\n";
                     goto customCase1m;
                 }
                 goto customCase1;
                 break;
-            case 'X':
-                classicGame::movement = 10;
-                custom();
-                break;
+            //case 'X':
+                //classicGame::movement = 10;
+                //custom();
+                //break;
             }
             break;
         case '2':
@@ -1574,11 +1580,33 @@ void classicMode::custom(){
                 break;
             }
             break;
+        case 'S':
+            cout << "COMING SOON" << endl;
+            custom();
+            break;
         case 'X':
+            classicGame::movement = 10;
             difficulty();
             break;
         case 'R':
-            cout << "COMING SOON" << endl;
+            cout << "RESETTING..." << endl;
+            //1
+            classicGameCustom::score = 0;
+            classicGameCustom::ammunition = 0;
+            classicGameCustom::rewardAmmunition = 0;
+            classicGameCustom::healthPoint = 0;
+            classicGame::movement = 0;
+
+            //2
+            classicGameCustom::amplifier = 0;
+
+            //3
+
+            //4
+            classicGameCustom::clearScreen = 0;
+
+            //5
+            classicGameCustom::tempAmmunition = 0;
             custom();
             break;
         case 'Z':
