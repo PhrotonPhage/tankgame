@@ -27,7 +27,7 @@ v0.4.0.5 Alpha build 1269 - December 25, 2020
 -Reset button on custom mode now resets amplifier (value on 2-amplifier)
 -Reset button on custom mode now resets clearscreen (value on 4-clsvalue)
 -Reset button on custom mode now resets ammo cache (value on 5-ammotemp)
--Doesn't clear 3-results values yet
+-Doesn't clear values on "3-results" yet
 
 Older Versions:
 v0.0.0 - May 17, 2020
