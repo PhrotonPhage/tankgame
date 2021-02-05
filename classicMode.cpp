@@ -1601,9 +1601,331 @@ void classicMode::custom(){
             classicGameCustom::amplifier = 0;
 
             //3
+            classicGameResultCustom::resultBlock1_1 = 0;
+            classicGameResultCustom::resultBlock1_2 = 0;
+            classicGameResultCustom::resultBlock1_3 = 0;
+            classicGameResultCustom::resultBlock1_4 = 0;
+            classicGameResultCustom::resultBlock1_5 = 0;
+            classicGameResultCustom::resultBlock1_6 = 0;
+            classicGameResultCustom::resultBlock1_7 = 0;
 
+            classicGameResultCustom::resultBlock2_1 = 0;
+            classicGameResultCustom::resultBlock2_2 = 0;
+            classicGameResultCustom::resultBlock2_3 = 0;
+            classicGameResultCustom::resultBlock2_4 = 0;
+            classicGameResultCustom::resultBlock2_5 = 0;
+            classicGameResultCustom::resultBlock2_6 = 0;
+            classicGameResultCustom::resultBlock2_7 = 0;
+
+            classicGameResultCustom::resultBlock3_1 = 0;
+            classicGameResultCustom::resultBlock3_2 = 0;
+            classicGameResultCustom::resultBlock3_3 = 0;
+            classicGameResultCustom::resultBlock3_4 = 0;
+            classicGameResultCustom::resultBlock3_5 = 0;
+            classicGameResultCustom::resultBlock3_6 = 0;
+            classicGameResultCustom::resultBlock3_7 = 0;
+
+            classicGameResultCustom::resultBlock4_1 = 0;
+            classicGameResultCustom::resultBlock4_2 = 0;
+            classicGameResultCustom::resultBlock4_3 = 0;
+            classicGameResultCustom::resultBlock4_4 = 0;
+            classicGameResultCustom::resultBlock4_5 = 0;
+            classicGameResultCustom::resultBlock4_6 = 0;
+            classicGameResultCustom::resultBlock4_7 = 0;
+
+            classicGameResultCustom::resultBlock5_1 = 0;
+            classicGameResultCustom::resultBlock5_2 = 0;
+            classicGameResultCustom::resultBlock5_3 = 0;
+            classicGameResultCustom::resultBlock5_4 = 0;
+            classicGameResultCustom::resultBlock5_5 = 0;
+            classicGameResultCustom::resultBlock5_6 = 0;
+            classicGameResultCustom::resultBlock5_7 = 0;
+            classicGameResultCustom::resultBlock6_1 = 0;
+            classicGameResultCustom::resultBlock6_2 = 0;
+            classicGameResultCustom::resultBlock6_3 = 0;
+            classicGameResultCustom::resultBlock6_4 = 0;
+            classicGameResultCustom::resultBlock6_5 = 0;
+            classicGameResultCustom::resultBlock6_6 = 0;
+            classicGameResultCustom::resultBlock6_7 = 0;
+            classicGameResultCustom::resultBlock7_1 = 0;
+            classicGameResultCustom::resultBlock7_2 = 0;
+            classicGameResultCustom::resultBlock7_3 = 0;
+            classicGameResultCustom::resultBlock7_4 = 0;
+            classicGameResultCustom::resultBlock7_5 = 0;
+            classicGameResultCustom::resultBlock7_6 = 0;
+            classicGameResultCustom::resultBlock7_7 = 0;
+            classicGameResultCustom::resultBlock8_1 = 0;
+            classicGameResultCustom::resultBlock8_2 = 0;
+            classicGameResultCustom::resultBlock8_3 = 0;
+            classicGameResultCustom::resultBlock8_4 = 0;
+            classicGameResultCustom::resultBlock8_5 = 0;
+            classicGameResultCustom::resultBlock8_6 = 0;
+            classicGameResultCustom::resultBlock8_7 = 0;
+            classicGameResultCustom::resultBlock9_1 = 0;
+            classicGameResultCustom::resultBlock9_2 = 0;
+            classicGameResultCustom::resultBlock9_3 = 0;
+            classicGameResultCustom::resultBlock9_4 = 0;
+            classicGameResultCustom::resultBlock9_5 = 0;
+            classicGameResultCustom::resultBlock9_6 = 0;
+            classicGameResultCustom::resultBlock9_7 = 0;
+            classicGameResultCustom::resultBlock10_1 = 0;
+            classicGameResultCustom::resultBlock10_2 = 0;
+            classicGameResultCustom::resultBlock10_3 = 0;
+            classicGameResultCustom::resultBlock10_4 = 0;
+            classicGameResultCustom::resultBlock10_5 = 0;
+            classicGameResultCustom::resultBlock10_6 = 0;
+            classicGameResultCustom::resultBlock10_7 = 0;
+            classicGameResultCustom::resultBlock11_1 = 0;
+            classicGameResultCustom::resultBlock11_2 = 0;
+            classicGameResultCustom::resultBlock11_3 = 0;
+            classicGameResultCustom::resultBlock11_4 = 0;
+            classicGameResultCustom::resultBlock11_5 = 0;
+            classicGameResultCustom::resultBlock11_6 = 0;
+            classicGameResultCustom::resultBlock11_7 = 0;
+            classicGameResultCustom::resultBlock12_1 = 0;
+            classicGameResultCustom::resultBlock12_2 = 0;
+            classicGameResultCustom::resultBlock12_3 = 0;
+            classicGameResultCustom::resultBlock12_4 = 0;
+            classicGameResultCustom::resultBlock12_5 = 0;
+            classicGameResultCustom::resultBlock12_6 = 0;
+            classicGameResultCustom::resultBlock12_7 = 0;
+            classicGameResultCustom::resultBlock13_1 = 0;
+            classicGameResultCustom::resultBlock13_2 = 0;
+            classicGameResultCustom::resultBlock13_3 = 0;
+            classicGameResultCustom::resultBlock13_4 = 0;
+            classicGameResultCustom::resultBlock13_5 = 0;
+            classicGameResultCustom::resultBlock13_6 = 0;
+            classicGameResultCustom::resultBlock13_7 = 0;
+            classicGameResultCustom::resultBlock14_1 = 0;
+            classicGameResultCustom::resultBlock14_2 = 0;
+            classicGameResultCustom::resultBlock14_3 = 0;
+            classicGameResultCustom::resultBlock14_4 = 0;
+            classicGameResultCustom::resultBlock14_5 = 0;
+            classicGameResultCustom::resultBlock14_6 = 0;
+            classicGameResultCustom::resultBlock14_7 = 0;
+            classicGameResultCustom::resultBlock15_1 = 0;
+            classicGameResultCustom::resultBlock15_2 = 0;
+            classicGameResultCustom::resultBlock15_3 = 0;
+            classicGameResultCustom::resultBlock15_4 = 0;
+            classicGameResultCustom::resultBlock15_5 = 0;
+            classicGameResultCustom::resultBlock15_6 = 0;
+            classicGameResultCustom::resultBlock15_7 = 0;
+            classicGameResultCustom::resultBlock16_1 = 0;
+            classicGameResultCustom::resultBlock16_2 = 0;
+            classicGameResultCustom::resultBlock16_3 = 0;
+            classicGameResultCustom::resultBlock16_4 = 0;
+            classicGameResultCustom::resultBlock16_5 = 0;
+            classicGameResultCustom::resultBlock16_6 = 0;
+            classicGameResultCustom::resultBlock16_7 = 0;
+            classicGameResultCustom::resultBlock17_1 = 0;
+            classicGameResultCustom::resultBlock17_2 = 0;
+            classicGameResultCustom::resultBlock17_3 = 0;
+            classicGameResultCustom::resultBlock17_4 = 0;
+            classicGameResultCustom::resultBlock17_5 = 0;
+            classicGameResultCustom::resultBlock17_6 = 0;
+            classicGameResultCustom::resultBlock17_7 = 0;
+            classicGameResultCustom::resultBlock18_1 = 0;
+            classicGameResultCustom::resultBlock18_2 = 0;
+            classicGameResultCustom::resultBlock18_3 = 0;
+            classicGameResultCustom::resultBlock18_4 = 0;
+            classicGameResultCustom::resultBlock18_5 = 0;
+            classicGameResultCustom::resultBlock18_6 = 0;
+            classicGameResultCustom::resultBlock19_7 = 0;
+            classicGameResultCustom::resultBlock19_1 = 0;
+            classicGameResultCustom::resultBlock19_2 = 0;
+            classicGameResultCustom::resultBlock19_3 = 0;
+            classicGameResultCustom::resultBlock19_4 = 0;
+            classicGameResultCustom::resultBlock19_5 = 0;
+            classicGameResultCustom::resultBlock19_6 = 0;
+            classicGameResultCustom::resultBlock19_7 = 0;
+            classicGameResultCustom::resultBlock20_1 = 0;
+            classicGameResultCustom::resultBlock20_2 = 0;
+            classicGameResultCustom::resultBlock20_3 = 0;
+            classicGameResultCustom::resultBlock20_4 = 0;
+            classicGameResultCustom::resultBlock20_5 = 0;
+            classicGameResultCustom::resultBlock20_6 = 0;
+            classicGameResultCustom::resultBlock20_7 = 0;
             //4
             classicGameCustom::clearScreen = 0;
+
+            //5
+            classicGameCustom::tempAmmunition = 0;
+            custom();
+            break;
+        case 'D':
+            cout << "SETTING DEFAULT VALUES..." << endl;
+            //1
+            classicGameCustom::score = 10;
+            classicGameCustom::ammunition = 100;
+            classicGameCustom::rewardAmmunition = 5;
+            classicGameCustom::healthPoint = 3;
+            classicGame::movement = 10;
+
+            //2
+            classicGameCustom::amplifier = 24;
+
+            //3
+            classicGameResultCustom::resultBlock1_1 = 32;
+            classicGameResultCustom::resultBlock1_2 = 24;
+            classicGameResultCustom::resultBlock1_3 = 16;
+            classicGameResultCustom::resultBlock1_4 = 12;
+            classicGameResultCustom::resultBlock1_5 = 8;
+            classicGameResultCustom::resultBlock1_6 = 4;
+            classicGameResultCustom::resultBlock1_7 = 0;
+
+            classicGameResultCustom::resultBlock2_1 = 31;
+            classicGameResultCustom::resultBlock2_2 = 23;
+            classicGameResultCustom::resultBlock2_3 = 15;
+            classicGameResultCustom::resultBlock2_4 = 11;
+            classicGameResultCustom::resultBlock2_5 = 7;
+            classicGameResultCustom::resultBlock2_6 = 3;
+            classicGameResultCustom::resultBlock2_7 = 1;
+
+            classicGameResultCustom::resultBlock3_1 = 30;
+            classicGameResultCustom::resultBlock3_2 = 22;
+            classicGameResultCustom::resultBlock3_3 = 14;
+            classicGameResultCustom::resultBlock3_4 = 10;
+            classicGameResultCustom::resultBlock3_5 = 6;
+            classicGameResultCustom::resultBlock3_6 = 2;
+            classicGameResultCustom::resultBlock3_7 = 0;
+
+            classicGameResultCustom::resultBlock4_1 = 29;
+            classicGameResultCustom::resultBlock4_2 = 21;
+            classicGameResultCustom::resultBlock4_3 = 13;
+            classicGameResultCustom::resultBlock4_4 = 9;
+            classicGameResultCustom::resultBlock4_5 = 7;
+            classicGameResultCustom::resultBlock4_6 = 6;
+            classicGameResultCustom::resultBlock4_7 = 3;
+
+            classicGameResultCustom::resultBlock5_1 = 28;
+            classicGameResultCustom::resultBlock5_2 = 20;
+            classicGameResultCustom::resultBlock5_3 = 12;
+            classicGameResultCustom::resultBlock5_4 = 8;
+            classicGameResultCustom::resultBlock5_5 = 6;
+            classicGameResultCustom::resultBlock5_6 = 5;
+            classicGameResultCustom::resultBlock5_7 = 1;
+
+            classicGameResultCustom::resultBlock6_1 = 27;
+            classicGameResultCustom::resultBlock6_2 = 19;
+            classicGameResultCustom::resultBlock6_3 = 11;
+            classicGameResultCustom::resultBlock6_4 = 7;
+            classicGameResultCustom::resultBlock6_5 = 5;
+            classicGameResultCustom::resultBlock6_6 = 3;
+            classicGameResultCustom::resultBlock6_7 = 2;
+
+            classicGameResultCustom::resultBlock7_1 = 26;
+            classicGameResultCustom::resultBlock7_2 = 25;
+            classicGameResultCustom::resultBlock7_3 = 18;
+            classicGameResultCustom::resultBlock7_4 = 16;
+            classicGameResultCustom::resultBlock7_5 = 9;
+            classicGameResultCustom::resultBlock7_6 = 6;
+            classicGameResultCustom::resultBlock7_7 = 4;
+
+            classicGameResultCustom::resultBlock8_1 = 29;
+            classicGameResultCustom::resultBlock8_2 = 24;
+            classicGameResultCustom::resultBlock8_3 = 16;
+            classicGameResultCustom::resultBlock8_4 = 14;
+            classicGameResultCustom::resultBlock8_5 = 8;
+            classicGameResultCustom::resultBlock8_6 = 3;
+            classicGameResultCustom::resultBlock8_7 = 1;
+
+            classicGameResultCustom::resultBlock9_1 = 31;
+            classicGameResultCustom::resultBlock9_2 = 29;
+            classicGameResultCustom::resultBlock9_3 = 21;
+            classicGameResultCustom::resultBlock9_4 = 17;
+            classicGameResultCustom::resultBlock9_5 = 13;
+            classicGameResultCustom::resultBlock9_6 = 12;
+            classicGameResultCustom::resultBlock9_7 = 6;
+
+            classicGameResultCustom::resultBlock10_1 = 32;
+            classicGameResultCustom::resultBlock10_2 = 26;
+            classicGameResultCustom::resultBlock10_3 = 19;
+            classicGameResultCustom::resultBlock10_4 = 18;
+            classicGameResultCustom::resultBlock10_5 = 15;
+            classicGameResultCustom::resultBlock10_6 = 11;
+            classicGameResultCustom::resultBlock10_7 = 7;
+
+            classicGameResultCustom::resultBlock11_1 = 31;
+            classicGameResultCustom::resultBlock11_2 = 22;
+            classicGameResultCustom::resultBlock11_3 = 14;
+            classicGameResultCustom::resultBlock11_4 = 11;
+            classicGameResultCustom::resultBlock11_5 = 5;
+            classicGameResultCustom::resultBlock11_6 = 3;
+            classicGameResultCustom::resultBlock11_7 = 0;
+
+            classicGameResultCustom::resultBlock12_1 = 26;
+            classicGameResultCustom::resultBlock12_2 = 25;
+            classicGameResultCustom::resultBlock12_3 = 10;
+            classicGameResultCustom::resultBlock12_4 = 9;
+            classicGameResultCustom::resultBlock12_5 = 8;
+            classicGameResultCustom::resultBlock12_6 = 4;
+            classicGameResultCustom::resultBlock12_7 = 2;
+
+            classicGameResultCustom::resultBlock13_1 = 28;
+            classicGameResultCustom::resultBlock13_2 = 21;
+            classicGameResultCustom::resultBlock13_3 = 18;
+            classicGameResultCustom::resultBlock13_4 = 13;
+            classicGameResultCustom::resultBlock13_5 = 7;
+            classicGameResultCustom::resultBlock13_6 = 5;
+            classicGameResultCustom::resultBlock13_7 = 1;
+
+            classicGameResultCustom::resultBlock14_1 = 24;
+            classicGameResultCustom::resultBlock14_2 = 15;
+            classicGameResultCustom::resultBlock14_3 = 14;
+            classicGameResultCustom::resultBlock14_4 = 10;
+            classicGameResultCustom::resultBlock14_5 = 5;
+            classicGameResultCustom::resultBlock14_6 = 4;
+            classicGameResultCustom::resultBlock14_7 = 3;
+
+            classicGameResultCustom::resultBlock15_1 = 25;
+            classicGameResultCustom::resultBlock15_2 = 19;
+            classicGameResultCustom::resultBlock15_3 = 17;
+            classicGameResultCustom::resultBlock15_4 = 14;
+            classicGameResultCustom::resultBlock15_5 = 10;
+            classicGameResultCustom::resultBlock15_6 = 5;
+            classicGameResultCustom::resultBlock15_7 = 4;
+
+            classicGameResultCustom::resultBlock16_1 = 31;
+            classicGameResultCustom::resultBlock16_2 = 26;
+            classicGameResultCustom::resultBlock16_3 = 20;
+            classicGameResultCustom::resultBlock16_4 = 14;
+            classicGameResultCustom::resultBlock16_5 = 7;
+            classicGameResultCustom::resultBlock16_6 = 6;
+            classicGameResultCustom::resultBlock16_7 = 2;
+
+            classicGameResultCustom::resultBlock17_1 = 30;
+            classicGameResultCustom::resultBlock17_2 = 25;
+            classicGameResultCustom::resultBlock17_3 = 20;
+            classicGameResultCustom::resultBlock17_4 = 15;
+            classicGameResultCustom::resultBlock17_5 = 10;
+            classicGameResultCustom::resultBlock17_6 = 5;
+            classicGameResultCustom::resultBlock17_7 = 0;
+
+            classicGameResultCustom::resultBlock18_1 = 29;
+            classicGameResultCustom::resultBlock18_2 = 27;
+            classicGameResultCustom::resultBlock18_3 = 18;
+            classicGameResultCustom::resultBlock18_4 = 17;
+            classicGameResultCustom::resultBlock18_5 = 11;
+            classicGameResultCustom::resultBlock18_6 = 9;
+            classicGameResultCustom::resultBlock18_7 = 6;
+
+            classicGameResultCustom::resultBlock19_1 = 26;
+            classicGameResultCustom::resultBlock19_2 = 21;
+            classicGameResultCustom::resultBlock19_3 = 19;
+            classicGameResultCustom::resultBlock19_4 = 15;
+            classicGameResultCustom::resultBlock19_5 = 10;
+            classicGameResultCustom::resultBlock19_6 = 8;
+            classicGameResultCustom::resultBlock19_7 = 4;
+
+            classicGameResultCustom::resultBlock20_1 = 29;
+            classicGameResultCustom::resultBlock20_2 = 25;
+            classicGameResultCustom::resultBlock20_3 = 16;
+            classicGameResultCustom::resultBlock20_4 = 14;
+            classicGameResultCustom::resultBlock20_5 = 9;
+            classicGameResultCustom::resultBlock20_6 = 7;
+            classicGameResultCustom::resultBlock20_7 = 5;
+            //4
+            classicGameCustom::clearScreen = 50;
 
             //5
             classicGameCustom::tempAmmunition = 0;

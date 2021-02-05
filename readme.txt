@@ -17,17 +17,14 @@ Plans:
 -Fix bugs
 (!=High Priority, '-Medium Priority, -Low Priority)
 
-v0.4.0.5 Alpha build 1269 - December 25, 2020
+v0.4.0.6 Alpha build 1275 - February 5, 2021
 !The development was slower compared to other versions due to personal issues
--Input less than 0 will now show error 05 in custom movement variable
--Invalid input written in custom movement will now clear the screen
--Added "COMING SOON" text when pressing save on custom mode, save button is still unused
--Reset button on custom mode now resets variables (values on 1-variables)
--Added unused "DEFAULT" button on custom mode
--Reset button on custom mode now resets amplifier (value on 2-amplifier)
--Reset button on custom mode now resets clearscreen (value on 4-clsvalue)
--Reset button on custom mode now resets ammo cache (value on 5-ammotemp)
--Doesn't clear values on "3-results" yet
+-Reset button on custom mode now resets ammo cache (value on 3-results from block 1 to 20 with subvalues 1-7)
+-Default button on custom mode will now sets default values to variables (1-variables)
+-Default button on custom mode will now sets default values to amplifier (2-amplifier)
+-Default button on custom mode will now sets default values to results (3-results, block 1-20 with subvalues 1-7)
+-Default button on custom mode will now sets default values to clear screen (4-clsvalue)
+-Default button on custom mode will now sets default values to ammo cache (5-ammotemp)
 
 Older Versions:
 v0.0.0 - May 17, 2020
@@ -592,3 +589,14 @@ v0.4.0.3 alpha build 1254 - October 17, 2020
 v0.4.0.4 alpha build 1260 - November 17, 2020
 -Added attempt message when accessing AMMOTEMP on custom mode
 -Added unused "RESET" on custom mode
+v0.4.0.5 Alpha build 1269 - December 25, 2020
+!The development was slower compared to other versions due to personal issues & has no arrays
+-Input less than 0 will now show error 05 in custom movement variable
+-Invalid input written in custom movement will now clear the screen
+-Added "COMING SOON" text when pressing save on custom mode, save button is still unused
+-Reset button on custom mode now resets variables (values on 1-variables)
+-Added unused "DEFAULT" button on custom mode
+-Reset button on custom mode now resets amplifier (value on 2-amplifier)
+-Reset button on custom mode now resets clearscreen (value on 4-clsvalue)
+-Reset button on custom mode now resets ammo cache (value on 5-ammotemp)
+-Doesn't clear values on "3-results" yet
