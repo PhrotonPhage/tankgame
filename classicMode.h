@@ -9,7 +9,7 @@ class classicMode
     public:
     void difficulty();
     void classicGameVariablePass();
-    void custom();
+    void custom(int experimentalFeatures);
     void mainGame();
     void gameover();
     void restart();

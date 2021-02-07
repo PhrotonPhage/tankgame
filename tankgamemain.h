@@ -8,9 +8,9 @@
 #define VERSION_MAJOR 0
 #define VERSION_MINOR 4
 #define VERSION_REVISION 0
-#define VERBUILD ".6"
+#define VERBUILD ".7"
 #define VERSION "ALPHA"
-#define BUILD 1275
+#define BUILD 1286
 
 class tankgamemain
 {

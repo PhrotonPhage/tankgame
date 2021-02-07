@@ -21,6 +21,7 @@ class tankGameStructure
         void videoSettings();
         void statistics();
         void experimentalGameplay();
+        void experimentalGameplayDirect();
         void controls();
         void generalSettings();
         void saveNow();

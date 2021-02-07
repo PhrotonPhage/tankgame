@@ -17,14 +17,12 @@ Plans:
 -Fix bugs
 (!=High Priority, '-Medium Priority, -Low Priority)
 
-v0.4.0.6 Alpha build 1275 - February 5, 2021
+v0.4.0.7 Alpha build  - February , 2021
 !The development was slower compared to other versions due to personal issues
--Reset button on custom mode now resets ammo cache (value on 3-results from block 1 to 20 with subvalues 1-7)
--Default button on custom mode will now sets default values to variables (1-variables)
--Default button on custom mode will now sets default values to amplifier (2-amplifier)
--Default button on custom mode will now sets default values to results (3-results, block 1-20 with subvalues 1-7)
--Default button on custom mode will now sets default values to clear screen (4-clsvalue)
--Default button on custom mode will now sets default values to ammo cache (5-ammotemp)
+-Added Score & Highscore message on Game Over screen for gamemode 3
+-Fixed bug causing result block 18 subvalue 7 does not reset on custom mode
+-Changed line length on game over screen for gamemode 3
+-"SAVE" button on custom mode gamemode 3 will no longer appear unless experimental mode is used
 
 Older Versions:
 v0.0.0 - May 17, 2020
@@ -600,3 +598,11 @@ v0.4.0.5 Alpha build 1269 - December 25, 2020
 -Reset button on custom mode now resets clearscreen (value on 4-clsvalue)
 -Reset button on custom mode now resets ammo cache (value on 5-ammotemp)
 -Doesn't clear values on "3-results" yet
+v0.4.0.6 Alpha build 1275 - February 5, 2021
+!The development was slower compared to other versions due to personal issues
+-Reset button on custom mode now resets ammo cache (value on 3-results from block 1 to 20 with subvalues 1-7)
+-Default button on custom mode will now sets default values to variables (1-variables)
+-Default button on custom mode will now sets default values to amplifier (2-amplifier)
+-Default button on custom mode will now sets default values to results (3-results, block 1-20 with subvalues 1-7)
+-Default button on custom mode will now sets default values to clear screen (4-clsvalue)
+-Default button on custom mode will now sets default values to ammo cache (5-ammotemp)

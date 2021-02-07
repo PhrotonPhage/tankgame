@@ -17,6 +17,8 @@ static int moveStimes03;
 static int shootingTimes03;
 static int death03;
 
+static int experimentalFeatures03;
+
 int dummy;
 static int clearScreen = 0;
 
@@ -302,7 +304,7 @@ void classicMode::difficulty(){
             break;
         case '5':
             classicGame::difficulty = 5;
-            custom();
+            custom(experimentalFeatures03);
             break;
         }
     }
@@ -313,7 +315,9 @@ void classicMode::classicGameVariablePass(){
     tankGameStructureClassicGameObject.gamemode3Stats(death03,shootingTimes03, moveAtimes03, moveDtimes03, moveStimes03, recentScore03, highscore03);
 }
 
-void classicMode::custom(){
+void classicMode::custom(int experimentalFeatures){
+    experimentalFeatures03 = experimentalFeatures;
+    tankGameStructureClassicGameObject.experimentalGameplayDirect();
     system("cls");
     cout << "GAMEMODE 3: CLASSIC MODE > CUSTOM\n\n";
     cout << "1 - VARIABLES\n";
@@ -321,7 +325,9 @@ void classicMode::custom(){
     cout << "3 - RESULTS\n";
     cout << "4 - CLSVALUE - "<< classicGameCustom::clearScreen <<"\n";
     cout << "5 - AMMOTEMP - "<< classicGameCustom::tempAmmunition << "\n\n";
-    cout << "S - SAVE\n";
+    if(experimentalFeatures03==1){
+        cout << "S - SAVE\n";
+    }
     cout << "R - RESET\n";
     cout << "D - DEFAULTS\n\n";
     cout << "Z - PLAY\n";
@@ -398,7 +404,7 @@ void classicMode::custom(){
                 cout << ": SET VALUE TO = ";
                 cin >> classicGameCustom::amplifier;
             case 'X':
-                custom();
+                custom(experimentalFeatures03);
                 break;
             }
             break;
@@ -1532,7 +1538,7 @@ void classicMode::custom(){
                 }
                 break;
         case 'X':
-                custom();
+                custom(experimentalFeatures03);
                 break;
             }
             break;
@@ -1549,7 +1555,7 @@ void classicMode::custom(){
                 cout << ": SET VALUE TO = ";
                 cin >> classicGameCustom::clearScreen;
             case 'X':
-                custom();
+                custom(experimentalFeatures03);
                 break;
             }
             break;
@@ -1576,13 +1582,15 @@ void classicMode::custom(){
                     break;
                 }
             case 'X':
-                custom();
+                custom(experimentalFeatures03);
                 break;
             }
             break;
         case 'S':
-            cout << "COMING SOON" << endl;
-            custom();
+            if(experimentalFeatures03==1){
+                cout << "COMING SOON" << endl;
+            }
+            custom(experimentalFeatures03);
             break;
         case 'X':
             classicGame::movement = 10;
@@ -1730,7 +1738,7 @@ void classicMode::custom(){
             classicGameResultCustom::resultBlock18_4 = 0;
             classicGameResultCustom::resultBlock18_5 = 0;
             classicGameResultCustom::resultBlock18_6 = 0;
-            classicGameResultCustom::resultBlock19_7 = 0;
+            classicGameResultCustom::resultBlock18_7 = 0;
             classicGameResultCustom::resultBlock19_1 = 0;
             classicGameResultCustom::resultBlock19_2 = 0;
             classicGameResultCustom::resultBlock19_3 = 0;
@@ -1750,7 +1758,7 @@ void classicMode::custom(){
 
             //5
             classicGameCustom::tempAmmunition = 0;
-            custom();
+            custom(experimentalFeatures03);
             break;
         case 'D':
             cout << "SETTING DEFAULT VALUES..." << endl;
@@ -1929,7 +1937,7 @@ void classicMode::custom(){
 
             //5
             classicGameCustom::tempAmmunition = 0;
-            custom();
+            custom(experimentalFeatures03);
             break;
         case 'Z':
             mainGame();
@@ -1940,7 +1948,7 @@ void classicMode::custom(){
         }
 
 
-    custom();
+    custom(experimentalFeatures03);
 }
 
 void classicMode::mainGame(){
@@ -5318,8 +5326,9 @@ void classicMode::gameover(){
     classicGame::recentScore3 = classicGame::highscore3;
     recentScore03 = classicGame::recentScore3;
     tankGameStructureClassicGameObject.gamemode3Stats(death03,shootingTimes03, moveAtimes03, moveDtimes03, moveStimes03, recentScore03, highscore03);
-    cout<<"GAME OVER!\n";
-    cout<<"--------------------\n";
+    cout<<"GAME OVER!\n\n";
+    cout << "SCORE: " << classicGame::recentScore3 << "\tHIGHSCORE: " << classicGame::highscore3 << endl;
+    cout<<"-------------------------------\n";
     cout<<"0 - QUIT 1 - TRY AGAIN\n";
     switch(_getch()){
     case '0':
@@ -5340,7 +5349,7 @@ void classicMode::gameover(){
         if(classicGame::difficulty!=5){
             mainGame();
         }else{
-            custom();
+            custom(experimentalFeatures03);
         }
         break;
     }
