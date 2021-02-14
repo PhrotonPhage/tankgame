@@ -17,7 +17,7 @@ static int moveStimes03;
 static int shootingTimes03;
 static int death03;
 
-static int experimentalFeatures03;
+static int *experimentalFeatures03;
 
 int dummy;
 static int clearScreen = 0;
@@ -304,7 +304,7 @@ void classicMode::difficulty(){
             break;
         case '5':
             classicGame::difficulty = 5;
-            custom(experimentalFeatures03);
+            custom(*experimentalFeatures03);
             break;
         }
     }
@@ -316,7 +316,7 @@ void classicMode::classicGameVariablePass(){
 }
 
 void classicMode::custom(int experimentalFeatures){
-    experimentalFeatures03 = experimentalFeatures;
+    *experimentalFeatures03 = experimentalFeatures;
     tankGameStructureClassicGameObject.experimentalGameplayDirect();
     system("cls");
     cout << "GAMEMODE 3: CLASSIC MODE > CUSTOM\n\n";
@@ -325,7 +325,7 @@ void classicMode::custom(int experimentalFeatures){
     cout << "3 - RESULTS\n";
     cout << "4 - CLSVALUE - "<< classicGameCustom::clearScreen <<"\n";
     cout << "5 - AMMOTEMP - "<< classicGameCustom::tempAmmunition << "\n\n";
-    if(experimentalFeatures03==1){
+    if(*experimentalFeatures03==1){
         cout << "S - SAVE\n";
     }
     cout << "R - RESET\n";
@@ -404,7 +404,7 @@ void classicMode::custom(int experimentalFeatures){
                 cout << ": SET VALUE TO = ";
                 cin >> classicGameCustom::amplifier;
             case 'X':
-                custom(experimentalFeatures03);
+                custom(*experimentalFeatures03);
                 break;
             }
             break;
@@ -1538,7 +1538,7 @@ void classicMode::custom(int experimentalFeatures){
                 }
                 break;
         case 'X':
-                custom(experimentalFeatures03);
+                custom(*experimentalFeatures03);
                 break;
             }
             break;
@@ -1555,7 +1555,7 @@ void classicMode::custom(int experimentalFeatures){
                 cout << ": SET VALUE TO = ";
                 cin >> classicGameCustom::clearScreen;
             case 'X':
-                custom(experimentalFeatures03);
+                custom(*experimentalFeatures03);
                 break;
             }
             break;
@@ -1582,15 +1582,16 @@ void classicMode::custom(int experimentalFeatures){
                     break;
                 }
             case 'X':
-                custom(experimentalFeatures03);
+                custom(*experimentalFeatures03);
                 break;
             }
             break;
         case 'S':
-            if(experimentalFeatures03==1){
+            int &experimentalFeatures03ptr = 1;
+            if(&experimentalFeatures03==experimentalFeatures03ptr){
                 cout << "COMING SOON" << endl;
             }
-            custom(experimentalFeatures03);
+            custom(*experimentalFeatures03);
             break;
         case 'X':
             classicGame::movement = 10;
@@ -1758,7 +1759,7 @@ void classicMode::custom(int experimentalFeatures){
 
             //5
             classicGameCustom::tempAmmunition = 0;
-            custom(experimentalFeatures03);
+            custom(*experimentalFeatures03);
             break;
         case 'D':
             cout << "SETTING DEFAULT VALUES..." << endl;
@@ -1937,7 +1938,7 @@ void classicMode::custom(int experimentalFeatures){
 
             //5
             classicGameCustom::tempAmmunition = 0;
-            custom(experimentalFeatures03);
+            custom(*experimentalFeatures03);
             break;
         case 'Z':
             mainGame();
@@ -1948,7 +1949,7 @@ void classicMode::custom(int experimentalFeatures){
         }
 
 
-    custom(experimentalFeatures03);
+    custom(*experimentalFeatures03);
 }
 
 void classicMode::mainGame(){
@@ -5349,7 +5350,7 @@ void classicMode::gameover(){
         if(classicGame::difficulty!=5){
             mainGame();
         }else{
-            custom(experimentalFeatures03);
+            custom(*experimentalFeatures03);
         }
         break;
     }
