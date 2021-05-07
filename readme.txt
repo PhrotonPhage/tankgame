@@ -17,12 +17,11 @@ Plans:
 -Fix bugs
 (!=High Priority, '-Medium Priority, -Low Priority)
 
-v0.4.0.7 Alpha build  - February , 2021
+v0.4.0.7 Alpha build 1292 - May 7, 2021
 !The development was slower compared to other versions due to personal issues
 -Added Score & Highscore message on Game Over screen for gamemode 3
 -Fixed bug causing result block 18 subvalue 7 does not reset on custom mode
 -Changed line length on game over screen for gamemode 3
--"SAVE" button on custom mode gamemode 3 will no longer appear unless experimental mode is used
 
 Older Versions:
 v0.0.0 - May 17, 2020

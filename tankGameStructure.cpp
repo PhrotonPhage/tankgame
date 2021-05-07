@@ -1393,7 +1393,7 @@ void tankGameStructure::experimentalGameplay(){
     cout << "-LOAD SETTINGS\n";
     cout << "-DEAD ENEMY TANK (VISUAL FEATURE)\n";
     cout << "-TANK COLORS\n";
-    cout << "-SAVE FEATURE ON CUSTOM MODE\n\n";
+    //cout << "-SAVE FEATURE ON CUSTOM MODE\n\n";
     cout << "0 - NO\t1 - YES\t2 - DISABLE" << endl;
     if(kbhit()){
     switch(_getch()){
@@ -1427,7 +1427,7 @@ void tankGameStructure::experimentalGameplay(){
 }
 
 void tankGameStructure::experimentalGameplayDirect(){
-    classicModeObject.custom(experimentalFeatures);
+    classicModeObject.custom();
 }
 
 void tankGameStructure::controls(){

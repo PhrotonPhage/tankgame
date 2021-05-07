@@ -304,7 +304,8 @@ void classicMode::difficulty(){
             break;
         case '5':
             classicGame::difficulty = 5;
-            custom(*experimentalFeatures03);
+            custom();
+            //mainGame();
             break;
         }
     }
@@ -315,9 +316,9 @@ void classicMode::classicGameVariablePass(){
     tankGameStructureClassicGameObject.gamemode3Stats(death03,shootingTimes03, moveAtimes03, moveDtimes03, moveStimes03, recentScore03, highscore03);
 }
 
-void classicMode::custom(int experimentalFeatures){
-    *experimentalFeatures03 = experimentalFeatures;
-    tankGameStructureClassicGameObject.experimentalGameplayDirect();
+void classicMode::custom(){
+    //*experimentalFeatures03 = experimentalFeatures;
+    //tankGameStructureClassicGameObject.experimentalGameplayDirect();
     system("cls");
     cout << "GAMEMODE 3: CLASSIC MODE > CUSTOM\n\n";
     cout << "1 - VARIABLES\n";
@@ -325,9 +326,9 @@ void classicMode::custom(int experimentalFeatures){
     cout << "3 - RESULTS\n";
     cout << "4 - CLSVALUE - "<< classicGameCustom::clearScreen <<"\n";
     cout << "5 - AMMOTEMP - "<< classicGameCustom::tempAmmunition << "\n\n";
-    if(*experimentalFeatures03==1){
+    //if(*experimentalFeatures03==1)
         cout << "S - SAVE\n";
-    }
+
     cout << "R - RESET\n";
     cout << "D - DEFAULTS\n\n";
     cout << "Z - PLAY\n";
@@ -404,7 +405,7 @@ void classicMode::custom(int experimentalFeatures){
                 cout << ": SET VALUE TO = ";
                 cin >> classicGameCustom::amplifier;
             case 'X':
-                custom(*experimentalFeatures03);
+                custom();
                 break;
             }
             break;
@@ -1538,7 +1539,7 @@ void classicMode::custom(int experimentalFeatures){
                 }
                 break;
         case 'X':
-                custom(*experimentalFeatures03);
+                custom();
                 break;
             }
             break;
@@ -1555,7 +1556,7 @@ void classicMode::custom(int experimentalFeatures){
                 cout << ": SET VALUE TO = ";
                 cin >> classicGameCustom::clearScreen;
             case 'X':
-                custom(*experimentalFeatures03);
+                custom();
                 break;
             }
             break;
@@ -1582,16 +1583,16 @@ void classicMode::custom(int experimentalFeatures){
                     break;
                 }
             case 'X':
-                custom(*experimentalFeatures03);
+                custom();
                 break;
             }
             break;
         case 'S':
-            int &experimentalFeatures03ptr = 1;
-            if(&experimentalFeatures03==experimentalFeatures03ptr){
+            //int &experimentalFeatures03ptr = 1;
+            //if(&experimentalFeatures03==experimentalFeatures03ptr)
                 cout << "COMING SOON" << endl;
-            }
-            custom(*experimentalFeatures03);
+
+            //custom(*experimentalFeatures03);
             break;
         case 'X':
             classicGame::movement = 10;
@@ -1759,7 +1760,7 @@ void classicMode::custom(int experimentalFeatures){
 
             //5
             classicGameCustom::tempAmmunition = 0;
-            custom(*experimentalFeatures03);
+            custom();
             break;
         case 'D':
             cout << "SETTING DEFAULT VALUES..." << endl;
@@ -1938,7 +1939,7 @@ void classicMode::custom(int experimentalFeatures){
 
             //5
             classicGameCustom::tempAmmunition = 0;
-            custom(*experimentalFeatures03);
+            custom();
             break;
         case 'Z':
             mainGame();
@@ -1949,7 +1950,7 @@ void classicMode::custom(int experimentalFeatures){
         }
 
 
-    custom(*experimentalFeatures03);
+    custom();
 }
 
 void classicMode::mainGame(){
@@ -5350,7 +5351,7 @@ void classicMode::gameover(){
         if(classicGame::difficulty!=5){
             mainGame();
         }else{
-            custom(*experimentalFeatures03);
+            custom();
         }
         break;
     }
