@@ -145,7 +145,7 @@ void tankGameStructure::gamemode3Stats(int death03,int shootingTimes03,int moveA
     death3 = death03;
     moveAtimes3 = moveAtimes03;
     moveDtimes3 = moveDtimes03;
-    moveStimes3 = moveDtimes03;
+    moveStimes3 = moveStimes03;
     shootingTimes3 = shootingTimes03;
     recentScore3 = recentScore03;
     highscore3 = highscore03;

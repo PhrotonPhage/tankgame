@@ -53,9 +53,9 @@ void helpPage::changelogs(){
     cout << "HELP > CHANGELOGS\n\n";
     cout << "CHANGELOGS:\n\n";
     cout << "WHAT'S NEW IN VERSION " << VERSION_MAJOR << "." << VERSION_MINOR << "." << VERSION_REVISION << VERBUILD << " " << VERSION << " BUILD " << BUILD  << "?\n";
-    cout << "RELEASE 0.3.0:\n";
-    cout << "-ADDED CLASSIC GAME MODE. A FAILED COPY OF SHOOTING IN TETRIS\n";
-    cout << "-ADDED GITHUB LINKS IN INFO PAGE\n";
+    cout << "RELEASE 0.4.0:\n";
+    cout << "-ADDED CUSTOM MODE. CAN BE USED TO CREATE YOUR OWN LEVELS\n";
+    cout << "-ADDED MORE OPTIONS UNDER CUSTOM MODE. CANNOT SAVE PROGRESS FROM NOW\n";
     cout << "-MORE INFO ADDED ON INFO PAGE\n";
     cout << "-BUG FIXES\n";
     cout << "\nFOR MORE INFO, CHECK README.TXT IN GAME FOLDER\n";
@@ -148,6 +148,8 @@ void helpPage::classicGame(){
     cout << "I - BLOCKS M - TANK . - BULLET\n";
     cout << "PER MOVEMENT WILL DECREASE 1 SCORE\n";
     cout << "BLOCKS UPDATE IN SPEFICIED VALUE\n\n";
+    cout << "CUSTOM MODE CAN BE USED TO CREATE YOUR OWN GAME.\n";
+    cout << "NOTE: CUSTOM MODE CANNOT SAVE PROGRESS\n\n";
     cout << "X - BACK";
     if(kbhit()){
         switch(_getch()){

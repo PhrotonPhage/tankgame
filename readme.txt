@@ -17,11 +17,12 @@ Plans:
 -Fix bugs
 (!=High Priority, '-Medium Priority, -Low Priority)
 
-v0.4.0.7 Alpha build 1292 - May 7, 2021
-!The development was slower compared to other versions due to personal issues
--Added Score & Highscore message on Game Over screen for gamemode 3
--Fixed bug causing result block 18 subvalue 7 does not reset on custom mode
--Changed line length on game over screen for gamemode 3
+v0.4.0 Alpha build 1297 - May 7, 2021		CCM Update (Classic Custom Mode)
+-Added Custom mode under classic mode. Can be used to create your own levels.
+-Options available: Variables, Ammotemp, Block Result, Clear Value & Amplifier
+-Cannot save setting progress yet. You may lose progress when creating your own levels.
+-Added controller setting warning
+-Bug fixes
 
 Older Versions:
 v0.0.0 - May 17, 2020
@@ -605,3 +606,11 @@ v0.4.0.6 Alpha build 1275 - February 5, 2021
 -Default button on custom mode will now sets default values to results (3-results, block 1-20 with subvalues 1-7)
 -Default button on custom mode will now sets default values to clear screen (4-clsvalue)
 -Default button on custom mode will now sets default values to ammo cache (5-ammotemp)
+v0.4.0.7 Alpha build 1292 - May 7, 2021
+!The development was slower compared to other versions due to personal issues
+-Added Score & Highscore message on Game Over screen for gamemode 3
+-Fixed bug causing result block 18 subvalue 7 does not reset on custom mode
+-Changed line length on game over screen for gamemode 3
+v0.4.0.8 Alpha build 1295 - May 7, 2021 
+-Updated Help Page
+-Fixed bug causing control d to be same as control s on statistics page (#3)
